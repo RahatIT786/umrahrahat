@@ -8,6 +8,6 @@ class UserHome extends Component
 {
     public function render()
     {
-        return view('livewire.user-home');
+        return view('user.layouts.app');
     }
 }
