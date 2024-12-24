@@ -6,4 +6,4 @@ use App\Livewire\UserHome;
 //     return view('index');
 // });
 
-Route::get('/',UserHome::class)->name('user.layouts.app');
+Route::get('/', UserHome::class)->name('user.layouts.app');

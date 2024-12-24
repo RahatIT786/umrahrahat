@@ -3,5 +3,10 @@
     <div id="page" class="hfeed site">
         <!-- navbar -->
         @include('user.includes.navbar')
-        {{ $slot }}
-     @include('user.includes.footer')
+
+        <!-- This is where the content from the Livewire component will be injected -->
+        {{$slot}}
+
+        @include('user.includes.footer')
+    </div>
+</body>
