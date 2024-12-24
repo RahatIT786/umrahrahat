@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="https://kitpro.site/zamzam/xmlrpc.php" />
-    <title></title>
-    <meta name='robots' content='max-image-preview:large' />
-    <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://kitpro.site/zamzam/feed/" />
-    <link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://kitpro.site/zamzam/comments/feed/" />
-    <!-- script1 -->
-    <script src="{{ asset('assets/user/js/script.js') }}"></script>
-    <!-- script1 -->
-    <link rel='stylesheet' id='hfe-widgets-style-css' href='https://kitpro.site/zamzam/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.36' media='all' />
-    <!-- style1 -->
-    <link href="{{ asset('assets/user/css/style1.css') }}" rel="stylesheet" />
-    <!-- style1 -->
-
-    <!-- style2 -->
-    <!-- <style id='classic-theme-styles-inline-css'></style>  -->
-    <link href="{{ asset('assets/user/css/style2.css') }}" rel="stylesheet" />
-    <!-- style2 -->
-    
-     <!-- style3 -->
-     <!-- <style id='global-styles-inline-css'></style> -->
-    <link href="{{ asset('assets/user/css/style3.css') }}" rel="stylesheet" />
-     <!-- style3 -->
-
-    <link rel='stylesheet' id='template-kit-export-css' href='https://kitpro.site/zamzam/wp-content/plugins/template-kit-export/assets/public/template-kit-export-public.css?ver=1.0.23' media='all' />
-    <link rel='stylesheet' id='hfe-style-css' href='https://kitpro.site/zamzam/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.36' media='all' />
-    <link rel='stylesheet' id='elementor-icons-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.32.0' media='all' />
-    <link rel='stylesheet' id='elementor-frontend-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.9' media='all' />
-    <link rel='stylesheet' id='swiper-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-    <link rel='stylesheet' id='e-swiper-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.9' media='all' />
-    <link rel='stylesheet' id='elementor-post-3-css' href='https://kitpro.site/zamzam/wp-content/uploads/sites/203/elementor/css/post-3.css?ver=1705457761' media='all' />
-    <link rel='stylesheet' id='e-animations-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.25.9' media='all' />
-    <link rel='stylesheet' id='elementor-post-1345-css' href='https://kitpro.site/zamzam/wp-content/uploads/sites/203/elementor/css/post-1345.css?ver=1705457762' media='all' />
-    <link rel='stylesheet' id='elementor-post-1142-css' href='https://kitpro.site/zamzam/wp-content/uploads/sites/203/elementor/css/post-1142.css?ver=1715837971' media='all' />
-    <link rel='stylesheet' id='elementor-post-1164-css' href='https://kitpro.site/zamzam/wp-content/uploads/sites/203/elementor/css/post-1164.css?ver=1705457762' media='all' />
-    <link rel='stylesheet' id='text-editor-style-css' href='https://kitpro.site/zamzam/wp-content/plugins/metform/public/assets/css/text-editor.css?ver=3.5.0' media='all' />
-    <link rel='stylesheet' id='hello-elementor-css' href='https://kitpro.site/zamzam/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1' media='all' />
-    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://kitpro.site/zamzam/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1' media='all' />
-    <link rel='stylesheet' id='elementor-icons-ekiticons-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.3.0' media='all' />
-    <link rel='stylesheet' id='ekit-widget-styles-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.3.0' media='all' />
-    <link rel='stylesheet' id='ekit-responsive-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.3.0' media='all' />
-    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Playfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.5.5'
-        media='all' />
-    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
-    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
-    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
-    <link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' media='all' />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src="https://kitpro.site/zamzam/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="https://kitpro.site/zamzam/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-    <script src="https://kitpro.site/zamzam/wp-content/plugins/template-kit-export/assets/public/template-kit-export-public.js?ver=1.0.23" id="template-kit-export-js"></script>
-    <link rel="https://api.w.org/" href="https://kitpro.site/zamzam/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://kitpro.site/zamzam/wp-json/wp/v2/pages/1345" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kitpro.site/zamzam/xmlrpc.php?rsd" />
-    <meta name="generator" content="WordPress 6.5.5" />
-    <link rel="canonical" href="https://kitpro.site/zamzam/" />
-    <link rel='shortlink' href='https://kitpro.site/zamzam/' />
-    <link rel="alternate" type="application/json+oembed" href="https://kitpro.site/zamzam/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkitpro.site%2Fzamzam%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://kitpro.site/zamzam/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkitpro.site%2Fzamzam%2F&#038;format=xml" />
-    <meta name="generator" content="Elementor 3.25.9; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-auto">
-    <!-- style4 -->
-    <link href="{{ asset('assets/user/css/style4.css') }}" rel="stylesheet" />
-    <!-- style4 -->
-    <livewire:styles />
-</head>
+@include('user.includes.header')
 <body class="home page-template page-template-elementor_header_footer page page-id-1345 ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-1345">
     <div id="page" class="hfeed site">
         <!-- navbar -->
@@ -78,9 +8,9 @@
         {{$slot}}
 
         @include('user.includes.footer')
-    </div>
-    <script type='text/javascript'>
-    const lazyloadRunObserver = () => {
+        </div>
+        <script type='text/javascript'>
+        const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
             const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
