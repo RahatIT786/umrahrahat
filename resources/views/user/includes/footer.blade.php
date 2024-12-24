@@ -573,7 +573,7 @@
             "nonce": "5c23625b7f"
         };
     </script>
+    <livewire:scripts />
     <script src="https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.3.0" id="elementskit-elementor-js"></script>
 </body>
-
 </html>
