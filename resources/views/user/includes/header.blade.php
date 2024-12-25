@@ -87,5 +87,6 @@
     {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
     @include('user.partials.blog.style')
     {{--------------}}
+
     <livewire:styles />
 </head>

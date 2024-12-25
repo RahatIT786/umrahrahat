@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="elementor-element elementor-element-f431541 e-flex e-con-boxed e-con e-parent" data-id="f431541" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    {{-- <div class="elementor-element elementor-element-f431541 e-flex e-con-boxed e-con e-parent" data-id="f431541" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         <div class="e-con-inner">
             <div class="elementor-element elementor-element-ab37613 e-flex e-con-boxed e-con e-child" data-id="ab37613" data-element_type="container">
                 <div class="e-con-inner">
@@ -65,8 +65,10 @@
                     </div>
                 </div>
             </div>
+          
         </div>
-    </div>
+    </div> --}}
+    @include('livewire.user_front.partner-logos',['dataId'=>'f431541'])
     <div class="elementor-element elementor-element-74f1f0b e-flex e-con-boxed e-con e-parent" data-id="74f1f0b" data-element_type="container">
         <div class="e-con-inner">
             <div class="elementor-element elementor-element-18287d6 e-con-full e-flex e-con e-child" data-id="18287d6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
