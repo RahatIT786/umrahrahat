@@ -22,7 +22,7 @@
             </div>
             <div class="elementor-element elementor-element-baa1e32 elementor-widget elementor-widget-text-editor" data-id="baa1e32" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                    <p>Embark on a spiritual journey with Rahat, offering personalized, seamless Hajj and Umrah experiences.</p>
+                    <p>Our goal is to make your spiritual journey as smooth and fulfilling as possible, offering personalized packages and attentive support every step of the way. Trust Rahat for a worry-free Umrah experience that lets you focus on your worship and devotion.</p>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="elementor-element elementor-element-9092323 elementor-widget elementor-widget-heading" data-id="9092323" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h3 class="elementor-heading-title elementor-size-default">About ZamZam</h3>
+                            <h3 class="elementor-heading-title elementor-size-default">About Rahat</h3>
                         </div>
                     </div>
                 </div>
