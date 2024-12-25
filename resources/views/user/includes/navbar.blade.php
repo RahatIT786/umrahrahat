@@ -24,31 +24,33 @@
                                         <nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;" data-close-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;far fa-window-close&quot;&gt;&lt;/i&gt;"
                                             data-full-width="yes">
                                             <ul id="menu-1-df913e0" class="hfe-nav-menu">
-                                                <li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="index.html" class="hfe-menu-item">Home</a></li>
+                                                <li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="/" class="hfe-menu-item">Home</a></li>
                                                 <li id="menu-item-1132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                     <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">About Us<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
-                                                    <ul class="sub-menu">
+                                                    {{-- <ul class="sub-menu">
                                                         <li id="menu-item-1355" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="about.html" class="hfe-sub-menu-item">About Us</a></li>
                                                         <li id="menu-item-1361" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="team.html" class="hfe-sub-menu-item">Team</a></li>
-                                                    </ul>
+                                                    </ul> --}}
                                                 </li>
                                                 <li id="menu-item-1133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                     <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">Package<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-1356" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="package.html" class="hfe-sub-menu-item">Package</a></li>
-                                                        <li id="menu-item-1362" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="single-package.html" class="hfe-sub-menu-item">Single Package</a></li>
+                                                        <li id="menu-item-1356" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="/package" class="hfe-sub-menu-item">Umrah Package</a></li>
+                                                        <li id="menu-item-1362" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="single-package.html" class="hfe-sub-menu-item">Ramadan Umrah Package</a></li>
                                                     </ul>
                                                 </li>
                                                 <li id="menu-item-1134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                                                    <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">Page<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
-                                                    <ul class="sub-menu">
+                                                    <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">Saudi Visa<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
+                                                    {{-- <ul class="sub-menu">
                                                         <li id="menu-item-1359" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="booking.html" class="hfe-sub-menu-item">Booking</a></li>
                                                         <li id="menu-item-1358" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="faq.html" class="hfe-sub-menu-item">FAQs</a></li>
                                                         <li id="menu-item-1357" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="blog.html" class="hfe-sub-menu-item">Blog</a></li>
                                                         <li id="menu-item-1360" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="404.html" class="hfe-sub-menu-item">404</a></li>
-                                                    </ul>
+                                                    </ul> --}}
                                                 </li>
-                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Contact Us</a></li>
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Blog </a></li>
+
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Contact Us </a></li>
                                             </ul>
                                         </nav>
                                     </div>
