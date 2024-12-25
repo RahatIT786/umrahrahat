@@ -79,7 +79,7 @@
                         </div>
                         <div class="elementor-element elementor-element-f316e06 elementor-widget elementor-widget-heading" data-id="f316e06" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">About ZamZam</h3>
+                                <h3 class="elementor-heading-title elementor-size-default">About Rahat</h3>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="elementor-element elementor-element-488cf2c elementor-widget elementor-widget-text-editor" data-id="488cf2c" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Our goal is to make your spiritual journey as smooth and fulfilling as possible, offering personalized packages and attentive support every step of the way. Trust Rahat for a worry-free Umrah experience that lets you focus on your worship and devotion.</p>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-c07fdca e-flex e-con-boxed e-con e-child" data-id="c07fdca" data-element_type="container">
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="elementor-element elementor-element-b726a11 elementor-widget elementor-widget-text-editor" data-id="b726a11" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Discover unbeatable Hajj and Umrah packages with Rahat, offering great value and exceptional service.</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="elementor-element elementor-element-8e9b6b4 elementor-widget elementor-widget-text-editor" data-id="8e9b6b4" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Travel with confidence through Rahat, offering official, reliable Hajj and Umrah services for all pilgrims.</p>
                                     </div>
                                 </div>
                             </div>
