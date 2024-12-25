@@ -67,5 +67,11 @@
     <!-- style4 -->
     <link href="{{ asset('assets/user/css/style4.css') }}" rel="stylesheet" />
     <!-- style4 -->
+
+    {{--PACKAGE-STYLE-FILE-INCLUDE-LINK--}}
+    @include('user.partials.styles')
+    {{--PACKAGE-STYLE-FILE-INCLUDE-LINK--}}
+    {{-------}}
+
     <livewire:styles />
 </head>
