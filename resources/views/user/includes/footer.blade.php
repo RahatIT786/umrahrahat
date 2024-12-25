@@ -8,32 +8,37 @@
                                     <div class="elementor-element elementor-element-76bc39d e-con-full e-flex e-con e-child" data-id="76bc39d" data-element_type="container">
                                         <div class="elementor-element elementor-element-e660264 elementor-widget elementor-widget-image" data-id="e660264" data-element_type="widget" data-widget_type="image.default">
                                             <div class="elementor-widget-container">
-                                                <img width="800" height="243" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1024x311.png" class="attachment-large size-large wp-image-1328" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1024x311.png 1024w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-300x91.png 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-768x233.png 768w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1536x467.png 1536w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-2048x623.png 2048w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-800x243.png 800w"
-                                                    sizes="(max-width: 800px) 100vw, 800px" /> </div>
+                                                <img 
+                                                  width="800" 
+                                                  height="243" 
+                                                  src="{{ asset('asserts/user/img/UMRAH.png') }}" 
+                                                  class="attachment-large size-large wp-image-1328" alt="" 
+                                                  sizes="(max-width: 800px) 100vw, 800px"
+                                                />
+                                            </div>
                                         </div>
                                         <div class="elementor-element elementor-element-20ecab6 elementor-widget elementor-widget-text-editor" data-id="20ecab6" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                    ex ea commodo consequat.</p>
+                                                <p>We offer various packages according to the convenience and budget of the pilgrims. We have special Umrah packages by Air, car and luxury buses.</p>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-d514042 e-grid-align-left e-grid-align-mobile-center elementor-shape-square elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="d514042" data-element_type="widget" data-widget_type="social-icons.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-social-icons-wrapper elementor-grid">
                                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-fa3c464" target="_blank">
+					<a href="https://www.facebook.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-fa3c464" target="_blank">
 						<span class="elementor-screen-only">Facebook</span>
-                                                    <i class="fab fa-facebook"></i> </a>
+                                                    <i class="bi bi-facebook"></i> </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-f542635" target="_blank">
+					<a href="https://www.instagram.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-f542635" target="_blank">
 						<span class="elementor-screen-only">Twitter</span>
-                                                    <i class="fab fa-twitter"></i> </a>
+                                                    <i class="bi bi-instagram"></i> </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a1f2815" target="_blank">
+					<a href="https://www.youtube.com/@RahatGroup" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a1f2815" target="_blank">
 						<span class="elementor-screen-only">Youtube</span>
-                                                    <i class="fab fa-youtube"></i> </a>
+                                                    <i class="bi bi-youtube"></i> </a>
                                                     </span>
                                                 </div>
                                             </div>
@@ -52,7 +57,7 @@
 
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="fas fa-phone-alt"></i>				</span>
+				<i aria-hidden="true" class="bi bi-telephone-fill"></i>				</span>
                                                                         </div>
 
                                                                         <div class="elementor-icon-box-content">
@@ -63,7 +68,7 @@
                                                                             </h3>
 
                                                                             <p class="elementor-icon-box-description">
-                                                                                (+856) 76882557 </p>
+                                                                           +91 78638 78630</p>
 
                                                                         </div>
 
@@ -81,19 +86,20 @@
 
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="fas fa-envelope-open-text"></i>				</span>
+				<i aria-hidden="true" class="bi bi-envelope-fill"></i>				</span>
                                                                         </div>
 
                                                                         <div class="elementor-icon-box-content">
-
+                                                                         <a href="mailto:info@rahat.in">
                                                                             <h3 class="elementor-icon-box-title">
                                                                                 <span>
-							Email						</span>
+							                                                        Email
+                                                                                </span>
                                                                             </h3>
-
                                                                             <p class="elementor-icon-box-description">
-                                                                                mail@zmzm.id </p>
-
+                                                                                info@rahat.in
+                                                                            </p>
+                                                                         </a>
                                                                         </div>
 
                                                                     </div>
@@ -106,7 +112,7 @@
                                                             <div class="elementor-element elementor-element-7d72cff elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-square elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="7d72cff" data-element_type="widget"
                                                                 data-widget_type="icon-box.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <div class="elementor-icon-box-wrapper">
+                                                                    <!-- <div class="elementor-icon-box-wrapper">
 
                                                                         <div class="elementor-icon-box-icon">
                                                                             <span class="elementor-icon elementor-animation-">
@@ -125,7 +131,7 @@
 
                                                                         </div>
 
-                                                                    </div>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -143,61 +149,64 @@
                                             <div class="elementor-element elementor-element-5c74f6b e-flex e-con-boxed e-con e-child" data-id="5c74f6b" data-element_type="container">
                                                 <div class="e-con-inner">
                                                     <div class="elementor-element elementor-element-c82f6dd e-flex e-con-boxed e-con e-child" data-id="c82f6dd" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-0d39d33 elementor-widget elementor-widget-heading" data-id="0d39d33" data-element_type="widget" data-widget_type="heading.default">
+                                                    <div class="e-con-inner">
+                                                            <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">Navigation</h5>
+                                                                    <h5 class="elementor-heading-title elementor-size-default">MAKKA - SAUDI</h5>
                                                                 </div>
                                                             </div>
-                                                            <div class="elementor-element elementor-element-8add4c9 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8add4c9" data-element_type="widget"
+                                                            <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
                                                                 <div class="elementor-widget-container">
                                                                     <ul class="elementor-icon-list-items">
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Home</span>
+                                                                        <li style="display:flex;align-items:flex-start" class="elementor-icon-list-item">
+                                                                            <span class="elementor-icon-list-icon">
+							                                                  <i aria-hidden="true" class="bi bi-geo-alt-fill"></i>
+                                                                            </span>
+                                                                            <span class="elementor-icon-list-text">Deafa International, Ajyad Sud Street. Anwar Deafa, Second Floor.</span>
                                                                         </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Pages</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">About Us</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Services</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">404</span>
+                                                                        <li  class="elementor-icon-list-item">
+                                                                            <a href="tel:+966563898353">
+                                                                            <span class="elementor-icon-list-icon">
+							                                                  <i aria-hidden="true" class="bi bi-telephone-fill"></i>
+                                                                            </span>
+                                                                            <span class="elementor-icon-list-text">
+                                                                                 +966 56 389 8353
+                                                                            </span>
+                                                                            </a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                           
+                                                    </div>
                                                     </div>
                                                     <div class="elementor-element elementor-element-9f04783 e-flex e-con-boxed e-con e-child" data-id="9f04783" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-5e37dc9 elementor-widget elementor-widget-heading" data-id="5e37dc9" data-element_type="widget" data-widget_type="heading.default">
+                                                       <div class="e-con-inner">
+                                                            <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">Quick Link</h5>
+                                                                    <h5 class="elementor-heading-title elementor-size-default">MADINA - SAUDI</h5>
                                                                 </div>
                                                             </div>
-                                                            <div class="elementor-element elementor-element-4d55331 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4d55331" data-element_type="widget"
+                                                            <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
                                                                 <div class="elementor-widget-container">
                                                                     <ul class="elementor-icon-list-items">
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Contact Us</span>
+                                                                        <li style="display:flex;align-items:flex-start" class="elementor-icon-list-item">
+                                                                            <span class="elementor-icon-list-icon">
+							                                                 <i aria-hidden="true" class="bi bi-geo-alt-fill"></i>	
+                                                                            </span>
+                                                                            <span class="elementor-icon-list-text">Ali ibne Talib Inside Qurban Mall. Awaali, Madina Munawwara.</span>
                                                                         </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">FAQs</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Blog</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Gallery</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-text">Pricing</span>
+                                                                        <li  class="elementor-icon-list-item">
+                                                                            <a href="tel:+966543186894">
+                                                                            <span class="elementor-icon-list-icon">
+						                                                	  <i aria-hidden="true" class="bi bi-telephone-fill"></i>	
+                                                                            </span>
+                                                                            <span class="elementor-icon-list-text">
+                                                                                +966 54 318 6894.
+                                                                            </span>
+                                                                            </a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -208,29 +217,30 @@
                                                         <div class="e-con-inner">
                                                             <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">Work Hours</h5>
+                                                                    <h5 class="elementor-heading-title elementor-size-default">SHARJAH - DUBAI</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
                                                                 <div class="elementor-widget-container">
                                                                     <ul class="elementor-icon-list-items">
-                                                                        <li class="elementor-icon-list-item">
+                                                                        <li style="display:flex;align-items:flex-start"  class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-clock"></i>						</span>
-                                                                            <span class="elementor-icon-list-text">Mon - Fri : 7AM-5PM</span>
+							                                                <i aria-hidden="true" class="bi bi-envelope-fill"></i>	</span>
+                                                                            <span class="elementor-icon-list-text">705, F1 Building, Rolla Market, Near Hisn Fort. Sharjah.</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
+                                                                            <a href="tel:+971566115491.">
                                                                             <span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-clock"></i>						</span>
-                                                                            <span class="elementor-icon-list-text">Saturday 9AM-3PM</span>
+							                                                  <i aria-hidden="true" class="bi bi-telephone-fill"></i>	
+                                                                            </span>
+
+                                                                            <span class="elementor-icon-list-text">
+                                                                                 +971 56 611 5491.
+                                                                            </span>
+                                                                            </a>
                                                                         </li>
                                                                     </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-a6fec0f elementor-widget elementor-widget-text-editor" data-id="a6fec0f" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -253,7 +263,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-5c5e1ac elementor-widget elementor-widget-text-editor" data-id="5c5e1ac" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>© 2023 Zamzam Template • All Rights Reserved</p>
+                                            <p>Copyright © 2024 Rahat IT Solutions. All Rights Reserved.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -262,6 +272,7 @@
                     </div>
                 </div>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </footer>
  
     <!-- #page -->

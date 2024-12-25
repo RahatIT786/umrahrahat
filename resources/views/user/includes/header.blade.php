@@ -27,7 +27,8 @@
      <!-- <style id='global-styles-inline-css'></style> -->
     <link href="{{ asset('assets/user/css/style3.css') }}" rel="stylesheet" />
      <!-- style3 -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel='stylesheet' id='template-kit-export-css' href='https://kitpro.site/zamzam/wp-content/plugins/template-kit-export/assets/public/template-kit-export-public.css?ver=1.0.23' media='all' />
     <link rel='stylesheet' id='hfe-style-css' href='https://kitpro.site/zamzam/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.36' media='all' />
     <link rel='stylesheet' id='elementor-icons-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.32.0' media='all' />
@@ -67,11 +68,20 @@
     <!-- style4 -->
     <link href="{{ asset('assets/user/css/style4.css') }}" rel="stylesheet" />
     <!-- style4 -->
+    <!-- Font Awesome 6 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     {{--PACKAGE-STYLE-FILE-INCLUDE-LINK--}}
-    @include('user.partials.styles')
+    @include('user.partials.umrahPackage.styles')
     {{--PACKAGE-STYLE-FILE-INCLUDE-LINK--}}
-    {{-------}}
+
+    {{--PACKAGE-STYLE-FILE-ABOUT--INCLUDE-LINK--}}
+    @include('user.partials.home.style')
+    {{--PACKAGE-STYLE-FILE-ABOUT--INCLUDE-LINK--}}
+
+    {{--PACKAGE-STYLE-FILE-ABOUT--INCLUDE-LINK--}}
+    @include('user.partials.about.style')
+    {{--PACKAGE-STYLE-FILE-ABOUT--INCLUDE-LINK--}}
 
 
     {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
