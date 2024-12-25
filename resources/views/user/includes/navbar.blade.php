@@ -9,7 +9,7 @@
                                     <img fetchpriority="high" 
                                         width="800" 
                                         height="243" 
-                                        src="{{ asset('asserts/user/img/UMRAH.png') }}" 
+                                        src="{{ asset('asserts/user/img/UMRAH_COLOR.png') }}" 
                                         class="attachment-large size-large wp-image-1328" 
                                         alt="" 
                                         sizes="(max-width: 800px) 100vw, 800px" 
@@ -59,12 +59,12 @@
 
                                                 <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="/blog" class="hfe-menu-item">Blog </a></li>
 
-                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#" class="hfe-menu-item">Contact Us </a></li>
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="tel:+917863878630" class="hfe-menu-item">Contact Us </a></li>
                                             </ul>
                                         </nav>
                                     </div>
-                                </div>
                             </div>
+                        </div>
                  </div>
             </div>
         </div>

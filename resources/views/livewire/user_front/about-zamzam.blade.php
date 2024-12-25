@@ -12,7 +12,7 @@
                             </div>
                             <div class="elementor-element elementor-element-2234e349 elementor-widget elementor-widget-heading" data-id="2234e349" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">About ZamZam</h3>
+                                    <h3 class="elementor-heading-title elementor-size-default">About Rahat</h3>
                                 </div>
                             </div>
                         </div>
