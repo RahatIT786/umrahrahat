@@ -18,7 +18,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-24f6b6e1 elementor-widget elementor-widget-heading" data-id="24f6b6e1" data-element_type="widget" data-widget_type="heading.default">
                                         <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">Welcome To ZamZam</h3>
+                                            <h3 class="elementor-heading-title elementor-size-default">Welcome To Rahat</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -32,7 +32,7 @@
                             <div class="elementor-element elementor-element-75f32ac2 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="75f32ac2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:700}"
                                 data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</p>
+                                    <p>Rahat is a trusted travel agency specializing in Hajj and Umrah services, providing seamless, guided experiences for pilgrims.</p>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-707af6a1 elementor-mobile-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="707af6a1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}"

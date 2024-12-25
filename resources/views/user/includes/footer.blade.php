@@ -11,7 +11,7 @@
                                                 <img 
                                                   width="800" 
                                                   height="243" 
-                                                  src="{{ asset('asserts/user/img/UMRAH.png') }}" 
+                                                  src="{{ asset('asserts/user/img/UMRAH_COLOR.png') }}" 
                                                   class="attachment-large size-large wp-image-1328" alt="" 
                                                   sizes="(max-width: 800px) 100vw, 800px"
                                                 />

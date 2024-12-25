@@ -1,6 +1,6 @@
 <div class="elementor-element elementor-element-7c45d61a e-flex e-con-boxed e-con e-parent" data-id="7c45d61a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-372ef787 e-flex e-con-boxed e-con e-child" data-id="372ef787" data-element_type="container">
+    <div class="e-con-inner">
+        <div class="elementor-element elementor-element-372ef787 e-flex e-con-boxed e-con e-child" data-id="372ef787" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-48756b9b animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="48756b9b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
@@ -36,8 +36,8 @@
                                 <div class="elementor-widget-container">
                                     <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png" class="attachment-large size-large wp-image-232" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4-300x86.png 300w"
                                         sizes="(max-width: 642px) 100vw, 642px" /> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               </div>
             </div>
+         </div>
+    </div>
+</div> 
