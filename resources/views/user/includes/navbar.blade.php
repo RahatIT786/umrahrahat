@@ -6,8 +6,15 @@
                         <div class="elementor-element elementor-element-c85665b e-con-full e-flex e-con e-child" data-id="c85665b" data-element_type="container">
                             <div class="elementor-element elementor-element-7ffde23 elementor-widget elementor-widget-image" data-id="7ffde23" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img fetchpriority="high" width="800" height="243" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1024x311.png" class="attachment-large size-large wp-image-1328" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1024x311.png 1024w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-300x91.png 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-768x233.png 768w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-1536x467.png 1536w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-2048x623.png 2048w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-Zamzam-01-800x243.png 800w"
-                                        sizes="(max-width: 800px) 100vw, 800px" /> </div>
+                                    <img fetchpriority="high" 
+                                        width="800" 
+                                        height="243" 
+                                        src="{{ asset('asserts/user/img/UMRAH.png') }}" 
+                                        class="attachment-large size-large wp-image-1328" 
+                                        alt="" 
+                                        sizes="(max-width: 800px) 100vw, 800px" 
+                                    /> 
+                                </div>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-d828a42 e-con-full e-flex e-con e-child" data-id="d828a42" data-element_type="container">
@@ -26,7 +33,7 @@
                                             <ul id="menu-1-df913e0" class="hfe-nav-menu">
                                                 <li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="/" class="hfe-menu-item">Home</a></li>
                                                 <li id="menu-item-1132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                                                    <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">About Us<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
+                                                    <div class="hfe-has-submenu-container"><a href="{{ route('about') }}" class="hfe-menu-item">About Us<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
                                                     {{-- <ul class="sub-menu">
                                                         <li id="menu-item-1355" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="about.html" class="hfe-sub-menu-item">About Us</a></li>
                                                         <li id="menu-item-1361" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="team.html" class="hfe-sub-menu-item">Team</a></li>
@@ -48,9 +55,9 @@
                                                         <li id="menu-item-1360" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="404.html" class="hfe-sub-menu-item">404</a></li>
                                                     </ul> --}}
                                                 </li>
-                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Blog </a></li>
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#" class="hfe-menu-item">Blog </a></li>
 
-                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Contact Us </a></li>
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="#" class="hfe-menu-item">Contact Us </a></li>
                                             </ul>
                                         </nav>
                                     </div>
