@@ -83,5 +83,9 @@
     @include('user.partials.about.style')
     {{--PACKAGE-STYLE-FILE-ABOUT--INCLUDE-LINK--}}
 
+
+    {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
+    @include('user.partials.blog.style')
+    {{--------------}}
     <livewire:styles />
 </head>
