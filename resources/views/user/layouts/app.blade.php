@@ -37,6 +37,16 @@
             document.addEventListener(event, lazyloadRunObserver);
         });
     </script>
+    
+    {{--dataId-dynamic-changing-script-start--}}
+    <script>
+            $(document).ready(function() {
+        var dataId=$('.partner-logo').data('id');
+        console.log(dataId);
+    });
+    </script>
+     {{--dataId-dynamic-changing-script-end--}}
+
     <link rel='stylesheet' id='font-awesome-5-all-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.25.9' media='all' />
     <link rel='stylesheet' id='font-awesome-4-shim-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.25.9' media='all' />
     <link rel='stylesheet' id='widget-image-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.9' media='all' />
