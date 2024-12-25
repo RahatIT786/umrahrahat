@@ -40,7 +40,7 @@
                                                     </ul>
                                                 </li>
                                                 <li id="menu-item-1134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                                                    <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">Saudi Visa<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
+                                                    <div class="hfe-has-submenu-container"><a href="/saudi-visa" class="hfe-menu-item">Saudi Visa<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
                                                     {{-- <ul class="sub-menu">
                                                         <li id="menu-item-1359" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="booking.html" class="hfe-sub-menu-item">Booking</a></li>
                                                         <li id="menu-item-1358" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="faq.html" class="hfe-sub-menu-item">FAQs</a></li>
@@ -48,7 +48,7 @@
                                                         <li id="menu-item-1360" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="404.html" class="hfe-sub-menu-item">404</a></li>
                                                     </ul> --}}
                                                 </li>
-                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Blog </a></li>
+                                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="/blog" class="hfe-menu-item">Blog </a></li>
 
                                                 <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="contact.html" class="hfe-menu-item">Contact Us </a></li>
                                             </ul>
