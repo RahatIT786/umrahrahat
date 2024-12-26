@@ -87,10 +87,10 @@
                     <div class="collapse" id="sidebarError">
                          <ul class="nav sub-navbar-nav">
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="">Pages 404</a>
+                                   <a class="sub-nav-link" href="">List All Package</a>
                               </li>
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="">Pages 404 Alt</a>
+                                   <a class="sub-nav-link" href="">Package Requests</a>
                               </li>
                          </ul>
                     </div>
