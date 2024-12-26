@@ -63,12 +63,10 @@
                                                                         <div class="elementor-icon-box-content">
 
                                                                             <h3 class="elementor-icon-box-title">
-                                                                                <span>
-							Phone						</span>
+                                                                                <span>Phone	</span>
                                                                             </h3>
 
-                                                                            <p class="elementor-icon-box-description">
-                                                                           +91 78638 78630</p>
+                                                                            <a class="elementor-icon-box-description" href="tel:+917863878630">+91 78638 78630</a>
 
                                                                         </div>
 
@@ -263,7 +261,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-5c5e1ac elementor-widget elementor-widget-text-editor" data-id="5c5e1ac" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Copyright © 2024 Rahat IT Solutions. All Rights Reserved.</p>
+                                            <p>Copyright © 2024 <a href="http://rahatitsolutions.com/" style="color: white">Rahat IT Solutions.</a> All Rights Reserved.</p>
                                         </div>
                                     </div>
                                 </div>
