@@ -2,13 +2,14 @@
 
 use App\Http\Controllers\RoutingController;
 use App\Livewire\Blog;
+use App\Livewire\Dashboard;
 use App\Livewire\Package;
 use App\Livewire\UserAbout;
-
 use App\Livewire\SaudiVisa;
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\UserHome;
+
 
 //USER ROUTES START
 Route::get('/', UserHome::class)->name('layouts.app');
@@ -21,6 +22,5 @@ Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa');
 
 
 // ADMIN ROUTES START
-
+Route::get('/admin',Dashboard::class)->name('admin.dashboard');
 //ADMIN ROUTES END
-
