@@ -498,7 +498,7 @@
         </div>
     </div>
     {{--partner-logos-start--}}
-    @include('livewire.user_front.partner-logos',['dataId'=>'93c5fcf'])
+    @include('livewire.user_front.components.partner-logos',['dataId'=>'93c5fcf'])
     {{--partner-logos-end--}}
     <div class="elementor-element elementor-element-6bc4964 e-flex e-con-boxed e-con e-parent" data-id="6bc4964" data-element_type="container">
         <div class="e-con-inner">
