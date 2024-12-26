@@ -5,7 +5,7 @@
                 <p class="mb-0">
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> &copy; Taplox.</a>
+                    </script> &copy;<a href="http://rahatitsolutions.com/" style=":focus{color:red;}"> Rahat IT Solution</a>
                 </p>
             </div>
         </div>
