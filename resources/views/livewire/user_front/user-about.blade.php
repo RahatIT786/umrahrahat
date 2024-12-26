@@ -68,7 +68,7 @@
           
         </div>
     </div> --}}
-    @include('livewire.user_front.partner-logos',['dataId'=>'f431541'])
+    @include('livewire.user_front.components.partner-logos',['dataId'=>'f431541'])
     <div class="elementor-element elementor-element-74f1f0b e-flex e-con-boxed e-con e-parent" data-id="74f1f0b" data-element_type="container">
         <div class="e-con-inner">
             <div class="elementor-element elementor-element-18287d6 e-con-full e-flex e-con e-child" data-id="18287d6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
