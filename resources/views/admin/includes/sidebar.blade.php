@@ -29,14 +29,14 @@
                </li>
 
                <li class="nav-item">
-                    <a class="nav-link menu-arrow" href="#sidebarAuthentication" data-bs-toggle="collapse" role="button"
+                    <!-- <a class="nav-link menu-arrow" href="#sidebarAuthentication" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarAuthentication">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:user-circle-outline"></iconify-icon>
                          </span>
                          <span class="nav-text"> Authentication </span>
-                    </a>
-                    <div class="collapse" id="sidebarAuthentication">
+                    </a> -->
+                    <!-- <div class="collapse" id="sidebarAuthentication">
                          <ul class="nav sub-navbar-nav">
                               <li class="sub-nav-item">
                                    <a class="sub-nav-link" href="">Sign In</a>
@@ -51,10 +51,10 @@
                                    <a class="sub-nav-link" href="">Lock Screen</a>
                               </li>
                          </ul>
-                    </div>
+                    </div> -->
                </li>
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarError" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarError">
                          <span class="nav-icon">
@@ -72,11 +72,31 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="menu-title">UI Kit...</li>
+               <li class="menu-title">Package Controller</li>
 
                <li class="nav-item">
+                    <a class="nav-link menu-arrow" href="#sidebarError" data-bs-toggle="collapse" role="button"
+                         aria-expanded="false" aria-controls="sidebarError">
+                         <span class="nav-icon">
+                              <iconify-icon icon="solar:bag-2-bold"></iconify-icon>
+                         </span>
+                         <span class="nav-text"> Package Manager</span>
+                    </a>
+                    <div class="collapse" id="sidebarError">
+                         <ul class="nav sub-navbar-nav">
+                              <li class="sub-nav-item">
+                                   <a class="sub-nav-link" href="">Pages 404</a>
+                              </li>
+                              <li class="sub-nav-item">
+                                   <a class="sub-nav-link" href="">Pages 404 Alt</a>
+                              </li>
+                         </ul>
+                    </div>
+               </li>
+
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarBaseUI" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarBaseUI">
                          <span class="nav-icon"><iconify-icon icon="solar:leaf-outline"></iconify-icon></span>
@@ -152,18 +172,18 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" href="">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:chart-square-outline"></iconify-icon>
                          </span>
                          <span class="nav-text"> Apex Charts </span>
                     </a>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarForms" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarForms">
                          <span class="nav-icon">
@@ -190,9 +210,9 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarTables" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarTables">
                          <span class="nav-icon">
@@ -210,9 +230,9 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarIcons" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarIcons">
                          <span class="nav-icon">
@@ -230,9 +250,9 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarMaps">
                          <span class="nav-icon">
@@ -250,11 +270,11 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="menu-title">Other</li>
+               <!-- <li class="menu-title">Other</li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarLayouts">
                          <span class="nav-icon">
@@ -288,9 +308,9 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarMultiLevelDemo" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarMultiLevelDemo">
                          <span class="nav-icon">
@@ -319,16 +339,16 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> -->
 
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link disabled" href="javascript:void(0);">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:library-outline"></iconify-icon>
                          </span>
                          <span class="nav-text"> Disable Item </span>
                     </a>
-               </li>
+               </li> -->
           </ul>
      </div>
 </div>
