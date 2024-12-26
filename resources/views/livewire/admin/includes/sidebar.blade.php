@@ -19,7 +19,7 @@
                <li class="menu-title">Menu</li>
 
                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.dashboard')}}">
+                    <a class="nav-link" href="{{route('admin.dashboard')}}"  >
                          <span class="nav-icon">
                               <iconify-icon icon="solar:widget-2-outline"></iconify-icon>
                          </span>
@@ -87,7 +87,7 @@
                     <div class="collapse" id="sidebarError">
                          <ul class="nav sub-navbar-nav">
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="{{route('admin.package')}}" >All Packages</a>
+                                   <a class="sub-nav-link" href="/admin/package" wire:navigate>All Packages</a>
                               <li class="sub-nav-item">
                                    <a class="sub-nav-link" href="">Pages 404 Alt</a>
                               </li>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\RoutingController;
 use App\Livewire\Blog;
 use App\Livewire\Admin\Dashboard;
+use App\Livewire\Admin\PackageManager\ListPackage;
 use App\Livewire\Package;
 use App\Livewire\UserAbout;
 use App\Livewire\SaudiVisa;
@@ -23,4 +24,5 @@ Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa');
 
 // ADMIN ROUTES START
 Route::get('/admin',Dashboard::class)->name('admin.dashboard');
+Route::get('/admin/package', ListPackage::class)->name('admin.package');
 //ADMIN ROUTES END
