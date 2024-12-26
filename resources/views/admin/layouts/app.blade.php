@@ -4,13 +4,14 @@
 <head>
     @include('admin.includes/title-meta')
     @include('admin.includes/head-css')
+    @livewireStyles
 </head>
 
 <body>
 
     <div class="app-wrapper">
 
-        @include('admin.includes/sidebar')
+        @include('livewire.admin.includes/sidebar')
 
         @include('admin.includes/topbar')
 
@@ -18,7 +19,7 @@
 
             <div class="container-fluid">
 
-                <!-- @yield('content') -->
+                @yield('content')
                 <!-- This is where the content from the Livewire component will be injected -->
                 {{$slot}}
 
@@ -30,7 +31,7 @@
     </div>
 
     @include('admin.includes/vendor-scripts')
-
+    @livewireScripts
 
 </body>
 
