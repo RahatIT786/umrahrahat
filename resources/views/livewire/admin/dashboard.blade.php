@@ -113,8 +113,8 @@
     </div>
 </div>
 
-
-<div class="row">
+{{-- COMMENTED-BY-ABUSIN-START --}}
+{{-- <div class="row">
     <div class="col-lg-6">
         <div class="card card-height-100">
             <div class="card-header d-flex align-items-center justify-content-between gap-2">
@@ -257,9 +257,9 @@
         </div> <!-- end card-->
     </div> <!-- end col-->
 
-</div> <!-- End row -->
+</div> <!-- End row --> --}}
 
-<div class="row">
+{{-- <div class="row">
     <div class="col-xl-4">
         <div class="card">
             <div class="card-body">
@@ -459,5 +459,7 @@
             </div>
         </div> <!-- end card -->
     </div> <!-- end col -->
-</div> <!-- end row -->
+</div> <!-- end row --> --}}
+{{-- COMMENTED-BY-ABUSIN-START --}}
+
 </section>

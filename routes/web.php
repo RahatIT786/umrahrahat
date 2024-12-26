@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\RoutingController;
 use App\Livewire\Blog;
-use App\Livewire\Dashboard;
+use App\Livewire\Admin\Dashboard;
 use App\Livewire\Package;
 use App\Livewire\UserAbout;
 use App\Livewire\SaudiVisa;
