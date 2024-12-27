@@ -3,11 +3,15 @@
         <div class="row">
             <div class="col-12 text-center">
                 <p class="mb-0">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> &copy;<a href="http://rahatitsolutions.com/" style=":focus{color:red;}"> Rahat IT Solution</a>
+                   
+                   <span id="dev-year"></span> &copy;<a href="http://rahatitsolutions.com/" style=":focus{color:red;}"> Rahat IT Solution</a>
                 </p>
             </div>
         </div>
+
     </div>
+    <script>
+        document.getElementById('dev-year').innerHTML = new Date().getFullYear();
+        // document.write(new Date().getFullYear())
+    </script>
 </footer>
