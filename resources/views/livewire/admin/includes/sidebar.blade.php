@@ -87,7 +87,7 @@
                     <div class="collapse" id="sidebarError">
                          <ul class="nav sub-navbar-nav">
                               <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="/admin/package" wire:navigate>All Packages</a>
+                                   <a class="sub-nav-link" href="{{route('package-manager')}}" wire:navigate>All Packages</a>
                               <li class="sub-nav-item">
                                    <a class="sub-nav-link" href="">Pages 404 Alt</a>
                               </li>

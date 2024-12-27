@@ -11,7 +11,7 @@
 
     <div class="app-wrapper">
 
-        @include('livewire.admin.includes/sidebar')
+        @include('admin.includes/sidebar')
 
         @include('admin.includes/topbar')
 

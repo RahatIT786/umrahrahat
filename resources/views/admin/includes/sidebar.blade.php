@@ -77,24 +77,24 @@
                <li class="menu-title">Package Controller</li>
 
                <li class="nav-item">
-                    <a class="nav-link menu-arrow" href="#sidebarError" data-bs-toggle="collapse" role="button"
-                         aria-expanded="false" aria-controls="sidebarError">
+                    <a class="nav-link menu-arrow {{Request::is('/admin/package') || Request::is('/admin/package-request')  ? 'active' : 'collapsed'}}" href="#sidebarError" data-bs-toggle="collapse" role="button"
+                         aria-expanded="{{Request::is('/admin/package') || Request::is('/admin/package-request') ? 'true' : 'false'}}" aria-controls="sidebarError">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:bag-2-bold"></iconify-icon>
                          </span>
                          <span class="nav-text"> Package Manager</span>
                     </a>
-                    <div class="collapse" id="sidebarError">
+                    <div class="collapse {{Request::is('/admin/package') || Request::is('/admin/package') ? 'show' : ''}}" id="sidebarError">
                          <ul class="nav sub-navbar-nav">
-                              <li class="sub-nav-item">
+                              <li class="sub-nav-item {{Request::is('/admin/package') ? 'active' : ''}}  ">
 
-                                   <a class="sub-nav-link" href="{{route('admin.package')}}" >List All Packages</a>
+                                   <a class="sub-nav-link {{Request::is('/admin/package') ? 'active' : ''}}" href="{{route('admin.package-manager')}}" wire:navigate>List All Packages</a>
 
                                    
                               </li>
 
-                              <li class="sub-nav-item">
-                                   <a class="sub-nav-link" href="">Package Requests</a>
+                              <li class="sub-nav-item {{Request::is('/admin/package-request') ? 'active' : ''}}">
+                                   <a class="sub-nav-link {{Request::is('/admin/package-request') ? 'active' : '' }}" href="{{route('admin.package-request')}}" wire:navigate>Package Requests</a>
                               </li>
                          </ul>
                     </div>
