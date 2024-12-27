@@ -32,4 +32,5 @@ Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa');
 Route::get('/admin',Dashboard::class)->name('admin.dashboard');
 Route::get('/admin/package', ListPackage::class)->name('admin.package-manager');
 Route::get('/admin/package-request', PackageRequest::class)->name('admin.package-request');
+Route::get('/admin/package/add', AddPackage::class)->name('admin.package-add');
 //ADMIN ROUTES END
