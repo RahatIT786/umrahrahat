@@ -4,6 +4,7 @@
 <head>
     @include('admin.includes/title-meta')
     @include('admin.includes/head-css')
+    <link rel="stylesheet" href="{{asset('resources.css.app.css')}}">
     @livewireStyles
 </head>
 
