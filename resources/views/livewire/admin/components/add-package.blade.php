@@ -36,7 +36,60 @@
                         <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
                         <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
                     </div>
-                    <!-- Repeat similar checkboxes for the remaining ones -->
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-3">
+                <div class="row">
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-3">
+                <div class="row">
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <input type="checkbox" class="form-check-input" id="customCheckcolor1" checked>
+                        <label class="form-check-label" for="customCheckcolor1">Default Checkbox</label>
+                    </div>
                 </div>
             </div>
 
