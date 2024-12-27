@@ -6,8 +6,9 @@ use Livewire\Component;
 
 class ListPackage extends Component
 {
+        #[Layout('admin.layouts.app')]
         public function render()
     {
-        return view('livewire.admin.components.list-package')->layout('admin.layouts.app');
+        return view('livewire.admin.components.list-package');
     }
 }
