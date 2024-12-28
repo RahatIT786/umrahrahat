@@ -2,10 +2,13 @@
 
 use App\Http\Controllers\RoutingController;
 
+use App\Livewire\Admin\Components\AddVisa;
+use App\Livewire\Admin\Components\ListAllVisa;
 use App\Livewire\Admin\Components\PackageRequest;
 
 
 
+use App\Livewire\Admin\Components\VisaRequest;
 use App\Livewire\Blog;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\PackageManager\ListPackage;
@@ -33,4 +36,8 @@ Route::get('/admin',Dashboard::class)->name('admin.dashboard');
 Route::get('/admin/package', ListPackage::class)->name('admin.package-manager');
 Route::get('/admin/package-request', PackageRequest::class)->name('admin.package-request');
 Route::get('/admin/package/add', AddPackage::class)->name('admin.package-add');
+Route::get('/admin/saudivisa',ListAllVisa::class)->name('admin.saudi-visa');
+Route::get('/admin/saudivisa-request',VisaRequest::class)->name('admin.visa-request');
+Route::get('/admin/saudivisa/add',AddVisa::class)->name('admin.visa-add');
+Route::get('/editdata/{id}', AddVisa::class)->name('editdata');
 //ADMIN ROUTES END
