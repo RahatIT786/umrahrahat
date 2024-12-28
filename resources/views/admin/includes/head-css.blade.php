@@ -8,3 +8,20 @@
 @vite([ 'resources/scss/icons.scss', 'resources/scss/style.scss'])
 
 @vite([ 'resources/js/config.js'])
+
+<style>
+
+#departure-date{
+    border: 1px solid rgba(0, 0, 0,0.1) !important;
+   padding-left: 20px;
+   border-radius: 10px;
+   
+ 
+  
+   
+}
+#departure-months{
+    padding:20px;
+
+}
+</style>

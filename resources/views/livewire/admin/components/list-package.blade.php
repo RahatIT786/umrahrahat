@@ -21,6 +21,33 @@
                         </tr>
                     </thead> <!-- end thead-->
                     <tbody>
+                        @foreach ($packages as $key => $package)
+                            
+                    <tr>
+                        <td> {{$key+1}} </td>
+                        <td>
+                            <img src="{{Storage::url($package->photo_path)}}" alt="user" class="avatar-md rounded" style="height: 2rem;">
+                            
+                        </td>
+                        <td>{{$package->package_name}}</td>
+                        <td>
+                            <a href="#!">
+                                <iconify-icon icon="solar:eye-bold" width="22" height="22"></iconify-icon>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#!">
+                                <iconify-icon icon="solar:pen-bold" width="22" height="22"></iconify-icon>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#!" >
+                                <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22"></iconify-icon>
+                            </a>
+                        </td>
+                    </tr>
+                            
+                        @endforeach
                     <tr>
                         <td> 1 </td>
                         <td>
