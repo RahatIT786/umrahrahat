@@ -87,6 +87,33 @@
     {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
     @include('user.partials.blog.style')
     {{--------------}}
+    <style>
+        .visa-details-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.visa-detail-item {
+    background: #fff; /* Add background color or styling */
+    border: 1px solid #ddd; /* Add a border if needed */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .visa-details-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .visa-details-container {
+        grid-template-columns: 1fr; /* 1 item per row for very small screens */
+    }
+}
+    </style>
 
     <livewire:styles />
 </head>

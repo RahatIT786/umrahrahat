@@ -3,10 +3,9 @@
 namespace App\Livewire\Admin\Components;
 
 use App\Models\VisaDetail;
-use Livewire\Attributes\Layout;
 use Livewire\WithFileUploads;
 use Livewire\Component;
-use Illuminate\Support\Facades\Log;
+use Livewire\Attributes\Layout;
 
 class AddVisa extends Component
 {
@@ -18,13 +17,14 @@ class AddVisa extends Component
     public $price;
     public $file;
     public $visaId;
+    public $filePath;
 
     protected $rules = [
         'visaType' => 'required|string',
         'documentsRequired' => 'required|string',
         'processingTime' => 'required|integer',
         'price' => 'required|numeric',
-        'file' => 'nullable|file|mimes:pdf,jpg,png,doc,docx|max:2048',
+        'file' => 'nullable|image|max:2048', // Only images allowed
     ];
 
     // Initialize component with ID when editing
@@ -37,6 +37,7 @@ class AddVisa extends Component
             $this->documentsRequired = $visa->documents_required;
             $this->processingTime = $visa->processing_time;
             $this->price = $visa->price;
+            $this->filePath = $visa->file_path;  // Set file path for editing
         }
     }
 
@@ -58,11 +59,9 @@ class AddVisa extends Component
                 'documents_required' => $this->documentsRequired,
                 'processing_time' => $this->processingTime,
                 'price' => $this->price,
-                'file_path' => $filePath ?? $visa->file_path,
+                'file_path' => $filePath ?? $visa->file_path, // Keep old file path if no new file is uploaded
             ]);
             session()->flash('message', 'Visa details updated successfully!');
-            $this->reset(['visaType', 'documentsRequired', 'processingTime', 'price', 'file']);
-            return view('livewire.admin.components.list-all-visa');
         } else {
             // Add new visa
             VisaDetail::create([
@@ -71,6 +70,7 @@ class AddVisa extends Component
                 'processing_time' => $this->processingTime,
                 'price' => $this->price,
                 'file_path' => $filePath,
+                'delete_status' => 1,
             ]);
             session()->flash('message', 'Visa details added successfully!');
         }
