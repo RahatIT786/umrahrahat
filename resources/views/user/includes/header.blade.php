@@ -17,7 +17,8 @@
     <!-- style1 -->
     <link href="{{ asset('assets/user/css/style1.css') }}" rel="stylesheet" />
     <!-- style1 -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- style2 -->
     <!-- <style id='classic-theme-styles-inline-css'></style>  -->
     <link href="{{ asset('assets/user/css/style2.css') }}" rel="stylesheet" />
@@ -70,6 +71,7 @@
     <!-- style4 -->
     <!-- Font Awesome 6 CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {{--PACKAGE-STYLE-FILE-INCLUDE-LINK--}}
     @include('user.partials.umrahPackage.styles')
@@ -86,6 +88,11 @@
 
     {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
     @include('user.partials.blog.style')
+    {{--------------}}
+
+    
+    {{--VIEW_PACKAGE_POPUP-STYLE-FILE-INCLUDE-LINK--}}
+    @include('user.partials.viewPackagePopUp.style')
     {{--------------}}
 
     <livewire:styles />

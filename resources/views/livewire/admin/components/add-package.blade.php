@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title mb-0">Add Package Details</h5>
+        <h5 class="card-title mb-0">{{$package_id ? 'Edit Package Details' : 'Add Package Details'}}</h5>
     </div>
 
     <div class="card-body">
@@ -10,7 +10,7 @@
             @endif
         </div>
      
-        <form wire:submit.prevent="storePackage">
+        <form wire:submit.prevent="packageSubmit">
         <div class="row">
             <!-- First Row: Two Inputs -->
             <div class="col-md-6 mb-3">
@@ -113,18 +113,19 @@
         </div>
 
         <div>
-            <input type="file" wire:model="photo" accept="image/*">
+            <label for="example-textarea" class="form-label">Visa Banner Image</label>
+            <input type="file" class="form-control" wire:model="photo" accept="image/*">
             <div>
                 @if ($photo)
-                <img src="{{$photo->temporaryUrl()}}" alt="Preview_image" height="80" width="90">
-                    
+                <img src="{{$photo->temporaryUrl() }}" alt="Preview_image" height="80" width="90">
+                   
                 @endif
             </div>
         </div>
 
         <!-- Save Button -->
-        <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-primary">Save</button>
+        <div class="d-flex justify-content-end m-2">
+            <button type="submit" class="btn btn-primary">{{$package_id ? 'Update Package' : 'Add Package'}}</button>
         </div>
     </form>
     </div>
