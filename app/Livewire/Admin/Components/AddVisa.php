@@ -28,8 +28,10 @@ class AddVisa extends Component
     ];
 
     // Initialize component with ID when editing
+   
     public function mount($id = null)
     {
+        
         if ($id) {
             $visa = VisaDetail::findOrFail($id);
             $this->visaId = $visa->id;
@@ -40,6 +42,8 @@ class AddVisa extends Component
         }
     }
 
+
+   
     // Submit form to save or update visa details
     public function submit()
     {

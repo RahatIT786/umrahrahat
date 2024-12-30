@@ -37,13 +37,44 @@ class AddPackage extends Component
     public $monthsWithWednesdays;
 
 
-    public function savePackage(){
+    public $package_id;
+   
+
+    public function mount($id=null){
+
+        // dd('Package id: '.$id);
+        if($id){
+            $package=Package::findOrFail($id);
+            $this->package_id = $package->id;
+            $this->package_name = $package->package_name;
+            $this->description = $package->description;
+            $this->sharing = $package->sharing;
+            $this->quint = $package->quint;
+            $this->quad = $package->quad;
+            $this->triple = $package->triple;
+            $this->double = $package->double;
+            $this->single = $package->single;
+            $this->note = $package->note;
+            $this->includes = $package->includes;
+            $this->startYear = $package->start_year;
+            $this->endYear = $package->end_year;
+           //  $this->startMonth = $package->start_month;
+           //  $this->endMonth = $package->end_month;
+            
+
+        }
+       
+
+    }
+
+
+    public function updatePackage(){
       
      
         $photoPath=$this->photo ? $this->photo-> store("package_photos","public") : null;
-      
+      $oldPackageData=Package::findOrFail($this->package_id);
 
-      Package::create([
+        $oldPackageData->update([
         'package_name'=>$this->package_name,
         'description'=> $this->description,
         'sharing'=> $this->sharing,
@@ -59,7 +90,13 @@ class AddPackage extends Component
         'photo_path'=> $photoPath
       ]);
 
-      session()->flash('message','Packa Saved Successfully ! ');
+      CalculateWednesdaysJob::dispatch($oldPackageData, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
+
+      // Optionally, you can return a success message or redirect
+      session()->flash('message', 'Package Update Successfully');
+    
+
+      $this->resetForm();
     }
 
 
@@ -146,35 +183,170 @@ class AddPackage extends Component
 
 
 
-    public function storePackage()
+    public function packageSubmit()
     {
-        // Validate if needed
-        // $photoPath = $this->photo->store('public/packages'); // Store the photo in storage and get the path
-        $photoPath=$this->photo ? $this->photo-> store("package_photos","public") : null;
-        $packageData = [
-            'package_name' => $this->package_name,
-            'description' => $this->description,
-            'sharing' => $this->sharing,
-            'quint' => $this->quint,
-            'quad' => $this->quad,
-            'triple' => $this->triple,
-            'double' => $this->double,
-            'single' => $this->single,
-            'months' => $this->months,
-            'note' => $this->note,
-            'includes' => $this->includes,
-            'photo_path' => $photoPath // Save the photo path
-        ];
+        if($this->photo){
+            $this->photo_path=$this->photo->store('package_photos','public');
+        }
+       
+       if($this->package_id){
 
+        $package=Package::findOrFail($this->package_id);
+
+        $package->update([
+            'package_name'=>$this->package_name ?: $package->package_name,
+            'description'=>$this->description?: $package->description,
+        'sharing'=>$this->sharing?? $package->sharing,
+        'quint'=>$this->quint?? $package->quint,
+        'quad'=>$this->quad ?? $package->quad,
+        'triple'=>$this->triple  ?? $package->triple,
+        'double'=>$this->double  ?? $package-> double,
+        'single'=>$this->single  ?? $package->single,
+        'months'=>$this->months  ?: $package->months,
+        'wednesday_dates',
+        'note'=>$this->note ?: $package->note,
+        'includes'=>$this->includes  ?: $package->includes,
+        'photo_path'=>$this->photo_path  ?: $package->photo_path,
+
+        ]);
+          CalculateWednesdaysJob::dispatch($package, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
+
+      // Optionally, you can return a success message or redirect
+      session()->flash('message', 'Package Update Successfully');
+      
+      return redirect()->route('admin.package-manager');
+
+
+       }
+       else{
+         // Validate if needed
+        // $photoPath = $this->photo->store('public/packages'); // Store the photo in storage and get the path
+        
+    //     $packageData= Package::create([
+    //     'package_name' => $this->package_name,
+    //     'description' => $this->description,
+    //     'sharing' => $this->sharing,
+    //     'quint' => $this->quint,
+    //     'quad' => $this->quad,
+    //     'triple' => $this->triple,
+    //     'double' => $this->double,
+    //     'single' => $this->single,
+    //     'months' => $this->months,
+    //     'note' => $this->note,
+    //     'includes' => $this->includes,
+    //     'photo_path' => $this->photo_path,// Save the photo path
+    // ]);
+
+    $packageData=[
+        'package_name' => $this->package_name,
+        'description' => $this->description,
+        'sharing' => $this->sharing,
+        'quint' => $this->quint,
+        'quad' => $this->quad,
+        'triple' => $this->triple,
+        'double' => $this->double,
+        'single' => $this->single,
+        'months' => $this->months,
+        'note' => $this->note,
+        'includes' => $this->includes,
+        'photo_path' => $this->photo_path,// Save the photo path
+    ];
+        
         // Dispatch the job to calculate Wednesdays and store the package
         CalculateWednesdaysJob::dispatch($packageData, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
 
         // Optionally, you can return a success message or redirect
-        session()->flash('message', 'Package created and job dispatched for processing!');
+        session()->flash('message', 'Package Added Successfully');
       
 
-        $this->reset();
+        $this->resetForm();
+       }
     }
+
+   public function deletePackage($id){
+    $package = Package::findOrFail($id);
+
+    $package->delete_status=true;
+    $package->save();
+    session()->flash('message','Package Deleted Successfully');
+    $this->emit('refreshPackages');
+   }
+
+
+    public function updatPackage(){
+
+        // Find the existing package by ID
+        $package=Package::findOrFail($this->package_id);
+
+        // Handle photo upload if a new photo is provided
+        $photo_path=$this->photo_path ? $this->photo_path->store('package_photos','public'):  $package->photo_path;
+
+
+        $package->update([
+            'package_name'=>$this->package_name,
+            'description'=>$this->description,
+        'sharing'=>$this->sharing,
+        'quint'=>$this->quint,
+        'quad'=>$this->quad,
+        'triple'=>$this->triple,
+        'double'=>$this->double,
+        'single'=>$this->single,
+        'months'=>$this->months,
+        'wednesday_dates',
+        'note'=>$this->note,
+        'includes'=>$this->includes,
+        'photo_path'=>$this->photo_path,
+
+        ]);
+
+
+    }
+
+
+     // Method for filling the form with existing data when editing
+     public function edit($packageId)
+     {
+         // Find the package by ID
+         $package = Package::findOrFail($packageId);
+ 
+         // Set form fields to the package data
+         $this->package_id = $package->id;
+         $this->package_name = $package->package_name;
+         $this->description = $package->description;
+         $this->sharing = $package->sharing;
+         $this->quint = $package->quint;
+         $this->quad = $package->quad;
+         $this->triple = $package->triple;
+         $this->double = $package->double;
+         $this->single = $package->single;
+         $this->note = $package->note;
+         $this->includes = $package->includes;
+         $this->startYear = $package->start_year;
+         $this->endYear = $package->end_year;
+        //  $this->startMonth = $package->start_month;
+        //  $this->endMonth = $package->end_month;
+      
+     }
+
+
+     // Reset form fields after saving or updating
+    public function resetForm()
+    {
+        $this->reset(['package_id', 'package_name', 'description', 'sharing', 'quint', 'quad', 'triple', 'double', 'single', 'note', 'includes', 'photo', 'startYear', 'endYear', 'startMonth', 'endMonth']);
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     public function savePackageImage(){
 
     }
