@@ -1,13 +1,20 @@
 <div class="card">
     <div class="card-body">
+        @if (session()->has('message'))
+            <div class="alert alert-success">
+                {{ session('message') }}
+            </div>
+        @endif
         <div class="d-flex align-items-center justify-content-between">
             <h4 class="card-title">All Visa Types</h4>
 
-            <a href="{{route('admin.visa-add')}}" wire:navigate class="btn btn-sm btn-primary">
+            <a href="{{ route('admin.visa-add') }}" wire:navigate class="btn btn-sm btn-primary">
                 <i class="bx bx-plus me-1"></i>Create Visa
             </a>
         </div>
-    </div> <!-- end card body -->
+    </div>
+    <!-- end card body -->
+
     <div class="table-responsive table-centered">
         <table class="table mb-0">
             <thead class="bg-light bg-opacity-50">
@@ -21,13 +28,13 @@
                     <th class="border-0 py-2">Edit</th>
                     <th class="border-0 py-2">Delete</th>
                 </tr>
-            </thead> <!-- end thead-->
+            </thead>
             <tbody>
-                @foreach ($visaDetails as $index => $visa) <!-- $index will provide the serial number -->
+                @foreach ($visaDetails as $index => $visa)
                     <tr>
-                        <td>{{ $index + 1 }}</td> <!-- S.No will automatically increment -->
+                        <td>{{ $visaDetails->firstItem() + $index }}</td>
                         <td>
-                            @if($visa->file_path)
+                            @if ($visa->file_path)
                                 <img src="{{ Storage::url($visa->file_path) }}" alt="visa image" style="height: 2rem;">
                             @else
                                 No Image available
@@ -38,44 +45,54 @@
                         <td>{{ $visa->processing_time }} days</td>
                         <td>{{ $visa->price }}</td>
                         <td>
-                           <a href="{{ route('editdata', ['id' => $visa->id]) }}">
-                             <iconify-icon icon="solar:pen-bold" width="22" height="22"></iconify-icon>
-                           </a>
+                            <a href="{{ route('editdata', ['id' => $visa->id]) }}">
+                                <iconify-icon icon="solar:pen-bold" width="22" height="22"></iconify-icon>
+                            </a>
                         </td>
                         <td>
-                            <a href="#!">
+                            <a href="#" wire:click="confirmDelete({{ $visa->id }})" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                                 <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22"></iconify-icon>
                             </a>
                         </td>
                     </tr>
                 @endforeach
-            </tbody> <!-- end tbody -->
-        </table> <!-- end table -->
-    </div> <!-- table responsive -->
-    <div class="align-items-center justify-content-between row g-0 text-center text-sm-start p-3 border-top">
-        <div class="col-sm">
-            <div class="text-muted">
-                Showing <span class="fw-semibold">5</span> of <span class="fw-semibold">90,521</span> orders
+            </tbody>
+        </table>
+    </div>
+    <!-- table responsive -->
+
+    <!-- Modal -->
+    <div class="modal fade @if($showModal) show @endif"
+         id="exampleModalCenter"
+         tabindex="-1"
+         aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true"
+         @if($showModal) style="display: block;" @endif>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete</h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            wire:click="closeModal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Are you sure you want to delete this visa detail?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            wire:click="closeModal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            wire:click="deleteData">Yes</button>
+                </div>
             </div>
         </div>
-        <div class="col-sm-auto mt-3 mt-sm-0">
-            <ul class="pagination pagination-rounded m-0">
-                <li class="page-item">
-                    <a href="#" class="page-link"><i class='bx bx-left-arrow-alt'></i></a>
-                </li>
-                <li class="page-item active">
-                    <a href="#" class="page-link">1</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link">2</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link">3</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link"><i class='bx bx-right-arrow-alt'></i></a>
-                </li>
-            </ul>
-        </div>
+    </div>
+
+    <!-- Pagination links -->
+    <div class="d-flex justify-content-end mt-3 mb-3">
+        {{ $visaDetails->links('vendor.pagination.custom') }}
     </div>
 </div>

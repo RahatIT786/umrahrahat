@@ -11,13 +11,7 @@
                     </div>
 
                     <!-- App Search-->
-                    <form class="app-search d-none d-md-block me-auto">
-                         <div class="position-relative">
-                              <input type="search" class="form-control" placeholder="admin,widgets..."
-                                   autocomplete="off" value="">
-                              <iconify-icon icon="solar:magnifer-outline" class="search-widget-icon"></iconify-icon>
-                         </div>
-                    </form>
+
                </div>
 
                <div class="d-flex align-items-center gap-2">

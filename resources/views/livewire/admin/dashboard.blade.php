@@ -63,24 +63,24 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="avatar-md bg-primary bg-opacity-10 rounded-circle">
-                            <iconify-icon icon="solar:calendar-date-outline"
+                            <iconify-icon icon="fa-solid:passport"
                                 class="fs-32 text-primary avatar-title"></iconify-icon>
                         </div>
                     </div>
                     <div class="col-6 text-end">
-                        <p class="text-muted mb-0 text-truncate">Events</p>
-                        <h3 class="text-dark mt-2 mb-0">5,123</h3>
+                        <p class="text-muted mb-0 text-truncate">Total Visa</p>
+                        <h3 class="text-dark mt-2 mb-0">{{ $totalVisa }}</h3>
                     </div>
                 </div>
             </div>
-            <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
+            <!-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
                 <div class="d-flex align-items-center justify-content-between">
                     <div>
                         <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 4.78%</span>
                         <span class="text-muted ms-1 fs-12">From last month</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -91,24 +91,23 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="avatar-md bg-primary bg-opacity-10 rounded-circle">
-                            <iconify-icon icon="solar:users-group-two-rounded-outline"
-                                class="fs-32 text-primary avatar-title"></iconify-icon>
+                            <iconify-icon icon="fa-solid:user" class="fs-32 text-primary avatar-title"></iconify-icon>
                         </div>
                     </div>
                     <div class="col-6 text-end">
-                        <p class="text-muted mb-0 text-truncate">Users</p>
-                        <h3 class="text-dark mt-2 mb-0">12,945</h3>
+                        <p class="text-muted mb-0">Visa Enquiry</p>
+                        <h3 class="text-dark mt-2 mb-0">{{ $userVisaEnquiry }}</h3>
                     </div>
                 </div>
             </div>
-            <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
+            <!-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
                 <div class="d-flex align-items-center justify-content-between">
                     <div>
                         <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 2.35%</span>
                         <span class="text-muted ms-1 fs-12">From last month</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
