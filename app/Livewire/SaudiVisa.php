@@ -52,6 +52,7 @@ class SaudiVisa extends Component
             'message'=> $this->message,
             'visaType' => $this->visaType,
             'delete_status' => 1,
+            'status' => 1,
         ]);
         $this->showModal = false;
     
