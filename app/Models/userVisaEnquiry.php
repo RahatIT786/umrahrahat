@@ -14,5 +14,6 @@ class userVisaEnquiry extends Model
         'visaType',
         'message',
         'delete_status',
+        'status',
     ];
 }

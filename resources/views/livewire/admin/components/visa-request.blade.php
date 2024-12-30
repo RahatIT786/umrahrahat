@@ -19,6 +19,7 @@
                         <th scope="col">Contact</th>
                         <th scope="col">Visa Type</th>
                         <th scope="col">Message</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Enquired Date</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -37,6 +38,18 @@
                         <td>{{$userVisaRequest -> phone}}</td>
                         <td>{{$userVisaRequest -> visaType}}</td>
                         <td>{{$userVisaRequest -> message}}</td>
+                        <td>
+                            <span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$userVisaRequest->id}})" class="badge
+                              @if($userVisaRequest->status == 1) badge-soft-success
+                              @elseif ($userVisaRequest->status == 2) badge-soft-warning
+                              @elseif ($userVisaRequest->status == 3) badge-soft-danger
+                              @endif
+                            ">
+                            @if($userVisaRequest->status == 1) Pending
+                            @elseif($userVisaRequest->status == 2) Responded
+                            @elseif($userVisaRequest->status == 3) No Responded
+                            @endif
+                            </span></td>
                         <td>{{$userVisaRequest -> created_at->format('d-m-Y') }}</td>
                         <td>
                             <a wire:click="confirmDelete({{ $userVisaRequest->id }})" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >
