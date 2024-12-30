@@ -14,100 +14,72 @@
             <table class="table table-hover table-centered">
                 <thead class="table-light">
                     <tr>
+                        <th scope="col">S.No</th>
                         <th scope="col">Customer Name</th>
                         <th scope="col">Contact</th>
                         <th scope="col">Visa Type</th>
+                        <th scope="col">Message</th>
                         <th scope="col">Enquired Date</th>
-                        <th scope="col">Call Status</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($userVisaRequests as $index => $userVisaRequest)
                     <tr>
+                        <td>{{ $index + 1}}</td>
                         <td>
                             <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-2.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
                                 <div class="d-block">
-                                    <h5 class="mb-0"> Tony M. Carter</h5>
+                                    <h5 class="mb-0">{{$userVisaRequest -> name}}</h5>
                                 </div>
                             </div>
                         </td>
-                        <td>7534452789</td>
-                        <td>Gold</td>
-                        <td>17/02/2024</td>
-                        <td ><span id="responded">Responded</span></td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
-                    <tr>
+                        <td>{{$userVisaRequest -> phone}}</td>
+                        <td>{{$userVisaRequest -> visaType}}</td>
+                        <td>{{$userVisaRequest -> message}}</td>
+                        <td>{{$userVisaRequest -> created_at->format('d-m-Y') }}</td>
                         <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-1.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">James E. Chamb</h5>
-                                </div>
-                            </div>
+                            <a wire:click="confirmDelete({{ $userVisaRequest->id }})" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >
+                                <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22" style="color: #3498db;"></iconify-icon>
+                            </a>
                         </td>
-                        <td>7534452789</td>
-                        <td>sliver</td>
-                        <td>17/02/2024</td>
-                        <td id="pending">Pending</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
                     </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-4.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">Charlotte J. Torres</h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Silver</td>
-                        <td>17/02/2024</td>
-                        <td id="noresponse">No Response</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-
-                    </tr>
-                    <tr class="table-active">
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-6.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0 d-flex align-items-center gap-1">
-                                        Mary J. Germain<i class='bx bxs-badge-check text-success'></i></iconify-icon>
-                                    </h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Gold</td>
-                        <td>17/02/2024</td>
-                        <td>Responded</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-7.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">Kevin C. Reyes</h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Economy</td>
-                        <td>17/02/2024</td>
-                        <td>Pending</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
+            <!-- Modal -->
+    <div class="modal fade @if($showModal) show @endif"
+         id="exampleModalCenter"
+         tabindex="-1"
+         aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true"
+         @if($showModal) style="display: block;" @endif>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete</h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            wire:click="closeModal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Are you sure you want to delete this User Visa Request?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            wire:click="closeModal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            wire:click="deleteData">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pagination links -->
+    <div class="d-flex justify-content-end mt-3 mb-3">
+        {{ $userVisaRequests->links('vendor.pagination.custom') }}
+    </div>
     </div>
 </div>
