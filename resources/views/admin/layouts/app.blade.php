@@ -6,8 +6,7 @@
     @include('admin.includes/head-css')
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
-      {{--VIEW_PACKAGE_POPUP-STYLE-FILE-INCLUDE-LINK--}}
-    @include('user.partials.viewPackagePopUp.style')
+   
     @livewireStyles
 </head>
 
