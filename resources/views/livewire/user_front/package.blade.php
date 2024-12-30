@@ -29,9 +29,9 @@
     </div>
     <div class="elementor-element elementor-element-ad41b26 e-flex e-con-boxed e-con e-parent" data-id="ad41b26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         <div class="e-con-inner">
-            <div class="elementor-element elementor-element-0cc2f2e e-flex e-con-boxed e-con e-child" data-id="0cc2f2e" data-element_type="container">
+            {{-- <div class="elementor-element elementor-element-0cc2f2e e-flex e-con-boxed e-con e-child" data-id="0cc2f2e" data-element_type="container"> --}}
                 <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    {{-- <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
@@ -81,60 +81,68 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="elementor-element elementor-element-1e19802 e-flex e-con-boxed e-con e-child" data-id="1e19802" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-bd5fea0 elementor-widget elementor-widget-image" data-id="bd5fea0" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="800" height="600" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2-1024x768.jpg" class="attachment-large size-large wp-image-22"
-                                        alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2-1024x768.jpg 1024w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2-300x225.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2-768x576.jpg 768w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2-800x600.jpg 800w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/prophet-mohammed-mosque-al-masjid-an-nabawi-um-2023-11-27-05-14-01-utc-2.jpg 1320w"
-                                        sizes="(max-width: 800px) 100vw, 800px" /> </div>
-                            </div>
-                            <div class="elementor-element elementor-element-3af4f33 elementor-widget elementor-widget-heading" data-id="3af4f33" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">Hajj Package</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-93cbc22 elementor-widget elementor-widget-text-editor" data-id="93cbc22" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-6bfae58 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6bfae58" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-e1b7f43 elementor-align-justify elementor-widget elementor-widget-button" data-id="e1b7f43" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
+                    </div> --}}
+{{--package-lable-start--}}
+                       
+                            
+                            {{-- @foreach ($packages as $package )
+                           
+                            <div style="width:80rem;" class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child " data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                <div class="e-con-inner"  >
+                                   
+                                    <div  class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" width="800" height="600" src="{{Storage::url($package->photo_path)}}" sizes="(max-width: 800px) 100vw, 800px"> </div>
                                     </div>
+                                    <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">{{$package->package_name}}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>{{$package->description}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
+                                        <div class="elementor-widget-container">
+                                            <ul class="elementor-icon-list-items">
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="fas fa-plane"></i>						</span>
+                                                    <span class="elementor-icon-list-text">Saudi Airlines</span>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
+                                                    <span class="elementor-icon-list-text">Madinah Regency</span>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
+                                                    <span class="elementor-icon-list-text">5 Star Hotel</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
+                        <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Get Package</span>
+                    </span>
+                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-49de6f8 e-flex e-con-boxed e-con e-child" data-id="49de6f8" data-element_type="container">
+                            @endforeach --}}
+                        
+                    {{--package-lable-end--}}
+                    {{-- <div class="elementor-element elementor-element-49de6f8 e-flex e-con-boxed e-con e-child" data-id="49de6f8" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-9790b27 elementor-widget elementor-widget-image" data-id="9790b27" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
@@ -187,9 +195,225 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
+
+
+<div class="container package-container d-flex  ">
+    @foreach ($packages as $package )
+                           
+                            <div  class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child " data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                <div class="e-con-inner"  >
+                                   
+                                    <div  class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async"style="height:10rem; width:100%;" src="{{Storage::url($package->photo_path)}}" > </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">{{$package->package_name}}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>{{$package->description}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
+                                        <div class="elementor-widget-container">
+                                            <ul class="elementor-icon-list-items">
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="fas fa-plane"></i>						</span>
+                                                    <span class="elementor-icon-list-text">Saudi Airlines</span>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
+                                                    <span class="elementor-icon-list-text">Madinah Regency</span>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon">
+                            <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
+                                                    <span class="elementor-icon-list-text">5 Star Hotel</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"  wire:click="showPackageDetails({{$package->id}})">
+                        <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text" >Get Package</span>
+                    </span>
+                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            @endforeach
+
+
+
+
+                        </div>
+
+
+{{-- disaplay package details --}}
+<div>
+ 
+
+@if ($selectedPackage)
+<div style="position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center; z-index: 1000; background-color: rgba(0, 0, 0, 0.5);">
+
+    <div class="container view-package-container" >
+        <div class="d-flex justify-content-end m-3">
+            <span wire:click="closePackageDetails()"><i class="fa-solid fa-xmark"></i></span>
+           </div>
+        <div class="row1">
+            <div class="img">
+                <img src="{{Storage::url($selectedPackage->photo_path)}}" alt="previewImage">
+            </div>
+            <div class="pack-name">
+                <h1>{{$selectedPackage->package_name}}</h1>
+                <h5>{{$selectedPackage->description}}</h5>
+                <div class="btns">
+                    <button class="book-btn btn btn-success" wire:click="bookHerePopUp">Book Here</button>
+                    {{-- <button class="vourcher-btn btn btn-primary"><span ><i class="fa-solid fa-download"></i></span> Voucher</button> --}}
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="includes-select">
+                <a wire:click="updateContent('sharing')" >Sharing</a>
+                
+                <a wire:click="updateContent('wednesday_dates')">Departure</a>
+                <a wire:click="updateContent('note')">Note</a>
+                <a wire:click="updateContent('includes')">includes</a>
+            </div>
+            <div class="includes-display">
+              
+                    @if ($type==='sharing' && is_array($includesContent))
+                    <!-- If the type is sharing, display sharing related data -->
+                    <div class="room-share-details">
+                        <div>
+                        <strong>Room Sharing Detail</strong>
+                        <p>Quint:  {{ $includesContent['quint'] }}.AED</p>
+                        <p>Quad: {{ $includesContent['quad'] }}.AED</p>
+                        <p>Triple: {{ $includesContent['triple'] }}.AED</p>
+                        <p>Double: {{ $includesContent['double'] }}.AED</p>
+                        <p>Single: {{ $includesContent['single'] }}.AED</p>
+                        </div>  
+                    </div>
+                    @elseif($type === 'wednesday_dates'  && is_array($includesContent))
+                        <div class="d-flex align-items-center">
+                            <h3>Departure Place : </h3>
+                            @foreach ($departurePlace as $place)
+                            <div style="margin: 0px 8px;">
+                                <span class="departure-days">{{$place}}</span><br>
+                            </div>
+                                
+                            @endforeach
+                        </div>
+                        <!-- Loop through the decoded $includesContent for wednesday dates -->
+                        <h3 class="text-start">Departure Date : </h3>
+                         <div class="" >
+                           
+                           
+                                @foreach ($includesContent as $data)
+                            <div class="departure-month"> <strong>{{ $data['month'] }}:</strong></div>
+                                <div class="departure-days">
+                                @foreach ($data['wednesdays'] as $wednesday)
+                                <span class="date-box">{{ $wednesday }}</span>
+                                @endforeach
+                                </div>
+                                @endforeach
+                            
+                            </div>
+
+                   
+                    @else
+                    <p>
+                        {{$includesContent}}
+                    </p>
+                @endif
+                
+
+            </div>
+
+        </div>
+        <div class="package-includes">
+            <div class="package-includes-lable">package Includes</div>
+            <div class="include-items">
+             <span><i class="fa-solid fa-bus"></i><div>bus</div></span>
+            <span><i class="fa-solid fa-passport"></i><div>visa</div></span>
+            <span><i class="fa-solid fa-file"></i><div>insurance</div></span>
+            <span><i class="fa-solid fa-bed"></i><div>hotel</div></span>
+            <span><i class="fa-solid fa-utensils"></i><div>meal</div></span>
+            <span><i class="fa-solid fa-shirt"></i><div>laundry</div></span>
+            <span><i class="fa-solid fa-person-praying"></i><div>ziyarat</div></span>
+            <span><i class="fa-solid fa-bottle-water"></i><div>zamzam</div></span>
+            <span><i class="fa-solid fa-sim-card"></i><div>saudi sim</div></span>
+
+           
+            </div>
+            
+        </div>
+
+    </div>
+    
+</div>
+@endif
+</div>
+
+
+<!-- Popup Modal -->
+@if ($showPopup)
+<div class="modal">
+    <div class="modal-content">
+        <span wire:click="closeBookHerePopUp" class="close">&times;</span>
+        <h3>Book Your Enquiry</h3>
+
+        <!-- Form -->
+        <form wire:submit.prevent="packageEnquirySubmitForm">
+            <div>
+                {{-- <label for="name">Name </label> --}}
+                <input type="text" id="name" wire:model.defer="customerName" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div>
+                {{-- <label for="mobile">Mobile</label> --}}
+                <input type="text" id="mobile" wire:model.defer="cutomerMobile" placeholder="Enter your mobile number" required>
+            </div>
+            <div>
+                
+                <input type="hidden" id="packageId" wire:model.defer="packageId" value="{{$customerChoosenPackage}}" >
+                
+            </div>
+            <div>
+                <h5>Choosen Package </h5>
+                <h6>{{$customerChoosenPackage}}</h6>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</div>
+@endif
+
+
+
+
+
+
+
+
+
+
+    {{-- --------------- --}}
     <div class="elementor-element elementor-element-2fecb51 e-flex e-con-boxed e-con e-parent" data-id="2fecb51" data-element_type="container">
         <div class="e-con-inner">
             <div class="elementor-element elementor-element-3255e35 e-flex e-con-boxed e-con e-child" data-id="3255e35" data-element_type="container">
@@ -212,7 +436,7 @@
                 </div>
             </div>
             <div class="elementor-element elementor-element-c06e76c e-flex e-con-boxed e-con e-child" data-id="c06e76c" data-element_type="container">
-                <div class="e-con-inner">
+                {{-- <div class="e-con-inner">
                     <div class="elementor-element elementor-element-65c8791 e-flex e-con-boxed e-con e-child" data-id="65c8791" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-7ffa03b elementor-widget elementor-widget-heading" data-id="7ffa03b" data-element_type="widget" data-widget_type="heading.default">
@@ -345,7 +569,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="elementor-element elementor-element-9c74a01 e-flex e-con-boxed e-con e-child" data-id="9c74a01" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-fa9247f elementor-widget elementor-widget-heading" data-id="fa9247f" data-element_type="widget" data-widget_type="heading.default">
@@ -412,6 +636,86 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        {{-- --------------- --}}
+                       
+                        {{-- <div class="elementor-element elementor-element-9c74a01 e-flex e-con-boxed e-con e-child" data-id="9c74a01" data-element_type="container">
+                            @foreach ($packages as $package )
+                            <div class="e-con-inner">
+                               
+                                <div class="elementor-element elementor-element-fa9247f elementor-widget elementor-widget-heading" data-id="fa9247f" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">
+                                            {{$package->package_name}}</h3>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-c0cd834 elementor-widget elementor-widget-text-editor" data-id="c0cd834" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>{{$package->description}}</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-1f40ee4 e-flex e-con-boxed e-con e-child" data-id="1f40ee4" data-element_type="container">
+                                    <div class="e-con-inner">
+                                        <div class="elementor-element elementor-element-bcc58ec elementor-widget elementor-widget-heading" data-id="bcc58ec" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">$65</h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-2b9d631 elementor-widget elementor-widget-heading" data-id="2b9d631" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">/Month</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-a4a5886 elementor-widget elementor-widget-text-editor" data-id="a4a5886" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Lorem dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-0dce510 elementor-align-left elementor-mobile-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                    data-id="0dce510" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-plane"></i>						</span>
+                                                <span class="elementor-icon-list-text">Saudi Airlines</span>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
+                                                <span class="elementor-icon-list-text">Madinah Regency</span>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
+                                                <span class="elementor-icon-list-text">5 Star Hotel</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-2f64e10 elementor-align-justify elementor-widget elementor-widget-button" data-id="2f64e10" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
+                    <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Get Package</span>
+                </span>
+                </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                @endforeach
+                            </div>
+                             --}}
+                             {{--  --}}
+                            
+                     
+
+                        {{-- ------------------ --}}
                     </div>
                 </div>
             </div>

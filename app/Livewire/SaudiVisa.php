@@ -2,6 +2,12 @@
 
 namespace App\Livewire;
 
+
+use App\Models\Package;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+use PhpParser\Node\Expr\FuncCall;
+
 use App\Models\userVisaEnquiry;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
@@ -10,6 +16,8 @@ use Illuminate\Support\Facades\Log;
 
 class SaudiVisa extends Component
 {
+    use HasFactory;
+  
     public $name;
     public $phone;
     public $message;
@@ -65,6 +73,7 @@ class SaudiVisa extends Component
     }
     
     #[Layout('user.layouts.app')]
+
     public function render()
     {
         return view('livewire.user_front.saudi-visa',['visaDetails' => $this->visaDetails]);

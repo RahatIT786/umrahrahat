@@ -13,17 +13,18 @@ use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\PackageManager\ListPackage;
 use App\Livewire\Admin\PackageManager\AddPackage;
 use App\Livewire\Package;
+use App\Livewire\PackageUserView;
 use App\Livewire\UserAbout;
 use App\Livewire\SaudiVisa;
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\UserHome;
-
+use Livewire\Livewire;
 
 //USER ROUTES START
 Route::get('/', UserHome::class)->name('layouts.app');
 Route::get('/about',UserAbout::class)->name('about');
-Route::get('/package',Package::class)->name('package');
+Route::get('/package',PackageUserView::class)->name('package');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa'); 
 //USER ROUTES END
@@ -39,4 +40,6 @@ Route::get('/admin/saudivisa',ListAllVisa::class)->name('admin.saudi-visa');
 Route::get('/admin/saudivisa-request',VisaRequest::class)->name('admin.visa-request');
 Route::get('/admin/saudivisa/add',AddVisa::class)->name('admin.visa-add');
 Route::get('/editdata/{id}', AddVisa::class)->name('editdata');
+Route::get('/editPackage/{id}',AddPackage::class)->name('editPackage');
+
 //ADMIN ROUTES END

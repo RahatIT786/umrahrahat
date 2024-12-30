@@ -24,89 +24,31 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($packageRequest as $data)
                     <tr>
                         <td>
                             <div class="d-flex align-items-center gap-1">
                                 {{-- <img src="/images/users/avatar-2.jpg" alt=""
                                     class="avatar-sm rounded-circle"> --}}
                                 <div class="d-block">
-                                    <h5 class="mb-0"> Tony M. Carter</h5>
+                                    <h5 class="mb-0">{{$data->customer_name}}</h5>
                                 </div>
                             </div>
                         </td>
-                        <td>7534452789</td>
-                        <td>Gold</td>
-                        <td>17/02/2024</td>
-                        <td ><span id="responded">Responded</span></td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
+                        <td>{{$data->mobile}}</td>
+                        <td>{{$data->package_name}}</td>
+                        <td>{{$data->created_at->format('h:i A')}}</td>
+                        <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="
+                            @if($data->call_status =='pending') text-warning
+                            @elseif ($data->call_status =='responded') text-success
+                            @elseif ($data->call_status == 'no responded') text-danger
+                            @endif
+                            ">{{$data->call_status}}</span></td>
+                        <td><a wire:click="deletePackageRequest({{$data->id}})" class="btn btn-primary btn-sm w-100">Delete</a></td>
                     </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-1.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">James E. Chamb</h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>sliver</td>
-                        <td>17/02/2024</td>
-                        <td id="pending">Pending</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-4.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">Charlotte J. Torres</h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Silver</td>
-                        <td>17/02/2024</td>
-                        <td id="noresponse">No Response</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-
-                    </tr>
-                    <tr class="table-active">
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-6.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0 d-flex align-items-center gap-1">
-                                        Mary J. Germain<i class='bx bxs-badge-check text-success'></i></iconify-icon>
-                                    </h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Gold</td>
-                        <td>17/02/2024</td>
-                        <td>Responded</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center gap-1">
-                                {{-- <img src="/images/users/avatar-7.jpg" alt=""
-                                    class="avatar-sm rounded-circle"> --}}
-                                <div class="d-block">
-                                    <h5 class="mb-0">Kevin C. Reyes</h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td>7534452789</td>
-                        <td>Economy</td>
-                        <td>17/02/2024</td>
-                        <td>Pending</td>
-                        <td><a href="#!" class="btn btn-primary btn-sm w-100">Delete</a></td>
-                    </tr>
+                    @endforeach
+                    {{------------------------}}
+                  
                 </tbody>
             </table>
         </div>
