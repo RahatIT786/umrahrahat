@@ -2,17 +2,11 @@
 
 namespace App\Livewire;
 
-
-use App\Models\Package;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
-use PhpParser\Node\Expr\FuncCall;
-
 use App\Models\userVisaEnquiry;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 use App\Models\VisaDetail;
-use Illuminate\Support\Facades\Log;
 
 class SaudiVisa extends Component
 {
