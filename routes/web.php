@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\RoutingController;
 use App\Livewire\Admin\Components\AddVisa;
 use App\Livewire\Admin\Components\ListAllVisa;
@@ -30,8 +32,11 @@ Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa');
 //USER ROUTES END
 
 
+Route::get('/login',[AuthController::class,'adminLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('admin.login.submit');
 
 // ADMIN ROUTES START
+Route::middleware(['auth:admins'])->group(function () {
 Route::get('/admin',Dashboard::class)->name('admin.dashboard');
 Route::get('/admin/package', ListPackage::class)->name('admin.package-manager');
 Route::get('/admin/package-request', PackageRequest::class)->name('admin.package-request');
@@ -41,5 +46,6 @@ Route::get('/admin/saudivisa-request',VisaRequest::class)->name('admin.visa-requ
 Route::get('/admin/saudivisa/add',AddVisa::class)->name('admin.visa-add');
 Route::get('/editdata/{id}', AddVisa::class)->name('editdata');
 Route::get('/editPackage/{id}',AddPackage::class)->name('editPackage');
-
+Route::post('/admin/logout',[AuthController::class,'logout'])->name('admin.logout');
+});
 //ADMIN ROUTES END
