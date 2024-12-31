@@ -83,17 +83,17 @@ public function updatePackage(){
     $package->update([
         'package_name'=>$this->package_name,
         'description'=>$this->description,
-    'sharing'=>$this->sharing,
-    'quint'=>$this->quint,
-    'quad'=>$this->quad,
-    'triple'=>$this->triple,
-    'double'=>$this->double,
-    'single'=>$this->single,
-    'months'=>$this->months,
-    'wednesday_dates',
-    'note'=>$this->note,
-    'includes'=>$this->includes,
-    'photo_path'=>$this->photo_path,
+        'sharing'=>$this->sharing,
+        'quint'=>$this->quint,
+        'quad'=>$this->quad,
+        'triple'=>$this->triple,
+        'double'=>$this->double,
+        'single'=>$this->single,
+        'months'=>$this->months,
+        'wednesday_dates',
+        'note'=>$this->note,
+        'includes'=>$this->includes,
+        'photo_path'=>$this->photo_path,
 
     ]);
 
@@ -133,11 +133,6 @@ public function edit($packageId)
    //  $this->endMonth = $package->end_month;
     $this->actionButton = 'Update'; // Change button text to "Update"
 }
-
-
-
-
-
     public function viewPackageDetails($id){
         // dd($packageId);
         // $this->showPopup = true;

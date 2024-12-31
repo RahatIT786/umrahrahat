@@ -16,6 +16,12 @@
     <!-- end card body -->
 
     <div class="table-responsive table-centered">
+        <div class="row d-flex justify-content-end me-3">
+            <h2>wewrtyry</h2>
+            <div class="col-4 mb-3 ">
+                <input type="text" class="form-control" placeholder="Search Packages" wire:model="search">
+            </div>
+        </div>
         <table class="table mb-0">
             <thead class="bg-light bg-opacity-50">
                 <tr>

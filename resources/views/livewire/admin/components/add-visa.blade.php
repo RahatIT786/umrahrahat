@@ -29,7 +29,7 @@
                     <input type="text" id="documentsRequired" wire:model="documentsRequired" class="form-control" placeholder="Enter Required Documents">
                     @error('documentsRequired') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
-
+               
                 <!-- Second Row: Two Inputs -->
                 <div class="col-md-6 mb-3">
                     <label for="processingTime" class="form-label">Processing Time (Days)</label>
@@ -41,7 +41,7 @@
                     <input type="number" id="price" class="form-control" min="0" wire:model="price" placeholder="Enter Price">
                     @error('price') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
-
+               
                 <!-- Third Row: File Upload -->
                 <div class="col-md-12 mb-3">
                     <label for="file" class="form-label">Upload Supporting Image</label>
