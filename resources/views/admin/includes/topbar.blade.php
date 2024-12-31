@@ -174,11 +174,17 @@
 
                               <div class="dropdown-divider my-1"></div>
 
-                              <a class="dropdown-item text-danger" href="">
+                              <form class="dropdown-item text-danger" action="{{route('admin.logout')}}" method="POST" id="logout-form">
+                                   @csrf
                                    <iconify-icon icon="solar:logout-3-outline"
                                         class="align-middle me-2 fs-18"></iconify-icon><span
-                                        class="align-middle">Logout</span>
-                              </a>
+                                        class="align-middle" id="logout-text" style="cursor: pointer;">Logout</span>
+                              </form>
+                              <script>
+                                   document.getElementById('logout-text').addEventListener('click',function(){
+                                        document.getElementById('logout-form').submit();
+                                   })
+                              </script>
                          </div>
                     </div>
                </div>
