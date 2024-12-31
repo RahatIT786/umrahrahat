@@ -15,10 +15,6 @@
     border: 1px solid rgba(0, 0, 0,0.1) !important;
    padding-left: 20px;
    border-radius: 10px;
-   
- 
-  
-   
 }
 #departure-months{
     padding:20px;

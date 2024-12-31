@@ -10,7 +10,6 @@ use Livewire\Attributes\Layout;
 class AddVisa extends Component
 {
     use WithFileUploads;
-
     public $visaType;
     public $documentsRequired;
     public $processingTime;

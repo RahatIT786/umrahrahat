@@ -32,7 +32,7 @@
                         </td>
                         <td>{{$package->package_name}}</td>
                         <td>
-                            <a style="cursor: pointer;" wire:click="viewPackageDetails({{$package->id}})" class="badge badge-soft-success">
+                            <a href="{{route('viewPackage',['id' => $package->id])}}" style="cursor: pointer;"  class="badge badge-soft-success">
                                 <iconify-icon icon="solar:eye-bold" width="22" height="22" ></iconify-icon>
                             </a>
                         </td>

@@ -290,13 +290,11 @@
         <div class="row2">
             <div class="includes-select">
                 <a wire:click="updateContent('sharing')" >Sharing</a>
-                
                 <a wire:click="updateContent('wednesday_dates')">Departure</a>
                 <a wire:click="updateContent('note')">Note</a>
                 <a wire:click="updateContent('includes')">includes</a>
             </div>
             <div class="includes-display">
-              
                     @if ($type==='sharing' && is_array($includesContent))
                     <!-- If the type is sharing, display sharing related data -->
                     <div class="room-share-details">
@@ -316,14 +314,11 @@
                             <div style="margin: 0px 8px;">
                                 <span class="departure-days">{{$place}}</span><br>
                             </div>
-                                
                             @endforeach
                         </div>
                         <!-- Loop through the decoded $includesContent for wednesday dates -->
                         <h3 class="text-start">Departure Date : </h3>
                          <div class="" >
-                           
-                           
                                 @foreach ($includesContent as $data)
                             <div class="departure-month"> <strong>{{ $data['month'] }}:</strong></div>
                                 <div class="departure-days">
@@ -332,19 +327,13 @@
                                 @endforeach
                                 </div>
                                 @endforeach
-                            
                             </div>
-
-                   
                     @else
                     <p>
                         {{$includesContent}}
                     </p>
                 @endif
-                
-
             </div>
-
         </div>
         <div class="package-includes">
             <div class="package-includes-lable">package Includes</div>
@@ -358,14 +347,9 @@
             <span><i class="fa-solid fa-person-praying"></i><div>ziyarat</div></span>
             <span><i class="fa-solid fa-bottle-water"></i><div>zamzam</div></span>
             <span><i class="fa-solid fa-sim-card"></i><div>saudi sim</div></span>
-
-           
             </div>
-            
         </div>
-
     </div>
-    
 </div>
 @endif
 </div>

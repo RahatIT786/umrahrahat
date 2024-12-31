@@ -4,9 +4,7 @@
 <head>
     @include('admin.includes/title-meta')
     @include('admin.includes/head-css')
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-
-   
+    <!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
     @livewireStyles
 </head>
 
@@ -35,7 +33,6 @@
 
     @include('admin.includes/vendor-scripts')
     @livewireScripts
-
 </body>
 
 </html>
