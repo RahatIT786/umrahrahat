@@ -32,18 +32,18 @@
                         </td>
                         <td>{{$package->package_name}}</td>
                         <td>
-                            <a style="cursor: pointer;" wire:click="viewPackageDetails({{$package->id}})">
+                            <a style="cursor: pointer;" wire:click="viewPackageDetails({{$package->id}})" class="badge badge-soft-success">
                                 <iconify-icon icon="solar:eye-bold" width="22" height="22" ></iconify-icon>
                             </a>
                         </td>
                         <td>
-                            <a href="{{route('editPackage',['id' => $package->id])}}" >
+                            <a href="{{route('editPackage',['id' => $package->id])}}" class="badge badge-soft-warning">
                                 <iconify-icon icon="solar:pen-bold" width="22" height="22"></iconify-icon>
                             </a>
                         </td>
                         <td>
-                            <a href="#!" wire:click="deletePackage({{$package->id}})" >
-                                <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22"></iconify-icon>
+                            <a href="#!" wire:click="deletePackage({{$package->id}})" class="badge badge-soft-danger">
+                                <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22" ></iconify-icon>
                             </a>
                         </td>
                     </tr>

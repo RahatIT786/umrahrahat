@@ -38,10 +38,10 @@
                         <td>{{$data->mobile}}</td>
                         <td>{{$data->package_name}}</td>
                         <td>{{$data->created_at->format('h:i A')}}</td>
-                        <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="
-                            @if($data->call_status =='pending') text-warning
-                            @elseif ($data->call_status =='responded') text-success
-                            @elseif ($data->call_status == 'no responded') text-danger
+                        <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="badge
+                            @if($data->call_status =='pending') badge-soft-warning
+                            @elseif ($data->call_status =='responded') badge-soft-success
+                            @elseif ($data->call_status == 'no responded') badge-soft-danger
                             @endif
                             ">{{$data->call_status}}</span></td>
                         <td><a wire:click="deletePackageRequest({{$data->id}})" class="btn btn-primary btn-sm w-100">Delete</a></td>
