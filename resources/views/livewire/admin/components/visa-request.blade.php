@@ -9,7 +9,11 @@
     </div>
 
     <div class="card-body">
-
+      <div class="row d-flex justify-content-end me-3">
+            <div class="col-4 mb-3 ">
+                <input type="text" class="form-control" placeholder="Search Visa " wire:model.live="search">
+            </div>
+        </div>
         <div class="table-responsive">
             <table class="table table-hover table-centered">
                 <thead class="table-light">

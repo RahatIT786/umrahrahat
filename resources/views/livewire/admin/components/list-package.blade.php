@@ -9,6 +9,7 @@
                     </a>
                 </div>
             </div> <!-- end card body -->
+
             <div class="table-responsive table-centered">
                 <table class="table mb-0">
                     <thead class="bg-light bg-opacity-50">

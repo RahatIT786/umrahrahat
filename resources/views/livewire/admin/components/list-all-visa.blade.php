@@ -17,14 +17,14 @@
 
     <div class="table-responsive table-centered">
         <div class="row d-flex justify-content-end me-3">
-            <h2>wewrtyry</h2>
             <div class="col-4 mb-3 ">
-                <input type="text" class="form-control" placeholder="Search Packages" wire:model="search">
+                <input type="text" class="form-control" placeholder="Search Visa" wire:model.live="search">
             </div>
         </div>
+        <!-- <button wire:click="$set('search', 'Test Value')">Set Search</button> -->
         <table class="table mb-0">
             <thead class="bg-light bg-opacity-50">
-                <tr>
+                <tr> 
                     <th class="border-0 py-2">S.No</th>
                     <th class="border-0 py-2">Visa Image</th>
                     <th class="border-0 py-2">Visa Type</th>

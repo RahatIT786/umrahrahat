@@ -39,7 +39,7 @@
                 <div class="col-md-6 mb-3">
                     <label for="price" class="form-label">Price</label>
                     <input type="number" id="price" class="form-control" min="0" wire:model="price" placeholder="Enter Price">
-                    @error('price') <span class="text-danger">{{ $message }}</span> @enderror
+                     @error('price') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
                
                 <!-- Third Row: File Upload -->

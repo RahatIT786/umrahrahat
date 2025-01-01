@@ -8,13 +8,11 @@ use Livewire\Attributes\Layout;
 
 class PackageRequest extends Component
 {
-    public $packageRequest=[];
 
+    public $packageRequest;
     public $package;
-
     public $packageStatus;
-
-
+    public $search;
     public $status;
     public $requestId;
 
@@ -27,43 +25,26 @@ class PackageRequest extends Component
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function mount(){
+
         $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(10)->getCollection();
         // $this->pagination = ModelsPackageRequest::where('delete_status', false)
         //                                      ->paginate(10);
         // $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
         // $this->loadPackageRequest();
     }
-    public function updatedSearch()
-{
-    $this->packageRequest = ModelsPackageRequest::where('delete_status', false)
-    ->where(function($query){
+  
+  
+    public function updatedSearch(){
+     $this->packageRequest = ModelsPackageRequest::where('delete_status', false)
+        ->where(function($query){
         $query ->where('customer_name', 'like', '%' . $this->search.'%')
         ->orWhere('mobile', 'like', '%' . $this->search.'%')
         ->orWhere('package_name', 'like', '%' . $this->search.'%')
         ->orWhere('call_status', 'like', '%' . $this->search.'%')
         ->paginate(10)->getCollection();
-    })->get();
-       
-}
+          })->get();
+       }
 
 
     // public function loadPackageRequest(){
@@ -81,28 +62,28 @@ class PackageRequest extends Component
     // }
 
 
+
+//         $this->packageRequest = ModelsPackageRequest::where('delete_status',false)->get();
+    
+
     public function deletePackageRequest($packageId){
             $this->package=ModelsPackageRequest::findOrFail($packageId);
              $this->package->delete_status=true;
-
              $this->package->save();
-
              $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-
     }
+  
 
     public function updateStatus($id){
         $this->requestId=   $id;
         $this->packageStatus=ModelsPackageRequest::findOrFail($id);
         $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
-
         ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
         $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-
     }
+  
 
-
- // Get the next status in the cycle (pending -> responded -> no responded)
+     // Get the next status in the cycle (pending -> responded -> no responded)
     private function getNextStatus($currentStatus){
         switch ($currentStatus) {
             case 'pending':
@@ -113,12 +94,10 @@ class PackageRequest extends Component
                 return 'pending';
         }
     }
-
-
+  
 
     #[Layout('admin.layouts.app')]
-    public function render()
-    {
+    public function render(){
         // $this->loadPackageRequest();
         // return view('livewire.admin.components.package-request',[
         //     'packageRequest',$this->packageRequest,
@@ -126,9 +105,19 @@ class PackageRequest extends Component
         // ]);
 
 
-        return view('livewire.admin.components.package-request', [
+        return view('livewire.admin.components.package-request',[
             'packageRequest' => $this->packageRequest,  // Only the data
             // 'pagination' => $this->pagination,  // Pagination info
         ]);
-    }
+ 
+         // return view('livewire.admin.components.package-request');
+      }
+
+  
+  
+  
+  
+  
+
+
 }
