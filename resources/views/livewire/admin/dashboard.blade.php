@@ -86,12 +86,12 @@
         <div class="card card-height-100">
             <div class="card-header d-flex align-items-center justify-content-between gap-2">
                 <h4 class="card-title flex-grow-1">Top Pages</h4>
-                <div>
+                <!-- <div>
                     <button type="button" class="btn btn-sm btn-outline-light">ALL</button>
                     <button type="button" class="btn btn-sm btn-outline-light">1M</button>
                     <button type="button" class="btn btn-sm btn-outline-light">6M</button>
                     <button type="button" class="btn btn-sm btn-outline-light active">1Y</button>
-                </div>
+                </div> -->
             </div>
 
             <div class="card-body pt-0">
@@ -105,7 +105,10 @@
 </section>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
-   
+       var visaRequests = @json($visaRequests);  // Get visa requests data from PHP
+       console.log(visaRequests);
+       var packageRequests = @json($packageRequests);
+        console.log(packageRequests);
     // Make sure the data arrays have exactly 12 months (Jan to Dec)
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     
@@ -119,12 +122,12 @@
             {
                 name: "Visa Request",
                 type: "area",
-                data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
+                data: visaRequests
             },
             {
                 name: "Package Request",
                 type: "area",
-                data:  [12, 16, 11, 22, 28, 25, 15, 29, 35, 45, 42, 48]
+                data:  packageRequests
             }
         ],
         chart: {
