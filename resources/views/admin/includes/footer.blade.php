@@ -13,5 +13,7 @@
     <script>
         document.getElementById('dev-year').innerHTML = new Date().getFullYear();
         // document.write(new Date().getFullYear())
+
+        
     </script>
 </footer>

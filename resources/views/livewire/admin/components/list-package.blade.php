@@ -44,7 +44,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="#!" wire:click="deletePackage({{$package->id}})" class="badge badge-soft-danger">
+                            <a href="#!" wire:click="confirmDelete({{$package->id}})" class="badge badge-soft-danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                                 <iconify-icon icon="solar:trash-bin-minimalistic-bold" width="22" height="22" ></iconify-icon>
                             </a>
                         </td>
@@ -66,7 +66,44 @@
                 {{$packages->links()}}
 
             </div> --}}
-        </div>
+
+            <!--CONFIRM DELETE -POPUP Modal -->
+
+    <div class="modal fade @if($showModal) show @endif"
+        id="exampleModalCenter"
+        tabindex="-1"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+    @if($showModal) style="display: block;" @endif>
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete</h5>
+               <button type="button" class="btn-close"
+                       data-bs-dismiss="modal"
+                       aria-label="Close"
+                       wire:click="closeConfirmDeletPopup"></button>
+           </div>
+           <div class="modal-body">
+               <h4>Are you sure you want to delete this visa detail?</h4>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-secondary"
+                       data-bs-dismiss="modal"
+                       wire:click="closeConfirmDeletPopup">Cancel</button>
+               <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                       wire:click="deletePackage">Yes</button>
+           </div>
+       </div>
+    </div>
+</div>
+  
+
+</div>{{--component end}}
+
+ 
+
+
 
 
         
@@ -195,3 +232,4 @@
         </form>
     </div>
 @endif
+
