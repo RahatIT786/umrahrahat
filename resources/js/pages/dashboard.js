@@ -14,11 +14,7 @@ import 'jsvectormap/dist/maps/world-merc.js'
 import 'jsvectormap/dist/maps/world.js'
 
 var options = {
-    series: [{
-        name: "Page Views",
-        type: "bar",
-        data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67],
-    },
+    series: [
     {
         name: "Clicks",
         type: "area",
@@ -30,13 +26,7 @@ var options = {
         data: [12, 16, 11, 22, 28, 25, 15, 29, 35, 45, 42, 48],
     }
     ],
-    chart: {
-        height: 313,
-        type: "line",
-        toolbar: {
-            show: false,
-        },
-    },
+
     stroke: {
         dashArray: [0, 0, 2],
         width: [0, 2, 2],
@@ -88,26 +78,7 @@ var options = {
             show: false,
         }
     },
-    grid: {
-        show: true,
-        strokeDashArray: 3,
-        xaxis: {
-            lines: {
-                show: false,
-            },
-        },
-        yaxis: {
-            lines: {
-                show: true,
-            },
-        },
-        padding: {
-            top: 0,
-            right: -2,
-            bottom: 0,
-            left: 10,
-        },
-    },
+
     legend: {
         show: true,
         horizontalAlign: "center",
@@ -141,14 +112,7 @@ var options = {
                 return y;
             },
         },
-        {
-            formatter: function (y) {
-                if (typeof y !== "undefined") {
-                    return y.toFixed(1) + "k";
-                }
-                return y;
-            },
-        },
+
         ],
     },
 }
@@ -160,11 +124,7 @@ var chart = new ApexCharts(
 
 chart.render();
 
-
-
-
 class VectorMap {
-
 
     initWorldMapMarker() {
         const map = new jsVectorMap({

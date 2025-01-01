@@ -13,17 +13,6 @@ class ListAllVisa extends Component
     public $showModal = false;
     public $visaId;
     public $search = null;
-    public $dumy;
-
-    // // This method will reset the pagination when search changes
-    // public function updatedSearch()
-    // {
-    //     $this->resetPage(); 
-    // }
-    public function mount(){
-        $this->search = $this->dumy;
-    }
-
     public function confirmDelete($id)
     {
         $this->visaId = $id;
@@ -48,7 +37,7 @@ class ListAllVisa extends Component
     #[Layout('admin.layouts.app')]
     public function render()
     {
-        dump($this->search);
+       //dump($this->search);
        // logger($this->search); // Log the search term for debugging
 
         $visaDetails = VisaDetail::where('delete_status', 1)

@@ -19,7 +19,6 @@ use App\Livewire\Package;
 use App\Livewire\PackageUserView;
 use App\Livewire\UserAbout;
 use App\Livewire\SaudiVisa;
-
 use Illuminate\Support\Facades\Route;
 use App\Livewire\UserHome;
 use Livewire\Livewire;
