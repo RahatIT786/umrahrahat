@@ -22,251 +22,75 @@
             </div>
             <div class="elementor-element elementor-element-1a084c7 elementor-widget elementor-widget-text-editor" data-id="1a084c7" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <p>
+                      Experience a seamless Hajj and Umrah journey with 5-star accommodations, direct flights, and personalized support.
+                       Let us guide you every step of the way.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="elementor-element elementor-element-ad41b26 e-flex e-con-boxed e-con e-parent" data-id="ad41b26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         <div class="e-con-inner">
-            {{-- <div class="elementor-element elementor-element-0cc2f2e e-flex e-con-boxed e-con e-child" data-id="0cc2f2e" data-element_type="container"> --}}
-                <div class="e-con-inner">
-                    {{-- <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <img decoding="async" width="800" height="600" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc-1024x768.jpg" class="attachment-large size-large wp-image-788" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc-1024x768.jpg 1024w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc-300x225.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc-768x576.jpg 768w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc-800x600.jpg 800w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/sheikh-zayed-mosque-in-abu-dhabi-2023-12-04-16-33-10-utc.jpg 1520w"
-                                        sizes="(max-width: 800px) 100vw, 800px" /> </div>
-                            </div>
-                            <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">Umrah Package</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-{{--package-lable-start--}}
-                       
-                            
-                            {{-- @foreach ($packages as $package )
-                           
-                            <div style="width:80rem;" class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child " data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="e-con-inner"  >
-                                   
-                                    <div  class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container">
-                                            <img decoding="async" width="800" height="600" src="{{Storage::url($package->photo_path)}}" sizes="(max-width: 800px) 100vw, 800px"> </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">{{$package->package_name}}</h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            <p>{{$package->description}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
-                                        <div class="elementor-widget-container">
-                                            <ul class="elementor-icon-list-items">
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                                    <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                                </li>
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                                    <span class="elementor-icon-list-text">Madinah Regency</span>
-                                                </li>
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                                    <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                        <span class="elementor-button-content-wrapper">
+        <div class="container package-container d-flex" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    @foreach ($packages as $package)
+        <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" style="flex: 1 1 30%; max-width: 30%; box-sizing: border-box;">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" style="height:10rem; width:100%;" src="{{Storage::url($package->photo_path)}}" alt="{{ $package->package_name }}">
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h3 class="elementor-heading-title elementor-size-default">{{ $package->package_name }}</h3>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p>{{ $package->description }}</p>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
+                    <div class="elementor-widget-container">
+                        <ul class="elementor-icon-list-items">
+                            <li class="elementor-icon-list-item">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fas fa-plane"></i>
+                                </span>
+                                <span class="elementor-icon-list-text">Saudi Airlines</span>
+                            </li>
+                            <li class="elementor-icon-list-item">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fas fa-hotel"></i>
+                                </span>
+                                <span class="elementor-icon-list-text">Madinah Regency</span>
+                            </li>
+                            <li class="elementor-icon-list-item">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="icon icon-star-1"></i>
+                                </span>
+                                <span class="elementor-icon-list-text">5 Star Hotel</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" wire:click="showPackageDetails({{ $package->id }})">
+                                <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-text">Get Package</span>
-                    </span>
-                    </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            @endforeach --}}
-                        
-                    {{--package-lable-end--}}
-                    {{-- <div class="elementor-element elementor-element-49de6f8 e-flex e-con-boxed e-con e-child" data-id="49de6f8" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-9790b27 elementor-widget elementor-widget-image" data-id="9790b27" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="800" height="600" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc-1024x768.jpg" class="attachment-large size-large wp-image-1058"
-                                        alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc-1024x768.jpg 1024w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc-300x225.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc-768x576.jpg 768w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc-800x600.jpg 800w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/pilgrims-in-kaaba-in-macca-al-haram-umrah-social-2023-11-27-04-49-04-utc.jpg 1320w"
-                                        sizes="(max-width: 800px) 100vw, 800px" /> </div>
-                            </div>
-                            <div class="elementor-element elementor-element-a8a9dce elementor-widget elementor-widget-heading" data-id="a8a9dce" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">Ramadhan Umrah</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0b1dd06 elementor-widget elementor-widget-text-editor" data-id="0b1dd06" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0bef3f5 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0bef3f5" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-9aa2db3 elementor-align-justify elementor-widget elementor-widget-button" data-id="9aa2db3" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
-                                    </div>
-                                </div>
-                            </div>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
-    </div>
-
-
-<div class="container package-container d-flex  ">
-    @foreach ($packages as $package )
-                           
-                            <div  class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child " data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="e-con-inner"  >
-                                   
-                                    <div  class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container">
-                                            <img decoding="async"style="height:10rem; width:100%;" src="{{Storage::url($package->photo_path)}}" > </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">{{$package->package_name}}</h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            <p>{{$package->description}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
-                                        <div class="elementor-widget-container">
-                                            <ul class="elementor-icon-list-items">
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                                    <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                                </li>
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                                    <span class="elementor-icon-list-text">Madinah Regency</span>
-                                                </li>
-                                                <li class="elementor-icon-list-item">
-                                                    <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                                    <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"  wire:click="showPackageDetails({{$package->id}})">
-                        <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-text" >Get Package</span>
-                    </span>
-                    </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            @endforeach
-
-
-
-
-                        </div>
-
-
-{{-- disaplay package details --}}
+    @endforeach
+</div>
 <div>
- 
-
 @if ($selectedPackage)
 <div style="position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center; z-index: 1000; background-color: rgba(0, 0, 0, 0.5);">
 
@@ -388,322 +212,6 @@
 </div>
 @endif
 
-
-
-
-
-
-
-
-
-
-    {{-- --------------- --}}
-    <div class="elementor-element elementor-element-2fecb51 e-flex e-con-boxed e-con e-parent" data-id="2fecb51" data-element_type="container">
-        <div class="e-con-inner">
-            <div class="elementor-element elementor-element-3255e35 e-flex e-con-boxed e-con e-child" data-id="3255e35" data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-cf2a2fa elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="cf2a2fa" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="500" height="500" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-9.jpg" class="attachment-large size-large wp-image-650" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-9.jpg 500w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-9-300x300.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-9-150x150.jpg 150w"
-                                sizes="(max-width: 500px) 100vw, 500px" /> </div>
-                    </div>
-                    <div class="elementor-element elementor-element-8f76c8e elementor-widget elementor-widget-heading" data-id="8f76c8e" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h3 class="elementor-heading-title elementor-size-default">Choose Package</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-2ccb40d elementor-widget elementor-widget-heading" data-id="2ccb40d" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">Umrah and Hajj Package</h2>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-c06e76c e-flex e-con-boxed e-con e-child" data-id="c06e76c" data-element_type="container">
-                {{-- <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-65c8791 e-flex e-con-boxed e-con e-child" data-id="65c8791" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-7ffa03b elementor-widget elementor-widget-heading" data-id="7ffa03b" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">
-                                        Economy package</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0761b83 elementor-widget elementor-widget-text-editor" data-id="0761b83" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus nec.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c26a917 e-flex e-con-boxed e-con e-child" data-id="c26a917" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-f6c63e6 elementor-widget elementor-widget-heading" data-id="f6c63e6" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">$45</h2>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-c9610ff elementor-widget elementor-widget-heading" data-id="c9610ff" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">/Month</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c8d1dfe elementor-widget elementor-widget-text-editor" data-id="c8d1dfe" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-ed0d5fd elementor-align-left elementor-mobile-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                data-id="ed0d5fd" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-a0277f0 elementor-align-justify elementor-widget elementor-widget-button" data-id="a0277f0" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-1d0e90a e-flex e-con-boxed e-con e-child" data-id="1d0e90a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-bcd4160 elementor-widget elementor-widget-heading" data-id="bcd4160" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">Premium package</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-36917d2 elementor-widget elementor-widget-text-editor" data-id="36917d2" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus nec.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-2839cd4 e-flex e-con-boxed e-con e-child" data-id="2839cd4" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-d3f9439 elementor-widget elementor-widget-heading" data-id="d3f9439" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">$96</h2>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-e8a4462 elementor-widget elementor-widget-heading" data-id="e8a4462" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">/Month</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-95e0935 elementor-widget elementor-widget-text-editor" data-id="95e0935" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0de878e elementor-align-left elementor-mobile-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                data-id="0de878e" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-9ecf9e0 elementor-align-justify elementor-widget elementor-widget-button" data-id="9ecf9e0" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    <div class="elementor-element elementor-element-9c74a01 e-flex e-con-boxed e-con e-child" data-id="9c74a01" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-fa9247f elementor-widget elementor-widget-heading" data-id="fa9247f" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-default">
-                                        Executive package</h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c0cd834 elementor-widget elementor-widget-text-editor" data-id="c0cd834" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus nec.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-1f40ee4 e-flex e-con-boxed e-con e-child" data-id="1f40ee4" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-bcc58ec elementor-widget elementor-widget-heading" data-id="bcc58ec" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">$65</h2>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-2b9d631 elementor-widget elementor-widget-heading" data-id="2b9d631" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h2 class="elementor-heading-title elementor-size-default">/Month</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-a4a5886 elementor-widget elementor-widget-text-editor" data-id="a4a5886" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Lorem dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0dce510 elementor-align-left elementor-mobile-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                data-id="0dce510" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                            <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                            <span class="elementor-icon-list-text">Madinah Regency</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                            <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-2f64e10 elementor-align-justify elementor-widget elementor-widget-button" data-id="2f64e10" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Get Package</span>
-            </span>
-            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        {{-- --------------- --}}
-                       
-                        {{-- <div class="elementor-element elementor-element-9c74a01 e-flex e-con-boxed e-con e-child" data-id="9c74a01" data-element_type="container">
-                            @foreach ($packages as $package )
-                            <div class="e-con-inner">
-                               
-                                <div class="elementor-element elementor-element-fa9247f elementor-widget elementor-widget-heading" data-id="fa9247f" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <h3 class="elementor-heading-title elementor-size-default">
-                                            {{$package->package_name}}</h3>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-c0cd834 elementor-widget elementor-widget-text-editor" data-id="c0cd834" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <p>{{$package->description}}</p>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-1f40ee4 e-flex e-con-boxed e-con e-child" data-id="1f40ee4" data-element_type="container">
-                                    <div class="e-con-inner">
-                                        <div class="elementor-element elementor-element-bcc58ec elementor-widget elementor-widget-heading" data-id="bcc58ec" data-element_type="widget" data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">$65</h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-2b9d631 elementor-widget elementor-widget-heading" data-id="2b9d631" data-element_type="widget" data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">/Month</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-a4a5886 elementor-widget elementor-widget-text-editor" data-id="a4a5886" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <p>Lorem dolor sit amet.</p>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-0dce510 elementor-align-left elementor-mobile-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                    data-id="0dce510" data-element_type="widget" data-widget_type="icon-list.default">
-                                    <div class="elementor-widget-container">
-                                        <ul class="elementor-icon-list-items">
-                                            <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-icon">
-                        <i aria-hidden="true" class="fas fa-plane"></i>						</span>
-                                                <span class="elementor-icon-list-text">Saudi Airlines</span>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-icon">
-                        <i aria-hidden="true" class="fas fa-hotel"></i>						</span>
-                                                <span class="elementor-icon-list-text">Madinah Regency</span>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-icon">
-                        <i aria-hidden="true" class="icon icon-star-1"></i>						</span>
-                                                <span class="elementor-icon-list-text">5 Star Hotel</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-2f64e10 elementor-align-justify elementor-widget elementor-widget-button" data-id="2f64e10" data-element_type="widget" data-widget_type="button.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                    <span class="elementor-button-content-wrapper">
-                                <span class="elementor-button-text">Get Package</span>
-                </span>
-                </a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                @endforeach
-                            </div>
-                             --}}
-                             {{--  --}}
-                            
-                     
-
-                        {{-- ------------------ --}}
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="elementor-element elementor-element-23ae455 e-flex e-con-boxed e-con e-parent" data-id="23ae455" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=a3MeLj37S8w&quot;,&quot;background_video_start&quot;:126,&quot;background_video_end&quot;:147}">
         <div class="e-con-inner">
@@ -797,38 +305,6 @@
                     </div>
                     <div class="elementor-element elementor-element-18b0be9 e-flex e-con-boxed e-con e-child" data-id="18b0be9" data-element_type="container">
                         <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-bf6f6fc e-flex e-con-boxed e-con e-child" data-id="bf6f6fc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-50ea05e elementor-widget elementor-widget-image" data-id="50ea05e" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container">
-                                            <img loading="lazy" decoding="async" width="500" height="500" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11.jpg" class="attachment-large size-large wp-image-667" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11.jpg 500w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11-300x300.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11-150x150.jpg 150w"
-                                                sizes="(max-width: 500px) 100vw, 500px" /> </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-74cbdb3 elementor-widget elementor-widget-heading" data-id="74cbdb3" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">Free Luggage</h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-8715434 elementor-widget elementor-widget-text-editor" data-id="8715434" data-element_type="widget" data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-79f1ef1 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="79f1ef1" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="elementor-element elementor-element-c846a06 e-flex e-con-boxed e-con e-child" data-id="c846a06" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                 <div class="e-con-inner">
                                     <div class="elementor-element elementor-element-938cda4 elementor-widget elementor-widget-image" data-id="938cda4" data-element_type="widget" data-widget_type="image.default">
@@ -843,20 +319,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-65b1994 elementor-widget elementor-widget-text-editor" data-id="65b1994" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-45d0c2e elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="45d0c2e" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
+                                            <p>Our 5-star hotel offers luxury, comfort, and exceptional service during Hajj and Umrah,</p>
                                         </div>
                                     </div>
                                 </div>
@@ -875,20 +338,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-339c6cc elementor-widget elementor-widget-text-editor" data-id="339c6cc" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-63dd429 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="63dd429" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
+                                            <p>We provide 24/7 support for Hajj and Umrah, ensuring assistance and guidance throughout your journey.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -908,11 +358,11 @@
                             <div class="elementor-element elementor-element-af6d38f elementor-widget elementor-widget-button" data-id="af6d38f" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
+                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="tel:+917863878630">
                 <span class="elementor-button-content-wrapper">
                 <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
+       			</span>
+                            <span class="elementor-button-text">Contact Us</span>
             </span>
             </a>
                                     </div>
@@ -922,17 +372,17 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9237e77" target="_blank">
+            <a href="https://www.facebook.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9237e77" target="_blank">
                 <span class="elementor-screen-only">Facebook</span>
                                         <i class="fab fa-facebook"></i> </a>
                                         </span>
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-21da54d" target="_blank">
-                <span class="elementor-screen-only">Twitter</span>
-                                        <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-21da54d" target="_blank">
+                <span class="elementor-screen-only">Instagram</span>
+                                        <i class="fab fa-instagram"></i> </a>
                                         </span>
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-dd6706d" target="_blank">
+            <a href="https://www.youtube.com/@RahatGroup" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-dd6706d" target="_blank">
                 <span class="elementor-screen-only">Youtube</span>
                                         <i class="fab fa-youtube"></i> </a>
                                         </span>

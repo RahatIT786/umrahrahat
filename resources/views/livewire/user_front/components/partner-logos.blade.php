@@ -5,8 +5,8 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-6a488aa elementor-widget elementor-widget-image" data-id="6a488aa" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1.png" class="attachment-large size-large wp-image-229" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
+                            <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img1.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -14,8 +14,8 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-15cb7fd elementor-widget elementor-widget-image" data-id="15cb7fd" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2.png" class="attachment-large size-large wp-image-230" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
+                            <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img2.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-66b181b elementor-widget elementor-widget-image" data-id="66b181b" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3.png" class="attachment-large size-large wp-image-231" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img3.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -32,8 +32,44 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-adfc3ce elementor-widget elementor-widget-image" data-id="adfc3ce" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png" class="attachment-large size-large wp-image-232" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img4.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-b9c53ce e-flex e-con-boxed e-con e-child" data-id="b9c53ce" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-adfc3ce elementor-widget elementor-widget-image" data-id="adfc3ce" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img5.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="elementor-element elementor-element-b9c53ce e-flex e-con-boxed e-con e-child" data-id="b9c53ce" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-adfc3ce elementor-widget elementor-widget-image" data-id="adfc3ce" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img6.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="elementor-element elementor-element-b9c53ce e-flex e-con-boxed e-con e-child" data-id="b9c53ce" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-adfc3ce elementor-widget elementor-widget-image" data-id="adfc3ce" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img7.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-b9c53ce e-flex e-con-boxed e-con e-child" data-id="b9c53ce" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-adfc3ce elementor-widget elementor-widget-image" data-id="adfc3ce" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="642" height="183" src="{{ asset('asserts/user/img/img8.png') }}" class="attachment-large size-large wp-image-229" alt="" sizes="(max-width: 642px) 100vw, 642px" /> 
+                        </div>
                     </div>
                 </div>
             </div>

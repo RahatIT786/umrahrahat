@@ -27,47 +27,7 @@
             </div>
         </div>
     </div>
-    {{-- <div class="elementor-element elementor-element-f431541 e-flex e-con-boxed e-con e-parent" data-id="f431541" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="e-con-inner">
-            <div class="elementor-element elementor-element-ab37613 e-flex e-con-boxed e-con e-child" data-id="ab37613" data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-07fe32b elementor-widget elementor-widget-image" data-id="07fe32b" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                            <img decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1.png" class="attachment-large size-large wp-image-229" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-1-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-ecec968 e-flex e-con-boxed e-con e-child" data-id="ecec968" data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-941558f elementor-widget elementor-widget-image" data-id="941558f" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2.png" class="attachment-large size-large wp-image-230" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-2-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-1dbecac e-flex e-con-boxed e-con e-child" data-id="1dbecac" data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-5edd47a elementor-widget elementor-widget-image" data-id="5edd47a" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3.png" class="attachment-large size-large wp-image-231" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-3-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-ca2f5d1 e-flex e-con-boxed e-con e-child" data-id="ca2f5d1" data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-88e4663 elementor-widget elementor-widget-image" data-id="88e4663" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                            <img loading="lazy" decoding="async" width="642" height="183" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png" class="attachment-large size-large wp-image-232" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4.png 642w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/Logo-4-300x86.png 300w"
-                                sizes="(max-width: 642px) 100vw, 642px" /> </div>
-                    </div>
-                </div>
-            </div>
-          
-        </div>
-    </div> --}}
+   
     @include('livewire.user_front.components.partner-logos',['dataId'=>'f431541'])
     <div class="elementor-element elementor-element-74f1f0b e-flex e-con-boxed e-con e-parent" data-id="74f1f0b" data-element_type="container">
         <div class="e-con-inner">
@@ -206,66 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="elementor-element elementor-element-3bf3262 e-flex e-con-boxed e-con e-parent" data-id="3bf3262" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="e-con-inner">
-            <div class="elementor-element elementor-element-80d8207 e-con-full e-flex e-con e-child" data-id="80d8207" data-element_type="container">
-                <div class="elementor-element elementor-element-0958896 elementor-widget elementor-widget-counter" data-id="0958896" data-element_type="widget" data-widget_type="counter.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-counter">
-                            <div class="elementor-counter-title">Happy Travellers</div>
-                            <div class="elementor-counter-number-wrapper">
-                                <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="75" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix">k+</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-38574d6 e-con-full e-flex e-con e-child" data-id="38574d6" data-element_type="container">
-                <div class="elementor-element elementor-element-6b0864b elementor-widget elementor-widget-counter" data-id="6b0864b" data-element_type="widget" data-widget_type="counter.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-counter">
-                            <div class="elementor-counter-title">Succes Traveller</div>
-                            <div class="elementor-counter-number-wrapper">
-                                <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="95" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix">%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-31368cc e-con-full e-flex e-con e-child" data-id="31368cc" data-element_type="container">
-                <div class="elementor-element elementor-element-17a3b89 elementor-widget elementor-widget-counter" data-id="17a3b89" data-element_type="widget" data-widget_type="counter.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-counter">
-                            <div class="elementor-counter-title">Rating Client</div>
-                            <div class="elementor-counter-number-wrapper">
-                                <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="4.9" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-9a43257 e-con-full e-flex e-con e-child" data-id="9a43257" data-element_type="container">
-                <div class="elementor-element elementor-element-05c1cd1 elementor-widget elementor-widget-counter" data-id="05c1cd1" data-element_type="widget" data-widget_type="counter.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-counter">
-                            <div class="elementor-counter-title">Experience</div>
-                            <div class="elementor-counter-number-wrapper">
-                                <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="23" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <div class="elementor-element elementor-element-5def8b7 e-flex e-con-boxed e-con e-parent" data-id="5def8b7" data-element_type="container">
         <div class="e-con-inner">
             <div class="elementor-element elementor-element-0cc6e43 e-flex e-con-boxed e-con e-child" data-id="0cc6e43" data-element_type="container">
@@ -556,4 +457,5 @@
             </div>
         </div>
     </div>
+    
 </div>
