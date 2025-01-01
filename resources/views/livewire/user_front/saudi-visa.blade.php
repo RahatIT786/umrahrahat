@@ -200,38 +200,6 @@
                     </div>
                     <div class="elementor-element elementor-element-18b0be9 e-flex e-con-boxed e-con e-child" data-id="18b0be9" data-element_type="container">
                         <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-bf6f6fc e-flex e-con-boxed e-con e-child" data-id="bf6f6fc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-50ea05e elementor-widget elementor-widget-image" data-id="50ea05e" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container">
-                                            <img loading="lazy" decoding="async" width="500" height="500" src="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11.jpg" class="attachment-large size-large wp-image-667" alt="" srcset="https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11.jpg 500w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11-300x300.jpg 300w, https://kitpro.site/zamzam/wp-content/uploads/sites/203/2023/12/icon-11-150x150.jpg 150w"
-                                                sizes="(max-width: 500px) 100vw, 500px" /> </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-74cbdb3 elementor-widget elementor-widget-heading" data-id="74cbdb3" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-heading-title elementor-size-default">Free Luggage</h3>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-8715434 elementor-widget elementor-widget-text-editor" data-id="8715434" data-element_type="widget" data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-79f1ef1 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="79f1ef1" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="elementor-element elementor-element-c846a06 e-flex e-con-boxed e-con e-child" data-id="c846a06" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                 <div class="e-con-inner">
                                     <div class="elementor-element elementor-element-938cda4 elementor-widget elementor-widget-image" data-id="938cda4" data-element_type="widget" data-widget_type="image.default">
@@ -246,20 +214,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-65b1994 elementor-widget elementor-widget-text-editor" data-id="65b1994" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-45d0c2e elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="45d0c2e" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
+                                            <p>Our 5-star hotel offers luxury, comfort, and exceptional service during Hajj and Umrah,</p>
                                         </div>
                                     </div>
                                 </div>
@@ -278,20 +233,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-339c6cc elementor-widget elementor-widget-text-editor" data-id="339c6cc" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-63dd429 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="63dd429" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
-                                            </div>
+                                            <p>We provide 24/7 support for Hajj and Umrah, ensuring assistance and guidance throughout your journey.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -311,13 +253,11 @@
                             <div class="elementor-element elementor-element-af6d38f elementor-widget elementor-widget-button" data-id="af6d38f" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
-                <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
-            </span>
-            </a>
+                                        <a href="+917863878630" class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
+                                            <span class="elementor-button-content-wrapper">
+                                                 <span class="elementor-button-text">Contact Us</span>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -325,17 +265,17 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9237e77" target="_blank">
+            <a href="https://www.facebook.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9237e77" target="_blank">
                 <span class="elementor-screen-only">Facebook</span>
                                         <i class="fab fa-facebook"></i> </a>
                                         </span>
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-21da54d" target="_blank">
-                <span class="elementor-screen-only">Twitter</span>
-                                        <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-21da54d" target="_blank">
+                <span class="elementor-screen-only">Instagram</span>
+                                        <i class="fab fa-instagram"></i> </a>
                                         </span>
                                         <span class="elementor-grid-item">
-            <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-dd6706d" target="_blank">
+            <a href="https://www.youtube.com/@RahatGroup" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-dd6706d" target="_blank">
                 <span class="elementor-screen-only">Youtube</span>
                                         <i class="fab fa-youtube"></i> </a>
                                         </span>
@@ -372,17 +312,14 @@
                 <form wire:submit="uservisaEnquiry" >
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="name" wire:model="name" placeholder="Enter your full name" required>
                         @error('name') <span class="text-danger">{{ $message }}</span> @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
                         <input type="tel" class="form-control" id="phone" wire:model="phone" placeholder="Enter your phone number" required>
                         @error('phone') <span class="text-danger">{{ $message }}</span> @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" wire:model="message" rows="4" placeholder="Enter your enquiry details" required></textarea>
                         @error('message') <span class="text-danger">{{ $message }}</span> @enderror
                     </div>
