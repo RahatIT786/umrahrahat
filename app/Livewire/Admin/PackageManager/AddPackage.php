@@ -38,7 +38,39 @@ class AddPackage extends Component
 
 
     public $package_id;
+
+    public $temp_photo_path;
    
+        
+    protected $rules = [
+        'package_name' => 'required|string|max:25',
+        'description' => 'required|string|max:50',
+        'sharing' => 'required|integer|min:0',
+        'quint' => 'required|integer|min:0',
+        'quad' => 'required|integer|min:0',
+        'triple' => 'required|integer|min:0',
+        'double' => 'required|integer|min:0',
+        'single' => 'required|integer|min:0',
+        'note' => 'required|string|max:1000',
+        'includes' => 'required|string|max:1000',
+        'startYear' => 'required|integer|min:2024|max:3000',
+        'endYear' => 'required|integer|min:2024|max:3000',
+        'photo' => 'required|image|mimes:jpeg,png,jpg',
+        
+    ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public function mount($id=null){
 
@@ -185,6 +217,9 @@ class AddPackage extends Component
 
     public function packageSubmit()
     {
+        $this->validate();
+        $this->photo_path=null;
+
         if($this->photo){
             $this->photo_path=$this->photo->store('package_photos','public');
         }
@@ -192,6 +227,7 @@ class AddPackage extends Component
        if($this->package_id){
 
         $package=Package::findOrFail($this->package_id);
+        $this->photo_path=$package->photo_path;
 
         $package->update([
             'package_name'=>$this->package_name ?: $package->package_name,

@@ -16,38 +16,49 @@
             <div class="col-md-6 mb-3">
                 <label for="simpleinput" class="form-label">Package Name</label>
                 <input type="text" id="simpleinput" class="form-control" placeholder="Package Name" wire:model="package_name">
+                @error('package_name') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-6 mb-3">
                 <label for="example-email" class="form-label">Package Description</label>
                 <input type="text" id="example-email" name="example-email" class="form-control"  placeholder="Package Description" wire:model="description">
+                @error('description') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
             <!-- Second Row: Three Inputs -->
             <div class="col-md-4 mb-3">
                 <label for="sharing" class="form-label">Sharing</label>
                 <input type="number" id="sharing" class="form-control" value="sharing" min="0" placeholder="Enter Price"  wire:model="sharing">
+                @error('sharing') <span class="text-danger">{{ $message }}</span> @enderror
+
             </div>
             <div class="col-md-4 mb-3">
                 <label for="quint" class="form-label">Quint</label>
                 <input type="number" id="quint" class="form-control" min="0" placeholder="Enter Price"  wire:model="quint">
+                @error('quint') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-4 mb-3">
                 <label for="quad" class="form-label">Quad</label>
                 <input type="number" id="quad" class="form-control" min="0" placeholder="Enter Price"  wire:model="quad">
+                @error('quad') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
             <!-- Second Row: Three Inputs -->
             <div class="col-md-4 mb-3">
                 <label for="triple" class="form-label">Triple</label>
                 <input type="number" id="triple" class="form-control" min="0" value="triple" placeholder="Enter Price"  wire:model="triple">
+                @error('triple') <span class="text-danger">{{ $message }}</span> @enderror
+
             </div>
             <div class="col-md-4 mb-3">
                 <label for="Double" class="form-label">Double</label>
                 <input type="number" id="Double" class="form-control" min="0" placeholder="Enter Price"  wire:model="double">
+                @error('double') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-4 mb-3">
                 <label for="single" class="form-label">Single</label>
                 <input type="number" id="single" class="form-control" min="0" placeholder="Enter Price"  wire:model="single">
+                @error('single') <span class="text-danger">{{ $message }}</span> @enderror
+
             </div>
 
            
@@ -57,10 +68,12 @@
             <div class="col-md-5 mb-3">
                 <label for="startYear" class="form-label">Enter Start Year</label>
                 <input type="number" class="form-control" id="startYear" wire:model="startYear" min="2023">
+                @error('startYear') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-6 mb-3">
                 <label for="startYear" class="form-label">Enter End Year</label>
                 <input type="number" class="form-control" id="startYear" wire:model="endYear" min="2023">
+                @error('endYear') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
             <div class="col-md-5 mb-3">
@@ -104,22 +117,43 @@
             <div class="col-md-12 mb-3">
                 <label for="example-textarea" class="form-label">Note</label>
                 <textarea class="form-control" id="example-textarea" rows="5" wire:model="note"></textarea>
+                @error('note') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
             <div class="col-md-12 mb-3">
                 <label for="example-textarea" class="form-label">Includes</label>
                 <textarea class="form-control" id="example-textarea" rows="5" wire:model="includes"></textarea>
+                @error('includes') <span class="text-danger">{{ $message }}</span> @enderror
+
             </div>
         </div>
 
         <div>
-            <label for="example-textarea" class="form-label">Visa Banner Image</label>
+            <label for="example-textarea" class="form-label">Package Banner Image</label>
             <input type="file" class="form-control" wire:model="photo" accept="image/*">
+            @error('photo') <span class="text-danger">{{ $message }}</span> @enderror
+
+            <h5>{{$photo_path ? $photo_path: 'null' }}</h5>
             <div>
-                @if ($photo)
+                {{-- @if ($photo)
                 <img src="{{$photo->temporaryUrl() }}" alt="Preview_image" height="80" width="90">
                    
-                @endif
+                @endif --}}
+                @if ($photo)
+                <div class="mt-2">
+                    <img src="{{ $photo->temporaryUrl() }}" alt="Preview" class="img-thumbnail" style="max-width: 200px;">
+                </div>
+            {{-- @elseif ($package_id)
+                <div class="mt-2">
+                    <img src="{{Storage::url($photo_path)}}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
+                </div> --}}
+                @elseif ($package_id && $photo)
+                <div class="mt-2">
+                    <img src="{{ asset('storage/' . $photo_path) }}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
+                </div>
+            @else
+                <p class="text-warning">No Photo Available</p>
+            @endif
             </div>
         </div>
 

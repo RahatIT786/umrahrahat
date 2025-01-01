@@ -11,6 +11,12 @@
     <div class="card-body">
     
         <div class="table-responsive">
+            <div class="row d-flex justify-content-end me-3">
+               
+                <div class="col-4 mb-3 ">
+                    <input type="text" class="form-control" placeholder="Search Packages" wire:model.live="search">
+                </div>
+            </div>
             <table class="table table-hover table-centered">
                 <thead class="table-light">
                     <tr>
@@ -51,6 +57,12 @@
                   
                 </tbody>
             </table>
+            <div>
+                <p>PageLinks</p>
+                <div class="pagination">
+                    {{-- {{ $pagination->links() }}  <!-- This will display the pagination links --> --}}
+                </div>
+            </div>
         </div>
     </div>
 </div>

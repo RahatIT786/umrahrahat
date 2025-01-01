@@ -2,7 +2,8 @@
             <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between">
                     <h4 class="card-title">All Packages</h4>
-
+                  
+                   
                     <a href="{{route('admin.package-add')}}" wire:navigate class="btn btn-sm btn-primary">
                         <i class="bx bx-plus me-1"></i>Create Packages
                     </a>
