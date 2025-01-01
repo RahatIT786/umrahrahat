@@ -6,8 +6,7 @@
         {{--partner-logos-start--}}
          @include('livewire.user_front.components.partner-logos',['dataId'=>'7c45d61a'])
         {{--partner-logos-end--}}
-        @livewire('choose-package')
-        @livewire('rating-numbers')
+        <!-- @livewire('choose-package') -->   
         @livewire('about-zamzam')
 </section>
 <!--body section end-->

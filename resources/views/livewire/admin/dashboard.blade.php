@@ -106,9 +106,9 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
        var visaRequests = @json($visaRequests);  // Get visa requests data from PHP
-       console.log(visaRequests);
+       //  console.log(visaRequests);
        var packageRequests = @json($packageRequests);
-        console.log(packageRequests);
+        // console.log(packageRequests);
     // Make sure the data arrays have exactly 12 months (Jan to Dec)
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     
@@ -181,8 +181,8 @@
         tooltip: {
             shared: true,
             y: [
-                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "k" : e; } },
-                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "k" : e; } }
+                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "" : e; } },
+                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "" : e; } }
             ]
         }
     };
