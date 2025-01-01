@@ -17,14 +17,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 3.02%</span>
-                        <span class="text-muted ms-1 fs-12">From last month</span>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </div>
 
@@ -45,14 +37,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 1.15%</span>
-                        <span class="text-muted ms-1 fs-12">From last month</span>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </div>
 
@@ -73,14 +57,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 4.78%</span>
-                        <span class="text-muted ms-1 fs-12">From last month</span>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -100,14 +76,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="card-footer border-0 py-2 bg-light bg-opacity-50 mx-2 mb-2">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 2.35%</span>
-                        <span class="text-muted ms-1 fs-12">From last month</span>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
@@ -133,210 +101,90 @@
             </div>
         </div> <!-- end card-->
     </div> <!-- end col -->
-
 </div> <!-- End row -->
-
-{{-- <div class="row">
-    <div class="col-xl-4">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h4 class="card-title">New Users</h4>
-
-                    <a href="#!" class="btn btn-sm btn-primary">
-                        <i class="bx bx-plus me-1"></i>Add New User
-                    </a>
-                </div>
-            </div> <!-- end card body -->
-
-            <div class="table-responsive table-centered">
-                <table class="table mb-0">
-                    <thead class="bg-light bg-opacity-50">
-                        <th class="border-0 py-2">Date</th>
-                        <th class="border-0 py-2">User</th>
-                        <th class="border-0 py-2">Account</th>
-                        <th class="border-0 py-2">Username</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>24 April, 2024</td>
-                            <td><img src="/images/users/avatar-2.jpg" alt="avatar-2"
-                                    class="img-fluid avatar-xs rounded-circle"> <span
-                                    class="align-middle ms-1">Dan Adrick</span></td>
-                            <td><span class="badge badge-soft-success">Verified</span></td>
-                            <td>@omions </td>
-                        </tr>
-                        <tr>
-                            <td>24 April, 2024</td>
-                            <td><img src="/images/users/avatar-3.jpg" alt="avatar-2"
-                                    class="img-fluid avatar-xs rounded-circle"> <span
-                                    class="align-middle ms-1">Daniel Olsen</span></td>
-                            <td><span class="badge badge-soft-success">Verified</span></td>
-                            <td>@alliates </td>
-                        </tr>
-                        <tr>
-                            <td>20 April, 2024</td>
-                            <td><img src="/images/users/avatar-4.jpg" alt="avatar-2"
-                                    class="img-fluid avatar-xs rounded-circle"> <span
-                                    class="align-middle ms-1">Jack Roldan</span></td>
-                            <td><span class="badge badge-soft-warning">Pending</span></td>
-                            <td>@griys </td>
-                        </tr>
-                        <tr>
-                            <td>18 April, 2024</td>
-                            <td><img src="/images/users/avatar-5.jpg" alt="avatar-2"
-                                    class="img-fluid avatar-xs rounded-circle"> <span
-                                    class="align-middle ms-1">Betty Cox</span></td>
-                            <td><span class="badge badge-soft-success">Verified</span></td>
-                            <td>@reffon </td>
-                        </tr>
-                        <tr>
-                            <td>18 April, 2024</td>
-                            <td><img src="/images/users/avatar-6.jpg" alt="avatar-2"
-                                    class="img-fluid avatar-xs rounded-circle"> <span
-                                    class="align-middle ms-1">Carlos Johnson</span></td>
-                            <td><span class="badge badge-soft-danger">Blocked</span></td>
-                            <td>@bebo </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> <!-- table responsive -->
-
-            <div
-                class="align-items-center justify-content-between row g-0 text-center text-sm-start p-3 border-top">
-                <div class="col-sm">
-                    <div class="text-muted">
-                        Showing <span class="fw-semibold">5</span> of <span
-                            class="fw-semibold">587</span> users
-                    </div>
-                </div>
-                <div class="col-sm-auto mt-3 mt-sm-0">
-                    <ul class="pagination pagination-rounded m-0">
-                        <li class="page-item">
-                            <a href="#" class="page-link"><i class='bx bx-left-arrow-alt'></i></a>
-                        </li>
-                        <li class="page-item active">
-                            <a href="#" class="page-link">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link"><i class='bx bx-right-arrow-alt'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> <!-- end card-->
-    </div> <!-- end col -->
-
-    <div class="col-xl-8">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h4 class="card-title">Recent Orders</h4>
-
-                    <a href="#!" class="btn btn-sm btn-primary">
-                        <i class="bx bx-plus me-1"></i>Create Order
-                    </a>
-                </div>
-            </div> <!-- end card body -->
-            <div class="table-responsive table-centered">
-                <table class="table mb-0">
-                    <thead class="bg-light bg-opacity-50">
-                        <tr>
-                            <th class="border-0 py-2">Order ID.</th>
-                            <th class="border-0 py-2">Date</th>
-                            <th class="border-0 py-2">Customer Name</th>
-                            <th class="border-0 py-2">Phone No.</th>
-                            <th class="border-0 py-2">Address</th>
-                            <th class="border-0 py-2">Payment Type</th>
-                            <th class="border-0 py-2">Status</th>
-                        </tr>
-                    </thead> <!-- end thead-->
-                    <tbody>
-                        <tr>
-                            <td><a href="#!">#TZ5625</a></td>
-                            <td>29 April 2024</td>
-                            <td><a href="#!">Anna M. Hines</a></td>
-                            <td>(+1)-555-1564-261</td>
-                            <td>Burr Ridge/Illinois</td>
-                            <td>Credit Card</td>
-                            <td><i class="bx bxs-circle text-success me-1"></i>Completed</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!">#TZ9652</a></td>
-                            <td>25 April 2024</td>
-                            <td><a href="#!">Judith H. Fritsche</a></td>
-                            <td>(+57)-305-5579-759</td>
-                            <td>SULLIVAN/Kentucky</td>
-                            <td>Credit Card</td>
-                            <td><i class="bx bxs-circle text-success me-1"></i>Completed</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!">#TZ5984</a></td>
-                            <td>25 April 2024</td>
-                            <td><a href="#!">Peter T. Smith</a></td>
-                            <td>(+33)-655-5187-93</td>
-                            <td>Yreka/California</td>
-                            <td>Pay Pal</td>
-                            <td><i class="bx bxs-circle text-success me-1"></i>Completed</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!">#TZ3625</a></td>
-                            <td>21 April 2024</td>
-                            <td><a href="#!">Emmanuel J. Delcid</a></td>
-                            <td>(+30)-693-5553-637</td>
-                            <td>Atlanta/Georgia</td>
-                            <td>Pay Pal</td>
-                            <td><i class="bx bxs-circle text-primary me-1"></i>Processing</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!">#TZ8652</a></td>
-                            <td>18 April 2024</td>
-                            <td><a href="#!">William J. Cook</a></td>
-                            <td>(+91)-855-5446-150</td>
-                            <td>Rosenberg/Texas</td>
-                            <td>Credit Card</td>
-                            <td><i class="bx bxs-circle text-primary me-1"></i>Processing</td>
-                        </tr>
-                    </tbody> <!-- end tbody -->
-                </table> <!-- end table -->
-            </div> <!-- table responsive -->
-            <div
-                class="align-items-center justify-content-between row g-0 text-center text-sm-start p-3 border-top">
-                <div class="col-sm">
-                    <div class="text-muted">
-                        Showing <span class="fw-semibold">5</span> of <span
-                            class="fw-semibold">90,521</span> orders
-                    </div>
-                </div>
-                <div class="col-sm-auto mt-3 mt-sm-0">
-                    <ul class="pagination pagination-rounded m-0">
-                        <li class="page-item">
-                            <a href="#" class="page-link"><i class='bx bx-left-arrow-alt'></i></a>
-                        </li>
-                        <li class="page-item active">
-                            <a href="#" class="page-link">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link"><i class='bx bx-right-arrow-alt'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> <!-- end card -->
-    </div> <!-- end col -->
-</div> <!-- end row --> --}}
-{{-- COMMENTED-BY-ABUSIN-START --}}
-
 </section>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+   
+    // Make sure the data arrays have exactly 12 months (Jan to Dec)
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+    // Fill missing months with 0 if any month data is missing
+    const fillData = (data) => {
+        return months.map((month, index) => data[index] || 0);
+    };
+    // Define the chart options dynamically
+    const chartOptions = {
+        series: [
+            {
+                name: "Visa Request",
+                type: "area",
+                data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
+            },
+            {
+                name: "Package Request",
+                type: "area",
+                data:  [12, 16, 11, 22, 28, 25, 15, 29, 35, 45, 42, 48]
+            }
+        ],
+        chart: {
+            height: 313,
+            type: "line",
+            toolbar: { show: false }
+        },
+        stroke: {
+            dashArray: [0, 0, 2],
+            width: [0, 2, 2],
+            curve: "smooth"
+        },
+        fill: {
+            opacity: [1, 1, 1],
+            type: ["solid", "gradient", "gradient"],
+            gradient: {
+                type: "vertical",
+                inverseColors: false,
+                opacityFrom: 0.5,
+                opacityTo: 0,
+                stops: [0, 90]
+            }
+        },
+        markers: {
+            size: [0, 0],
+            strokeWidth: 2,
+            hover: { size: 4 }
+        },
+        xaxis: {
+            categories: months, // Use the months array for x-axis
+            axisTicks: { show: false },
+            axisBorder: { show: false }
+        },
+        yaxis: { min: 0, axisBorder: { show: false } },
+        grid: {
+            show: true,
+            strokeDashArray: 3,
+            xaxis: { lines: { show: false } },
+            yaxis: { lines: { show: true } },
+            padding: { top: 0, right: -2, bottom: 0, left: 10 }
+        },
+        legend: {
+            show: true,
+            horizontalAlign: "center",
+            offsetX: 0,
+            offsetY: 5,
+            markers: { width: 9, height: 9, radius: 6 },
+            itemMargin: { horizontal: 10, vertical: 0 }
+        },
+        colors: ["#1a80f8", "#17c553", "#7942ed"],
+        tooltip: {
+            shared: true,
+            y: [
+                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "k" : e; } },
+                { formatter: function (e) { return typeof e < "u" ? e.toFixed(1) + "k" : e; } }
+            ]
+        }
+    };
+
+    // Initialize and render the chart
+    var chart = new ApexCharts(document.querySelector("#dash-performance-chart"), chartOptions);
+    chart.render();
+</script>
