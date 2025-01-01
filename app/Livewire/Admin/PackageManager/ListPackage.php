@@ -11,11 +11,7 @@ use Livewire\WithFileUploads;
 class ListPackage extends Component
 {
     public $packages;
-
-
-
     use WithFileUploads;
-
     public $package_name;
     public $description;
     public $sharing;
@@ -28,10 +24,7 @@ class ListPackage extends Component
     public $note;
     public $includes;
     public $photo_path;
-
-
     public $photo;
-
     public $type;
     // this is for month wise get wednesdays
     public $startYear;
@@ -39,38 +32,21 @@ class ListPackage extends Component
     public $startMonth;
     public $endMonth;
     public $monthsWithWednesdays;
-
-
     public $package_id;
     public $includesContent;
     public $actionButton='Save';
-
     protected $listeners = ['packageDeleted'=>'refreshPackageList'];
-
-
-
-
-
     //this variable for show package details in form 
     public $viewPackageId;
     public $selectedPackage;
-
-
-
     public $showPopup;
-
     public function mount()
 {
     $this->packages = Package::where('delete_status',false)->get();
-   
 }
-
 public function refreshPackageList(){
     $this->packages=Package::where('delete_status',false)->get();
 }
-
-
-
 public function updatePackage(){
 
     // Find the existing package by ID
@@ -146,23 +122,9 @@ public function edit($packageId)
         $this->selectedPackage = null;
         $this->viewPackageId = null;
     }
-
-
-
-
-
-
-
-
-
-
-
-        #[Layout('admin.layouts.app')]
-        public function render()
+    #[Layout('admin.layouts.app')]
+    public function render()
     {
-        // $packages= Package::where('delete_status',false)->paginate(10);
-        // $packagesArray=$packages->toArray();
-    //    dd($packages);
         return view('livewire.admin.components.list-package');
     }
 }

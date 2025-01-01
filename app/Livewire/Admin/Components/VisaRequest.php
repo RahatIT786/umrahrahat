@@ -12,6 +12,7 @@ class VisaRequest extends Component
     public $showModal = false;
     public $requestId;
     public $visaRequestStatus;
+    public $search = null;
     public $VisaRequestId;
     public function confirmDelete($id)
     {
@@ -39,8 +40,6 @@ class VisaRequest extends Component
         userVisaEnquiry::where('id',$this->VisaRequestId)->update(['status'=>$nextStatus]);
         // $this->visaRequestStatus=userVisaEnquiry::where('delete_status',false)->get();
     }
-
-
  // Get the next status in the cycle (pending -> responded -> no responded)
     private function getNextStatus($currentStatus){
         switch ($currentStatus) {
@@ -55,7 +54,15 @@ class VisaRequest extends Component
     #[Layout('admin.layouts.app')]
     public function render()
     {
-        $userVisaRequest = userVisaEnquiry::where('delete_status', 1)->paginate(10);
+        $userVisaRequest = userVisaEnquiry::where('delete_status', 1)
+            ->where(function($query){
+                $query->where('name', 'like', '%'.$this->search.'%')
+                  ->orWhere('phone', 'like', '%'.$this->search.'%')
+                  ->orWhere('visaType', 'like', '%'.$this->search.'%')
+                  ->orWhere('status', 'like', '%'.$this->search.'%');
+            })
+            ->paginate(10);
+       
         return view('livewire.admin.components.visa-request',['userVisaRequests' => $userVisaRequest]);
     }
 }

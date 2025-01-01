@@ -5,8 +5,7 @@
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 @yield('css')
 @vite(['node_modules/quill/dist/quill.snow.css', 'node_modules/quill/dist/quill.bubble.css'])
-@vite([ 'resources/scss/icons.scss', 'resources/scss/style.scss'])
-
+@vite([ 'resources/scss/icons.scss', 'resources/scss/style.scss'])=
 @vite([ 'resources/js/config.js'])
 
 <style>

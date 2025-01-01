@@ -32,6 +32,9 @@
     </div>
 
     @include('admin.includes/vendor-scripts')
+    <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
+    <script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
+    @vite(['resources/js/pages/dashboard.js'])
     @livewireScripts
 </body>
 

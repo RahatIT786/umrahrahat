@@ -26,6 +26,27 @@ class AddVisa extends Component
         'file' => 'nullable|image|max:2048', // Only images allowed
     ];
 
+    protected $messages = [
+        'visaType.required' => 'Visa type is required.',
+        'visaType.string' => 'Visa type must be a string.',
+        'visaType.max' => 'Visa type cannot exceed 255 characters.',
+
+        'documentsRequired.required' => 'Fill this field.',
+        'documentsRequired.string' => 'Documents required must be a string.',
+        'documentsRequired.max' => 'Documents required description cannot exceed 1000 characters.',
+
+        'processingTime.required' => 'Processing time is required.',
+        'processingTime.integer' => 'Processing time must be an integer.',
+        'processingTime.min' => 'Processing time must be at least 1 day.',
+
+        'price.required' => 'Price is required.',
+        'price.numeric' => 'Price must be a numeric value.',
+        'price.min' => 'Price must be a positive value.',
+
+        'file.image' => 'The file must be an image.',
+        'file.max' => 'The image size must not exceed 2MB.',
+    ];
+
     // Initialize component with ID when editing
    
     public function mount($id = null)

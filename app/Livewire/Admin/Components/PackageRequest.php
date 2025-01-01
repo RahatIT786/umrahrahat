@@ -9,40 +9,29 @@ use Livewire\Attributes\Layout;
 class PackageRequest extends Component
 {
     public $packageRequest;
-
     public $package;
-
     public $packageStatus;
-
-
+    public $search;
     public $status;
     public $requestId;
 
     public function mount(){
-        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
+        $this->packageRequest = ModelsPackageRequest::where('delete_status',false)->get();
     }
-
-
     public function deletePackageRequest($packageId){
             $this->package=ModelsPackageRequest::findOrFail($packageId);
              $this->package->delete_status=true;
-
              $this->package->save();
-
              $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-
     }
 
     public function updateStatus($id){
         $this->requestId=   $id;
         $this->packageStatus=ModelsPackageRequest::findOrFail($id);
         $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
-
         ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
         $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-
     }
-
 
  // Get the next status in the cycle (pending -> responded -> no responded)
     private function getNextStatus($currentStatus){
@@ -56,11 +45,9 @@ class PackageRequest extends Component
         }
     }
 
-
-
     #[Layout('admin.layouts.app')]
     public function render()
-    {
+    {   
         return view('livewire.admin.components.package-request');
     }
 }
