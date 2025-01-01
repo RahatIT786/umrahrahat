@@ -44,20 +44,14 @@
                                 <div class="mx-auto mb-4 text-center auth-logo">
                                     <a href="" class="logo-dark">
                                         {{-- <img src="/images/logo-dark.png" height="32" alt="logo dark"> --}}
-                                        <img src="{{asset('asserts/user/img/UMRAH_COLOR.png')}}" height="100" alt="logo dark">
+                                       
+                                        <img src="{{asset('asserts/user/img/umrah_dark.png')}}" height="100" alt="logo dark">
                                         
                                     </a>
     
                                     <a  class="logo-light">
-                                        {{-- <img src="/images/logo-light.png" height="28" alt="logo light"> --}}
-                                        <img fetchpriority="high" 
-                                        width="800" 
-                                        height="243" 
-                                        src="{{ asset('asserts/user/img/UMRAH_COLOR.png') }}" 
-                                        class="attachment-large size-large wp-image-1328" 
-                                        alt="" 
-                                        sizes="(max-width: 800px) 100vw, 800px" 
-                                    /> 
+                                       
+                                        <img src="{{asset('asserts/user/img/UMRAH_COLOR.png')}}" height="100" alt="logo dark">
                                     </a>
                                 </div>
                                 <h4 class="fw-bold text-dark mb-2">Admin Login</h3>

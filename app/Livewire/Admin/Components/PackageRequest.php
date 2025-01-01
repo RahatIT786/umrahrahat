@@ -8,7 +8,7 @@ use Livewire\Attributes\Layout;
 
 class PackageRequest extends Component
 {
-    public $packageRequest;
+    public $packageRequest=[];
 
     public $package;
 
@@ -18,9 +18,67 @@ class PackageRequest extends Component
     public $status;
     public $requestId;
 
+    public $perPage=10;
+    public $search;
+    public $pagination;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function mount(){
-        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
+        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(10)->getCollection();
+        // $this->pagination = ModelsPackageRequest::where('delete_status', false)
+        //                                      ->paginate(10);
+        // $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
+        // $this->loadPackageRequest();
     }
+    public function updatedSearch()
+{
+    $this->packageRequest = ModelsPackageRequest::where('delete_status', false)
+    ->where(function($query){
+        $query ->where('customer_name', 'like', '%' . $this->search.'%')
+        ->orWhere('mobile', 'like', '%' . $this->search.'%')
+        ->orWhere('package_name', 'like', '%' . $this->search.'%')
+        ->orWhere('call_status', 'like', '%' . $this->search.'%')
+        ->paginate(10)->getCollection();
+    })->get();
+       
+}
+
+
+    // public function loadPackageRequest(){
+    //     $packageRequest= ModelsPackageRequest::where('delete_status', false)
+    //     ->where(function ($query) {
+    //         $query->where('customer_name', 'like', '%' . $this->search . '%')
+    //               ->orWhere('mobile', 'like', '%' . $this->search . '%')
+    //               ->orWhere('package_name', 'like', '%' . $this->search . '%')
+    //               ->orWhere('call_status', 'like', '%' . $this->search . '%');
+    //     })
+    //     ->paginate($this->perPage)->toArray();
+    //     $this->packageRequest=$packageRequest;
+    //     // $this->paginationLinks=$packageRequest->links();
+
+    // }
 
 
     public function deletePackageRequest($packageId){
@@ -61,6 +119,16 @@ class PackageRequest extends Component
     #[Layout('admin.layouts.app')]
     public function render()
     {
-        return view('livewire.admin.components.package-request');
+        // $this->loadPackageRequest();
+        // return view('livewire.admin.components.package-request',[
+        //     'packageRequest',$this->packageRequest,
+        //     'paginationLinks'=>$this->paginationLinks,
+        // ]);
+
+
+        return view('livewire.admin.components.package-request', [
+            'packageRequest' => $this->packageRequest,  // Only the data
+            // 'pagination' => $this->pagination,  // Pagination info
+        ]);
     }
 }
