@@ -40,6 +40,11 @@ class ListPackage extends Component
     public $viewPackageId;
     public $selectedPackage;
     public $showPopup;
+
+
+    public $showModal;
+    
+
     public function mount()
 {
     $this->packages = Package::where('delete_status',false)->get();
@@ -76,16 +81,7 @@ public function updatePackage(){
 
 }
 
-public function deletePackage($id){
-    $package = Package::findOrFail($id);
 
-    $package->delete_status=true;
-    $package->save();
-
-    $this->packages=Package::where('delete_status',false)->get();
-    session()->flash('message','Package Deleted Successfully');
-    
-   }
 public function edit($packageId)
 {
     // Find the package by ID
@@ -122,6 +118,45 @@ public function edit($packageId)
         $this->selectedPackage = null;
         $this->viewPackageId = null;
     }
+
+
+    // BELOW FUNCTION ARE CONFIRM DELETE FUNCTION
+    public function confirmDelete($id)
+    {
+        $this->package_id = $id;
+        $this->showModal = true;
+      
+    }
+    public function closeConfirmDeletPopup(){
+        $this->showModal = false;
+
+    }
+
+    public function deletePackage(){
+        $package = Package::findOrFail($this->package_id);
+    
+        $package->delete_status=true;
+        $package->save();
+
+        $this->showModal = false;
+
+        
+        //refresh the package list
+        $this->packages=Package::where('delete_status',false)->get();
+        session()->flash('message','Package Deleted Successfully');
+        
+       }
+
+
+
+
+
+
+
+
+
+
+
     #[Layout('admin.layouts.app')]
     public function render()
     {

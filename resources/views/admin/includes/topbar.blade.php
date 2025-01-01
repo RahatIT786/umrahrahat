@@ -150,7 +150,7 @@
                               <!-- item-->
                               <h6 class="dropdown-header">Welcome!</h6>
 
-                              <a class="dropdown-item" href="#">
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myaccount" wire:click="OpenMyAccount">
                                    <iconify-icon icon="solar:user-outline"
                                         class="align-middle me-2 fs-18"></iconify-icon><span class="align-middle">My
                                         Account</span>
@@ -190,4 +190,88 @@
                </div>
           </div>
      </div>
+
+
+
+ <!--CONFIRM DELETE -POPUP Modal -->
+
+
+  <div class="modal  @if($showMyAccount) show @endif" 
+  id="myaccount" 
+  tabindex="-1" 
+  aria-labelledby="myaccountLabel" 
+  aria-hidden="true" 
+  wire:ignore.self 
+  data-bs-backdrop="false">
+  
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="modal-header">
+              <h5 class="modal-title" id="myaccountLabel">My Account</h5>
+              <button type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close" 
+                      wire:click="closeMyAccount"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Admin details and password change form -->
+              <form wire:submit.prevent="updateAccountDetails">
+               <div>
+                    @if (session()->has('success'))
+                    <div id="myaccountMessage"   class="alert alert-success text-center myaccountMessage">
+                        {{ session('success') }}
+                    </div>
+                   
+                @endif
+                <script>
+                               
+                            
+                       </script>
+               </div>
+                 
+                  <div class="mb-3">
+                      <label for="admin-email" class="form-label">Admin Email</label>
+                      <input type="email" class="form-control" id="admin-email" wire:model="email" required >
+                  </div>
+                  <div class="mb-3">
+                      <label for="new-password" class="form-label">Change Password</label>
+                      <input type="{{$showPassword ? 'text' : 'password'}}" class="form-control" id="new-password" wire:model="password" required >
+                      <span>
+                         <input type="checkbox" wire:model.live="showPassword"> Show Password
+                      </span>
+                  </div>
+                  {{-- <div class="mb-3">
+                      <label for="confirm-password" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirm-password" wire:model="confirmPassword">
+                  </div> --}}
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+              </form>
+          </div>
+          <script>
+               // document.addEventListener('DOMContentLoaded', function () {
+               //     var alertMessage = document.getElementById('alert-message');
+               //     if (alertMessage) {
+               //         setTimeout(function () {
+               //             alertMessage.style.display = 'none';
+               //         }, 3000);
+               //     }
+               // });
+
+                 // Wait for 3 seconds (3000 milliseconds) then hide the error message
+      </script>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 </header>

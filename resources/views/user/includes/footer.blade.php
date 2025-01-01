@@ -261,7 +261,7 @@
                                     </div>
                                     <div class="elementor-element elementor-element-5c5e1ac elementor-widget elementor-widget-text-editor" data-id="5c5e1ac" data-element_type="widget" data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>Copyright © 2024 <a href="http://rahatitsolutions.com/" style="color: white">Rahat IT Solutions.</a> All Rights Reserved.</p>
+                                            <p>Copyright © <span id="dev-year"></span> <a href="http://rahatitsolutions.com/" style="color: white">Rahat IT Solutions.</a> All Rights Reserved.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,6 +270,10 @@
                     </div>
                 </div>
             </div>
+            <script>
+                document.getElementById('dev-year').innerHTML = new Date().getFullYear();
+                // document.write(new Date().getFullYear())
+            </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </footer>
  

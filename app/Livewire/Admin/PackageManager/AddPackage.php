@@ -53,9 +53,9 @@ class AddPackage extends Component
         'single' => 'required|integer|min:0',
         'note' => 'required|string|max:1000',
         'includes' => 'required|string|max:1000',
-        'startYear' => 'required|integer|min:2024|max:3000',
-        'endYear' => 'required|integer|min:2024|max:3000',
-        'photo' => 'required|image|mimes:jpeg,png,jpg',
+        'startYear' => 'nullable|integer|min:2025|max:3000',
+        'endYear' => 'nullable|integer|min:2025|max:3000',
+        // 'photo' => 'required|image|mimes:jpeg,png,jpg',
         
     ];
 
@@ -90,6 +90,7 @@ class AddPackage extends Component
             $this->includes = $package->includes;
             $this->startYear = $package->start_year;
             $this->endYear = $package->end_year;
+            $this->photo_path=$package->photo_path;
            //  $this->startMonth = $package->start_month;
            //  $this->endMonth = $package->end_month;
             
@@ -217,7 +218,9 @@ class AddPackage extends Component
 
     public function packageSubmit()
     {
-        $this->validate();
+        $this->validate([
+            'photo'=>$this->photo_path ?'nullable|image|mimes:jpeg,png,jpg|max:2048': 'required|image|mimes:jpeg,png,jpg|max:2048'
+        ]);
         $this->photo_path=null;
 
         if($this->photo){

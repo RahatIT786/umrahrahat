@@ -67,12 +67,12 @@
            <div class="col-md-12 d-flex flex-wrap justify-content-between" >
             <div class="col-md-5 mb-3">
                 <label for="startYear" class="form-label">Enter Start Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="startYear" min="2023">
+                <input type="number" class="form-control" id="startYear" wire:model="startYear" min="2025" >
                 @error('startYear') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-6 mb-3">
                 <label for="startYear" class="form-label">Enter End Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="endYear" min="2023">
+                <input type="number" class="form-control" id="startYear" wire:model="endYear" min="2025">
                 @error('endYear') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
@@ -130,30 +130,24 @@
 
         <div>
             <label for="example-textarea" class="form-label">Package Banner Image</label>
-            <input type="file" class="form-control" wire:model="photo" accept="image/*">
+            <input type="file" class="form-control" wire:model="photo" value="" accept="image/*">
             @error('photo') <span class="text-danger">{{ $message }}</span> @enderror
 
-            <h5>{{$photo_path ? $photo_path: 'null' }}</h5>
+           
             <div>
                 {{-- @if ($photo)
                 <img src="{{$photo->temporaryUrl() }}" alt="Preview_image" height="80" width="90">
                    
                 @endif --}}
                 @if ($photo)
-                <div class="mt-2">
-                    <img src="{{ $photo->temporaryUrl() }}" alt="Preview" class="img-thumbnail" style="max-width: 200px;">
-                </div>
-            {{-- @elseif ($package_id)
-                <div class="mt-2">
-                    <img src="{{Storage::url($photo_path)}}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
-                </div> --}}
-                @elseif ($package_id && $photo)
-                <div class="mt-2">
-                    <img src="{{ asset('storage/' . $photo_path) }}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
-                </div>
-            @else
-                <p class="text-warning">No Photo Available</p>
-            @endif
+                        <div class="mt-2">
+                            <img src="{{ $photo->temporaryUrl() }}" alt="Preview" class="img-thumbnail" style="max-width: 200px;">
+                        </div>
+                    @elseif ($package_name && $photo_path && $package_name)
+                        <div class="mt-2">
+                            <img src="{{ asset('storage/' . $photo_path) }}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
+                        </div>
+                    @endif
             </div>
         </div>
 

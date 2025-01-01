@@ -43,7 +43,7 @@
                                                     <div class="hfe-has-submenu-container"><a href="#" class="hfe-menu-item">Package<span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span></a></div>
                                                     <ul class="sub-menu">
                                                         <li id="menu-item-1356" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="{{route('package')}}" wire:navigate class="hfe-sub-menu-item">Umrah Package</a></li>
-                                                        <li id="menu-item-1362" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="single-package.html" class="hfe-sub-menu-item">Ramadan Umrah Package</a></li>
+                                                        {{-- <li id="menu-item-1362" class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu"><a href="single-package.html" class="hfe-sub-menu-item">Ramadan Umrah Package</a></li> --}}
                                                     </ul>
                                                 </li>
                                                 <li id="menu-item-1134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
