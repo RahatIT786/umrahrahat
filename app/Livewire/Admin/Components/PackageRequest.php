@@ -12,7 +12,7 @@ class PackageRequest extends Component
     public $packageRequest;
     public $package;
     public $packageStatus;
-    public $search;
+  
     public $status;
     public $requestId;
 
