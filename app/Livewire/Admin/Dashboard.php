@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Livewire\Admin;
+
 use App\Models\Package;
 use App\Models\PackageRequest;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use App\Models\VisaDetail;
 use App\Models\userVisaEnquiry;
-
 use Illuminate\Support\Facades\DB;
 
 class Dashboard extends Component
@@ -16,7 +16,6 @@ class Dashboard extends Component
     public $userVisaEnquiry;
     public $totalPackage;
     public $packageRequest;
-    // These will hold the dynamic data for the chart
     public $visaRequests;
     public $packageRequests;
 

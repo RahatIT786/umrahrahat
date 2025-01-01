@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="https://kitpro.site/zamzam/xmlrpc.php" />
-    <title></title>
+    <title>Umrah Rahat</title>
+    <link rel="icon" href="{{ asset('fav.jpg') }}" type="image/jpg">
     <meta name='robots' content='max-image-preview:large' />
     <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://kitpro.site/zamzam/feed/" />
     <link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://kitpro.site/zamzam/comments/feed/" />
