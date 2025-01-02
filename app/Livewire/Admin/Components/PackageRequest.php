@@ -20,19 +20,37 @@ class PackageRequest extends Component
     public $perPage=10;
     public $search;
     public $pagination;
-
-
+    public $showModal = false;
 
 
 
 
     public function mount(){
 
-        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(10)->getCollection();
+        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(50)->getCollection();
         // $this->pagination = ModelsPackageRequest::where('delete_status', false)
         //                                      ->paginate(10);
         // $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
         // $this->loadPackageRequest();
+    }
+    public function confirmDelete($id)
+    {
+        $this->requestId = $id; // Set the visa ID
+        $this->showModal = true; // Show the modal
+    }
+    public function closeModal()
+    {
+        $this->showModal = false; // Close the modal
+    }
+    public function deleteData()
+    {
+        if ($this->requestId) {
+             $this->package=ModelsPackageRequest::findOrFail($$this->requestId);
+             $this->package->delete_status=true;
+             $this->package->save();
+             $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
+            $this->showModal = false; // Close the modal
+        }
     }
   
   
@@ -68,7 +86,7 @@ class PackageRequest extends Component
     
 
     public function deletePackageRequest($packageId){
-            $this->package=ModelsPackageRequest::findOrFail($packageId);
+             $this->package=ModelsPackageRequest::findOrFail($packageId);
              $this->package->delete_status=true;
              $this->package->save();
              $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();

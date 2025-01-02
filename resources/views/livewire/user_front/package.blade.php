@@ -267,11 +267,9 @@
                     <div class="elementor-element elementor-element-84a6f4c elementor-widget elementor-widget-button" data-id="84a6f4c" data-element_type="widget" data-widget_type="button.default">
                         <div class="elementor-widget-container">
                             <div class="elementor-button-wrapper">
-                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#">
+                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://www.youtube.com/embed/w1cMpMBahFE?feature=oembed?playlist=w1cMpMBahFE&amp;mute=0&amp;autoplay=0&amp;loop=no&amp;controls=0&amp;start=0&amp;end=">
                 <span class="elementor-button-content-wrapper">
-                <span class="elementor-button-icon">
-        <i aria-hidden="true" class="fas fa-arrow-circle-right"></i>			</span>
-                            <span class="elementor-button-text">Learn More</span>
+                            <span class="elementor-button-text">Watch Video</span>
             </span>
             </a>
                             </div>
