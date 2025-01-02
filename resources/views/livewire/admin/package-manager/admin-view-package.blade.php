@@ -51,47 +51,14 @@
            <div class="col-md-12 d-flex flex-wrap justify-content-between" >
             <div class="col-md-5 mb-3">
                 <label for="startYear" class="form-label">Enter Start Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="startYear" min="2023" readonly>
+                <input type="month" class="form-control" id="startYear" wire:model="startMonth"  readonly>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="startYear" class="form-label">Enter End Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="endYear" min="2023" readonly>
+                <input type="month" class="form-control" id="startYear" wire:model="endMonth"  readonly>
             </div>
 
-            <div class="col-md-5 mb-3">
-                <label for="startMonth" class="form-label">Start Month</label>
-                <select id="startMonth" class="form-control" wire:model="startMonth" readonly>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">August</option>
-                    <option value="9">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
-            </div>
-            <div class="col-md-5 mb-3">
-                <label for="endMonth" class="form-label">Start Month</label>
-                <select id="endMonth" class="form-control" wire:model="endMonth" readonly>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">August</option>
-                    <option value="9">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
-            </div>
+           
            </div>
          
 
@@ -107,8 +74,8 @@
             </div>
         </div>
         <div>
-            <label for="example-textarea" class="form-label">Visa Banner Image</label>
-            <input type="file" class="form-control" wire:model="photo" accept="image/*" readonly>
+            <label for="example-textarea" class="form-label">Package Banner Image</label>
+
             <div>
                     <!-- Show uploaded image if available -->
                     @if ($photo)

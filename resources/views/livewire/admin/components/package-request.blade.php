@@ -57,6 +57,9 @@
                   
                 </tbody>
             </table>
+
+            
+
         </div>
         <div class="modal fade @if($showModal) show @endif"
          id="exampleModalCenter"
@@ -82,6 +85,7 @@
                             wire:click="closeModal">Cancel</button>
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
                             wire:click="deleteData">Yes</button>
+
                 </div>
             </div>
         </div>
