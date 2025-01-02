@@ -35,7 +35,7 @@
                                     <p>Rahat is a trusted travel agency specializing in Hajj and Umrah services, providing seamless, guided experiences for pilgrims.</p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-707af6a1 elementor-mobile-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="707af6a1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}"
+                            <!-- <div class="elementor-element elementor-element-707af6a1 elementor-mobile-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="707af6a1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}"
                                 data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
@@ -48,7 +48,7 @@
 					</a>
                                     </div>
                     </div>
-            </div>
+            </div> -->
           </div>
         </div>
      </div>
