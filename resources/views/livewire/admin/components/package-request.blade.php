@@ -43,26 +43,48 @@
                         </td>
                         <td>{{$data->mobile}}</td>
                         <td>{{$data->package_name}}</td>
-                        <td>{{$data->created_at->format('h:i A')}}</td>
+                        <td>{{$data->created_at->format('d M Y')}}</td>
                         <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="badge
                             @if($data->call_status =='pending') badge-soft-warning
                             @elseif ($data->call_status =='responded') badge-soft-success
                             @elseif ($data->call_status == 'no responded') badge-soft-danger
                             @endif
                             ">{{$data->call_status}}</span></td>
-                        <td><a wire:click="deletePackageRequest({{$data->id}})" class="btn btn-primary btn-sm w-100">Delete</a></td>
+                        <td><a wire:click="confirmDelete({{ $data->id }})" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >Delete</a></td>
                     </tr>
                     @endforeach
                     {{------------------------}}
                   
                 </tbody>
             </table>
-            <div>
-                <p>PageLinks</p>
-                <div class="pagination">
-                    {{-- {{ $pagination->links() }}  <!-- This will display the pagination links --> --}}
+        </div>
+        <div class="modal fade @if($showModal) show @endif"
+         id="exampleModalCenter"
+         tabindex="-1"
+         aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true"
+         @if($showModal) style="display: block;" @endif>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete</h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            wire:click="closeModal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Are you sure you want to delete this User Visa Request?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            wire:click="closeModal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            wire:click="deleteData">Yes</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
