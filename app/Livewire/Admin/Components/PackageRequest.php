@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\Components;
 
 use App\Models\PackageRequest as ModelsPackageRequest;
+use Carbon\Carbon;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 
@@ -94,6 +95,54 @@ class PackageRequest extends Component
                 return 'pending';
         }
     }
+
+
+
+    public $startmonth = '2025-01'; // Default to January
+    public $endmonth = '2025-12';   // Default to March
+    public $wednesdays = [];
+
+
+    public function getWednesdays()
+    {
+        
+        // // Validate inputs
+        // $this->validate([
+        //     'startMonth' => 'required|date_format:Y-m',
+        //     'endMonth' => 'required|date_format:Y-m|after_or_equal:startMonth',
+        // ]);
+
+        // Convert to Carbon instances
+        $start = Carbon::createFromFormat('Y-m', $this->startmonth)->startOfMonth();
+        $end = Carbon::createFromFormat('Y-m', $this->endmonth)->endOfMonth();
+
+        // Get all Wednesdays
+        $this->wednesdays = [];
+       
+        $currentDate = $start->copy();
+
+        // Adjust to the first Wednesday within the range
+        if (!$currentDate->isWednesday()) {
+            $currentDate->next(Carbon::WEDNESDAY);
+        }
+
+        // Collect all Wednesdays by jumping a week at a time
+        while ($currentDate->lte($end)) {
+            $this->wednesdays[] = $currentDate->toDateString();
+            $currentDate->addWeek();
+        }
+        dd($this->wednesdays);
+    }
+
+
+
+
+
+
+
+
+
+
   
 
     #[Layout('admin.layouts.app')]

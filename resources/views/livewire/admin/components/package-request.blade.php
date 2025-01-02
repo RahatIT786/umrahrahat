@@ -58,7 +58,9 @@
                 </tbody>
             </table>
             <div>
-                <p>PageLinks</p>
+                
+               
+
                 <div class="pagination">
                     {{-- {{ $pagination->links() }}  <!-- This will display the pagination links --> --}}
                 </div>

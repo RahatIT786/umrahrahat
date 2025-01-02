@@ -56,21 +56,21 @@
                         <ul class="elementor-icon-list-items">
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="fas fa-plane"></i>
+                                    <i class="fa-solid fa-piggy-bank"></i>
                                 </span>
-                                <span class="elementor-icon-list-text">Saudi Airlines</span>
+                                <span class="elementor-icon-list-text">Affordable Price </span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="fas fa-hotel"></i>
                                 </span>
-                                <span class="elementor-icon-list-text">Madinah Regency</span>
+                                <span class="elementor-icon-list-text">Luxury Hotel</span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="icon icon-star-1"></i>
+                                    <i class="fa-regular fa-face-smile"></i>
                                 </span>
-                                <span class="elementor-icon-list-text">5 Star Hotel</span>
+                                <span class="elementor-icon-list-text">Exceptional Service</span>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +80,7 @@
                         <div class="elementor-button-wrapper">
                             <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" wire:click="showPackageDetails({{ $package->id }})">
                                 <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-text">Get Package</span>
+                                    <span class="elementor-button-text">View Package</span>
                                 </span>
                             </a>
                         </div>
@@ -114,7 +114,7 @@
         <div class="row2">
             <div class="includes-select">
                 <a wire:click="updateContent('sharing')" >Sharing</a>
-                <a wire:click="updateContent('wednesday_dates')">Departure</a>
+                <a wire:click="updateContent('wednesday_dates')"  wire:key="wednesday_dates">Departure</a>
                 <a wire:click="updateContent('note')">Note</a>
                 <a wire:click="updateContent('includes')">includes</a>
             </div>
@@ -132,7 +132,7 @@
                         </div>  
                     </div>
                     @elseif($type === 'wednesday_dates'  && is_array($includesContent))
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex ">
                             <h3>Departure Place : </h3>
                             @foreach ($departurePlace as $place)
                             <div style="margin: 0px 8px;">
@@ -142,15 +142,29 @@
                         </div>
                         <!-- Loop through the decoded $includesContent for wednesday dates -->
                         <h3 class="text-start">Departure Date : </h3>
-                         <div class="" >
-                                @foreach ($includesContent as $data)
+                         <div class="d-flex flex-wrap justify-content-evenly align-items-center" style="width:60vw;  padding: 1rem;">
+                            @foreach ($includesContent as $day)
+                            <div class="date-box m-1">{{$day}}</div>
+                                
+                            @endforeach
+                            {{-- @foreach ($groupedByMonth as $month => $dates)
+                            <h4>{{ \Carbon\Carbon::parse($month)->format('F Y') }}</h4>  <!-- Display the month name and year -->
+                            <div class="departure-days">
+                                @foreach ($dates as $day)
+                                    <span class="date-box">{{ $day }}</span>
+                                @endforeach
+                            </div>
+                        @endforeach --}}
+                        
+                            
+                                {{-- @foreach ($includesContent as $data)
                             <div class="departure-month"> <strong>{{ $data['month'] }}:</strong></div>
                                 <div class="departure-days">
                                 @foreach ($data['wednesdays'] as $wednesday)
                                 <span class="date-box">{{ $wednesday }}</span>
                                 @endforeach
                                 </div>
-                                @endforeach
+                                @endforeach --}}
                             </div>
                     @else
                     <p>

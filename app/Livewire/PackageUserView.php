@@ -35,6 +35,8 @@ class PackageUserView extends Component
     public $cutomerMobile;
     public $packageId;  
 
+    public $groupedByMonth;
+
     public function mount(){
         $this->packages =  Package::where('delete_status',false)->get();
         $this->includesContent=$this->selectedPackage->note ?? 'Click to Explore';
@@ -58,7 +60,16 @@ class PackageUserView extends Component
        }
     
        elseif(isset($this->selectedPackage[$type]) && $type=== 'wednesday_dates'){
-        $this->includesContent= json_decode($this->selectedPackage[$type], true);
+        // elseif( $type=== 'wednesday_dates'){
+        $this->includesContent=$this->selectedPackage->wednesday_dates;
+
+        //     $this->groupedByMonth = [];
+        //     foreach ($includesContent as $date) {
+        //     $month = \Carbon\Carbon::parse($date)->format('Y-m');  // Extract month in Y-m format
+        //     $this->groupedByMonth[$month][] = $date;
+        //         }
+
+        // $this->includesContent= json_decode($this->selectedPackage[$type], true);
         $this->departurePlace=['DUBAI','SHARJAH','ABU DHABI'];
        }
    
@@ -80,6 +91,9 @@ class PackageUserView extends Component
     public function closeBookHerePopUp(){
         $this->showPopup=false;
         $this->customerChoosenPackage=null;
+        $this->selectedPackage=null;
+        $this->type=null;
+        $this->includesContent=null;
     }
 
     public function packageEnquirySubmitForm(){

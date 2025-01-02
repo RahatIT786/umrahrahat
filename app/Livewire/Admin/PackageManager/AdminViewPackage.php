@@ -36,13 +36,32 @@ class AdminViewPackage extends Component
         $this->single = $package->single;
         $this->startYear = $package->startYear;
         $this->endYear = $package->endYear;
-        $this->startMonth = $package->startMonth;
-        $this->endMonth = $package->endMonth;
+        // $this->startMonth = $package->wednesday_dates;
+        // $this->endMonth = $package->wednesday_dates;
         $this->note = $package->note;
         $this->includes = $package->includes;
         $this->photo = $package->photo_path;
 
+        $dates=collect($package->wednesday_dates); 
+        $minDate = $dates->min();  // Get the earliest date
+        $maxDate = $dates->max();  // Get the latest date
+
+        // Set the start and end month using the minimum and maximum dates
+        $this->startMonth = \Carbon\Carbon::parse($minDate)->format('Y-m');  // Format as Y-m
+        $this->endMonth = \Carbon\Carbon::parse($maxDate)->format('Y-m');  // Format as Y-m
+
+
     }
+
+
+
+
+
+
+
+
+
+
     #[Layout('admin.layouts.app')]  
     public function render()
     {

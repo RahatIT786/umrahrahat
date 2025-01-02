@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title mb-0">{{$package_id ? 'Edit Package Details' : 'Add Package Details'}}</h5>
+        <h5 class="card-title mb-0" >{{$package_id ? 'Edit Package Details' : 'Add Package Details'}}</h5>
     </div>
 
     <div class="card-body">
@@ -67,16 +67,16 @@
            <div class="col-md-12 d-flex flex-wrap justify-content-between" >
             <div class="col-md-5 mb-3">
                 <label for="startYear" class="form-label">Enter Start Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="startYear" min="2025" >
-                @error('startYear') <span class="text-danger">{{ $message }}</span> @enderror
+                <input type="month" class="form-control" id="startYear" wire:model="startMonth"  >
+                @error('startMonth') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-6 mb-3">
                 <label for="startYear" class="form-label">Enter End Year</label>
-                <input type="number" class="form-control" id="startYear" wire:model="endYear" min="2025">
-                @error('endYear') <span class="text-danger">{{ $message }}</span> @enderror
+                <input type="month" class="form-control" id="startYear" wire:model="endMonth" >
+                @error('endMonth') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
 
-            <div class="col-md-5 mb-3">
+            {{-- <div class="col-md-5 mb-3">
                 <label for="startMonth" class="form-label">Start Month</label>
                 <select id="startMonth" class="form-control" wire:model="startMonth">
                     <option value="1">January</option>
@@ -92,8 +92,8 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
                 </select>
-            </div>
-            <div class="col-md-5 mb-3">
+            </div> --}}
+            {{-- <div class="col-md-5 mb-3">
                 <label for="endMonth" class="form-label">Start Month</label>
                 <select id="endMonth" class="form-control" wire:model="endMonth">
                     <option value="1">January</option>
@@ -109,7 +109,7 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
                 </select>
-            </div>
+            </div> --}}
            </div>
          
 
@@ -150,12 +150,15 @@
                     @endif
             </div>
         </div>
+     
 
         <!-- Save Button -->
         <div class="d-flex justify-content-end m-2">
             <button type="submit" class="btn btn-primary">{{$package_id ? 'Update Package' : 'Add Package'}}</button>
         </div>
     </form>
+  
+   
     </div>
    
 </div>

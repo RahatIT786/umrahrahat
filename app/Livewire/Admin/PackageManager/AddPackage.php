@@ -40,6 +40,8 @@ class AddPackage extends Component
     public $package_id;
 
     public $temp_photo_path;
+
+    public $wednesdays;
    
         
     protected $rules = [
@@ -53,8 +55,9 @@ class AddPackage extends Component
         'single' => 'required|integer|min:0',
         'note' => 'required|string|max:1000',
         'includes' => 'required|string|max:1000',
-        'startYear' => 'nullable|integer|min:2025|max:3000',
-        'endYear' => 'nullable|integer|min:2025|max:3000',
+        'startMonth'=>'required|date_format:Y-m',
+        'endMonth'=> 'required|date_format:Y-m',
+        
         // 'photo' => 'required|image|mimes:jpeg,png,jpg',
         
     ];
@@ -88,11 +91,18 @@ class AddPackage extends Component
             $this->single = $package->single;
             $this->note = $package->note;
             $this->includes = $package->includes;
-            $this->startYear = $package->start_year;
-            $this->endYear = $package->end_year;
+           
             $this->photo_path=$package->photo_path;
-           //  $this->startMonth = $package->start_month;
-           //  $this->endMonth = $package->end_month;
+        
+
+
+           $dates=collect($package->wednesday_dates); 
+           $minDate = $dates->min();  // Get the earliest date
+           $maxDate = $dates->max();  // Get the latest date
+            
+           // Set the start and end month using the minimum and maximum dates
+           $this->startMonth = \Carbon\Carbon::parse($minDate)->format('Y-m');  // Format as Y-m
+           $this->endMonth = \Carbon\Carbon::parse($maxDate)->format('Y-m');  // Format as Y-m
             
 
         }
@@ -221,6 +231,8 @@ class AddPackage extends Component
         $this->validate([
             'photo'=>$this->photo_path ?'nullable|image|mimes:jpeg,png,jpg|max:2048': 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
+        $this->validate();
+
         $this->photo_path=null;
 
         if($this->photo){
@@ -241,14 +253,14 @@ class AddPackage extends Component
         'triple'=>$this->triple  ?? $package->triple,
         'double'=>$this->double  ?? $package-> double,
         'single'=>$this->single  ?? $package->single,
-        'months'=>$this->months  ?: $package->months,
-        'wednesday_dates',
+        // 'months'=>$this->months  ?: $package->months,
+        'wednesday_dates'=>$this->wednesdays  ?: $package->wednesday_dates,
         'note'=>$this->note ?: $package->note,
         'includes'=>$this->includes  ?: $package->includes,
         'photo_path'=>$this->photo_path  ?: $package->photo_path,
 
         ]);
-          CalculateWednesdaysJob::dispatch($package, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
+        //   CalculateWednesdaysJob::dispatch($package, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
 
       // Optionally, you can return a success message or redirect
       session()->flash('message', 'Package Update Successfully');
@@ -260,8 +272,24 @@ class AddPackage extends Component
        else{
          // Validate if needed
         // $photoPath = $this->photo->store('public/packages'); // Store the photo in storage and get the path
+         $getWednesday =  $this->getWednesdays($this->startMonth, $this->endMonth);
+        $packageData= Package::create([
+        'package_name' => $this->package_name,
+        'description' => $this->description,
+        'sharing' => $this->sharing,
+        'quint' => $this->quint,
+        'quad' => $this->quad,
+        'triple' => $this->triple,
+        'double' => $this->double,
+        'single' => $this->single,
         
-    //     $packageData= Package::create([
+        'note' => $this->note,
+        'wednesday_dates'=> $getWednesday,
+        'includes' => $this->includes,
+        'photo_path' => $this->photo_path,// Save the photo path
+    ]);
+
+    // $packageData=[
     //     'package_name' => $this->package_name,
     //     'description' => $this->description,
     //     'sharing' => $this->sharing,
@@ -274,25 +302,10 @@ class AddPackage extends Component
     //     'note' => $this->note,
     //     'includes' => $this->includes,
     //     'photo_path' => $this->photo_path,// Save the photo path
-    // ]);
-
-    $packageData=[
-        'package_name' => $this->package_name,
-        'description' => $this->description,
-        'sharing' => $this->sharing,
-        'quint' => $this->quint,
-        'quad' => $this->quad,
-        'triple' => $this->triple,
-        'double' => $this->double,
-        'single' => $this->single,
-        'months' => $this->months,
-        'note' => $this->note,
-        'includes' => $this->includes,
-        'photo_path' => $this->photo_path,// Save the photo path
-    ];
+    // ];
         
         // Dispatch the job to calculate Wednesdays and store the package
-        CalculateWednesdaysJob::dispatch($packageData, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
+        // CalculateWednesdaysJob::dispatch($packageData, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
 
         // Optionally, you can return a success message or redirect
         session()->flash('message', 'Package Added Successfully');
@@ -301,6 +314,55 @@ class AddPackage extends Component
         $this->resetForm();
        }
     }
+
+    public function getWednesdays($startMonth,$endMonth)
+    {
+        
+        // // Validate inputs
+        // $this->validate([
+        //     'startMonth' => 'required|date_format:Y-m',
+        //     'endMonth' => 'required|date_format:Y-m|after_or_equal:startMonth',
+        // ]);
+
+        // Convert to Carbon instances
+        $start = Carbon::createFromFormat('Y-m', $startMonth)->startOfMonth();
+        $end = Carbon::createFromFormat('Y-m', $endMonth)->endOfMonth();
+
+        // Get all Wednesdays
+        $this->wednesdays = [];
+       
+        $currentDate = $start->copy();
+
+        // Adjust to the first Wednesday within the range
+        if (!$currentDate->isWednesday()) {
+            $currentDate->next(Carbon::WEDNESDAY);
+        }
+
+        // Collect all Wednesdays by jumping a week at a time
+        while ($currentDate->lte($end)) {
+            $this->wednesdays[] = $currentDate->toDateString();
+            $currentDate->addWeek();
+        }
+       return $this->wednesdays;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    public function deletePackage($id){
     $package = Package::findOrFail($id);
@@ -382,13 +444,6 @@ class AddPackage extends Component
 
 
 
-
-
-
-
-    public function savePackageImage(){
-
-    }
 
 
 
