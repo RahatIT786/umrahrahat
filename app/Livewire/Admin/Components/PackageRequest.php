@@ -26,7 +26,7 @@ class PackageRequest extends Component
 
     public function mount(){
 
-        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(10)->getCollection();
+        $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(50)->getCollection();
         // $this->pagination = ModelsPackageRequest::where('delete_status', false)
         //                                      ->paginate(10);
         // $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->get();
@@ -44,10 +44,10 @@ class PackageRequest extends Component
     public function deleteData()
     {
         if ($this->requestId) {
-            $this->package=ModelsPackageRequest::findOrFail($this->requestId);
-            $this->package->delete_status=true;
-            $this->package->save();
-            $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
+             $this->package=ModelsPackageRequest::findOrFail($$this->requestId);
+             $this->package->delete_status=true;
+             $this->package->save();
+             $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
             $this->showModal = false; // Close the modal
         }
     }
