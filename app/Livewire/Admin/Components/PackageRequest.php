@@ -45,7 +45,7 @@ class PackageRequest extends Component
     public function deleteData()
     {
         if ($this->requestId) {
-             $this->package=ModelsPackageRequest::findOrFail($$this->requestId);
+             $this->package=ModelsPackageRequest::findOrFail($this->requestId);
              $this->package->delete_status=true;
              $this->package->save();
              $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();

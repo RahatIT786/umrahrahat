@@ -66,12 +66,12 @@
             <!--DEPARTURE DATES Checkboxes -->
            <div class="col-md-12 d-flex flex-wrap justify-content-between" >
             <div class="col-md-5 mb-3">
-                <label for="startYear" class="form-label">Enter Start Year</label>
+                <label for="startYear" class="form-label">Enter Start Month</label>
                 <input type="month" class="form-control" id="startYear" wire:model="startMonth"  >
                 @error('startMonth') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="col-md-6 mb-3">
-                <label for="startYear" class="form-label">Enter End Year</label>
+                <label for="startYear" class="form-label">Enter End Month</label>
                 <input type="month" class="form-control" id="startYear" wire:model="endMonth" >
                 @error('endMonth') <span class="text-danger">{{ $message }}</span> @enderror
             </div>
