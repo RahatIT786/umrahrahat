@@ -16,9 +16,9 @@ class AdminUserSeeder extends Seeder
     {
         SuperAdmin::create([
            
-            "email"=> "sam55@gmail.com",
+            "email"=> "info@rahat.in",
             // "password"=> 'root',
-            "password"=> Hash::make('sam'),
+            "password"=> Hash::make('info@rahat.in'),
             "role"=>'admin',
         ]);
     }
