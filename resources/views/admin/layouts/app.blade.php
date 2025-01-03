@@ -34,7 +34,9 @@
 </head>
 
 <body>
-    <div>
+    <div  class="wrapper">
+        @include('admin.includes/sidebar')
+        @livewire('admin.components.topbar')
        @yield('content')
        <!-- This is where the content from the Livewire component will be injected -->
        {{$slot}}
