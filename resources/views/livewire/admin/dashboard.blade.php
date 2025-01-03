@@ -1,4 +1,4 @@
-<section>
+
 <div >
     <!--start top header-->
      
@@ -9,7 +9,7 @@
        <!--end sidebar -->
 
        <!--start content-->
-          <main class="page-content">
+         
               
              <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
                  <div class="col">
@@ -138,7 +138,7 @@
                </div>
 
              </div><!--end row-->
-          </main>
+          
        <!--end page main-->
 
        <!--start overlay-->
@@ -214,4 +214,3 @@
        <!--end switcher-->
 
   </div>
-</section>
