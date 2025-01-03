@@ -39,7 +39,7 @@
                           <div class="table-actions d-flex align-items-center gap-3 fs-6">
                             <a style="padding: 5px; border-radius:20px;" href="{{route('viewPackage',['id' => $package->id])}}" class="text-primary bg-light-primary shadow-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a> &nbsp;
                             <a style="padding: 5px; border-radius:20px;"  href="{{route('editPackage',['id' => $package->id])}}" class="text-warning bg-light-warning shadow-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a> &nbsp;
-                            <a style="cursor: pointer; padding: 5px; border-radius:20px;" wire:click="confirmDelete({{$package->id}})" class="text-danger bg-light-danger shadow-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                            <a style="cursor: pointer; padding: 5px; border-radius:20px;" wire:click="confirmDelete({{$package->id}})" class="text-danger bg-light-danger shadow-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-target="exampleModalCenter" title="Delete"><i class="bi bi-trash-fill"></i></a>
                           </div>
                         </td>
                         {{-- <td>
@@ -64,6 +64,8 @@
                        
                        </tbody>
                      </table>
+
+                     
                     {{-- popup box start --}}
                     <div class="modal fade @if($showModal) show @endif"
         id="exampleModalCenter"
