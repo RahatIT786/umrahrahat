@@ -16,35 +16,8 @@
                 <div class="menu-title">Dashboard</div>
               </a>
             </li>
-            <!-- <li>
-              <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bi bi-grid-fill"></i>
-                </div>
-                <div class="menu-title">Application</div>
-              </a>
-              <ul>
-                <li> <a href="app-emailbox.html"><i class="bi bi-circle"></i>Email</a>
-                </li>
-                <li> <a href="app-chat-box.html"><i class="bi bi-circle"></i>Chat Box</a>
-                </li>
-                <li> <a href="app-file-manager.html"><i class="bi bi-circle"></i>File Manager</a>
-                </li>
-                <li> <a href="app-to-do.html"><i class="bi bi-circle"></i>Todo List</a>
-                </li>
-                <li> <a href="app-invoice.html"><i class="bi bi-circle"></i>Invoice</a>
-                </li>
-                <li> <a href="app-fullcalender.html"><i class="bi bi-circle"></i>Calendar</a>
-                </li>
-              </ul>
-            </li> -->
+           
             <li class="menu-label">Package Controller</li>
-            <!-- <li>
-              <a href="widgets.html">
-                <div class="parent-icon"><i class="bi bi-droplet-fill"></i>
-                </div>
-                <div class="menu-title">Widgets</div>
-              </a>
-            </li> -->
             <li>
               <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bi bi-basket2-fill"></i>
