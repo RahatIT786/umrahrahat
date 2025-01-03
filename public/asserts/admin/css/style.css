@@ -34,7 +34,13 @@ body {
     background-color: #f7f8fa;
     overflow-x: hidden;
 }
+.card:hover {
+	cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 
+
+}
 .wrapper{
     width: auto;
 	position: relative

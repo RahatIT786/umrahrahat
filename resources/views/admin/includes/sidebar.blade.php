@@ -1,10 +1,10 @@
 <aside class="sidebar-wrapper" data-simplebar="true">
           <div class="sidebar-header">
+            {{-- <div>
+              <img src="{{asset('images/umrah_dark.png')}}" class="logo-icon" alt="logo icon">
+            </div> --}}
             <div>
-              <img src="asserts/admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
-            </div>
-            <div>
-              <h4 class="logo-text">Rahat</h4>
+              <img src="{{asset('images/umrah_dark.png')}}" class="logo-icon" alt="logo icon" style="height: 7rem; width:auto;">
             </div>
             <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
             </div>

@@ -18,11 +18,14 @@
                       <div class="d-flex align-items-center">
                         <div class="">
                           <p class="mb-1">Total Package</p>
-                          <h4 class="mb-0">5.8K</h4>
-                          <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>22.5% from last week</span></p>
+                          <h4 class="mb-0">{{$totalPackage ?? 0}}</h4>
+                          <p class="mb-0 mt-2 font-13">
+                            {{-- <i class="bi bi-arrow-up"></i><span></span> --}}
+                          </p>
                         </div>
                         <div class="ms-auto widget-icon bg-primary text-white">
                           <i class="bi bi-basket2"></i>
+                          
                         </div>
                       </div>
                      
@@ -34,9 +37,11 @@
                     <div class="card-body">
                       <div class="d-flex align-items-center">
                         <div class="">
-                          <p class="mb-1">Total Package Enquries</p>
-                          <h4 class="mb-0">$9,786</h4>
-                          <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>13.2% from last week</span></p>
+                          <p class="mb-1">Package Request</p>
+                          <h4 class="mb-0">{{$packageRequest ?? 0}}</h4>
+                          <p class="mb-0 mt-2 font-13">
+                            {{-- <i class="bi bi-arrow-up"></i><span></span> --}}
+                          </p>
                         </div>
                         <div class="ms-auto widget-icon bg-success text-white">
                           <i class="bi bi-currency-dollar"></i>
@@ -51,8 +56,10 @@
                       <div class="d-flex align-items-center">
                         <div class="">
                           <p class="mb-1">Total Visa</p>
-                          <h4 class="mb-0">875</h4>
-                          <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>12.3% from last week</span></p>
+                          <h4 class="mb-0">{{ $totalVisa ?? 0 }}</h4>
+                          <p class="mb-0 mt-2 font-13">
+                            {{-- <i class="bi bi-arrow-up"></i><span></span> --}}
+                          </p>
                         </div>
                         <div class="ms-auto widget-icon bg-orange text-white">
                           <i class="bi bi-emoji-heart-eyes"></i>
@@ -67,8 +74,10 @@
                       <div class="d-flex align-items-center">
                         <div class="">
                           <p class="mb-1">Total Visa Enquries</p>
-                          <h4 class="mb-0">9853</h4>
-                          <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>32.7% from last week</span></p>
+                          <h4 class="mb-0">{{ $userVisaEnquiry ?? 0 }}</h4>
+                          <p class="mb-0 mt-2 font-13">
+                            <span></span>
+                          </p>
                         </div>
                         <div class="ms-auto widget-icon bg-info text-white">
                           <i class="bi bi-people-fill"></i>
