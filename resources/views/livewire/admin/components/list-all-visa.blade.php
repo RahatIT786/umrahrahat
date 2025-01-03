@@ -45,7 +45,7 @@
                             <td>{{ $visaDetails->firstItem() + $index }}</td>
                             <td>
                                 @if ($visa->file_path)
-                                    <img src="{{ Storage::url($visa->file_path) }}" alt="Visa Image" class="img-thumbnail" style="height: 2rem;">
+                                    <img src="{{Storage::url($visa->file_path) }}" alt="Visa Image" class="img-thumbnail shadow-lg" style="height: 5rem;">
                                 @else
                                     No Image available
                                 @endif
