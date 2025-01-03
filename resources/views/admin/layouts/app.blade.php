@@ -39,7 +39,10 @@
         @livewire('admin.components.topbar')
        @yield('content')
        <!-- This is where the content from the Livewire component will be injected -->
-       {{$slot}}
+       <main class="page-content">
+        {{$slot}}
+       </main>
+       
     </div>
     @stack('scripts')
     @livewireScripts
