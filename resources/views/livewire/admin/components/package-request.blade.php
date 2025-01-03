@@ -14,12 +14,14 @@
             <div class="row d-flex justify-content-end me-3">
                
                 <div class="col-4 mb-3 ">
-                    <input type="text" class="form-control" placeholder="Search Packages" wire:model.live="search">
+                    <input type="text" class="form-control" placeholder="Search request" wire:model.live="search">
                 </div>
             </div>
             <table class="table table-hover table-centered">
                 <thead class="table-light">
                     <tr>
+                        
+                        <th scope="col">SI.No</th>
                         <th scope="col">Customer Name</th>
                         <th scope="col">Contact</th>
                         <th scope="col">Package Name</th>
@@ -32,24 +34,26 @@
                 <tbody>
                     @foreach ($packageRequest as $data)
                     <tr>
+                        <td>{{$loop->index+1}}</td>
                         <td>
                             <div class="d-flex align-items-center gap-1">
                                 {{-- <img src="/images/users/avatar-2.jpg" alt=""
                                     class="avatar-sm rounded-circle"> --}}
                                 <div class="d-block">
-                                    <h5 class="mb-0">{{$data->customer_name}}</h5>
+                                    <span>{{$data->customer_name}}</span>
+                                   
                                 </div>
                             </div>
                         </td>
                         <td>{{$data->mobile}}</td>
                         <td>{{$data->package_name}}</td>
                         <td>{{$data->created_at->format('d M Y')}}</td>
-                        <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="badge
-                            @if($data->call_status =='pending') badge-soft-warning
-                            @elseif ($data->call_status =='responded') badge-soft-success
-                            @elseif ($data->call_status == 'no responded') badge-soft-danger
+                        <td ><span style="cursor: pointer;" id="responded" wire:click="updateStatus({{$data->id}})" class="badge 
+                            @if($data->call_status =='pending') bg-light-warning text-warning 
+                            @elseif ($data->call_status =='responded') bg-light-success text-success 
+                            @elseif ($data->call_status == 'no responded') bg-light-danger text-danger 
                             @endif
-                            ">{{$data->call_status}}</span></td>
+                            w-100">{{$data->call_status}}</span></td>
                         <td><a wire:click="confirmDelete({{ $data->id }})" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >Delete</a></td>
                     </tr>
                     @endforeach
@@ -91,4 +95,8 @@
         </div>
     </div>
     </div>
+
+
+
+    
 </div>
