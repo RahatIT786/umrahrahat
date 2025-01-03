@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+  <link rel="icon" href="{{ asset('asserts/admin/images/favicon-32x32.png') }}" type="image/png" />
   <!--plugins-->
   <link href="{{ asset('asserts/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet"/>
   <link href="{{ asset('asserts/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
@@ -52,16 +52,15 @@
 </body>
 <footer class="footer card mb-0 rounded-0 justify-content-center align-items-center">
   <!-- Bootstrap bundle JS -->
-  <script src="{{asset('assert/admin/js/bootstrap.bundle.min.js')}}"></script>
-              
-  <script src="{{asset('asserts/aadmin/js/jquery.min.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/simplebar/js/simplebar.min.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/js/pace.min.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/chartjs/js/Chart.min.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/chartjs/js/Chart.extension.js')}}"></script>
-  <script src="{{asset('asserts/aadmin/plugins/apexcharts-bundle/js/apexcharts.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/js/jquery.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/simplebar/js/simplebar.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
+  <script src="{{asset('asserts/admin/js/pace.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/chartjs/js/Chart.min.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/chartjs/js/Chart.extension.js')}}"></script>
+  <script src="{{asset('asserts/admin/plugins/apexcharts-bundle/js/apexcharts.min.js')}}"></script>
    <!-- Vector map JavaScript -->
    <script src="{{asset('asserts/admin/plugins/vectormap/jquery-jvectormap-2.0.2.min.js')}}"></script>
    <script src="{{asset('asserts/admin/plugins/vectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
