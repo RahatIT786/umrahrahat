@@ -46,22 +46,22 @@
 </body>
 <footer class="footer card mb-0 rounded-0 justify-content-center align-items-center">
   <!-- Bootstrap bundle JS -->
-  <script src="assets/admin/js/bootstrap.bundle.min.js"></script>
-  <!--plugins-->
-  <script src="asserts/admin/js/jquery.min.js"></script>
-  <script src="asserts/admin/plugins/simplebar/js/simplebar.min.js"></script>
-  <script src="asserts/admin/plugins/metismenu/js/metisMenu.min.js"></script>
-  <script src="asserts/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-  <script src="asserts/admin/js/pace.min.js"></script>
-  <script src="asserts/admin/plugins/chartjs/js/Chart.min.js"></script>
-  <script src="asserts/admin/plugins/chartjs/js/Chart.extension.js"></script>
-  <script src="asserts/admin/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+  <script src="{{asset('assert/admin/js/bootstrap.bundle.min.js')}}"></script>
+              
+  <script src="{{asset('asserts/aadmin/js/jquery.min.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/simplebar/js/simplebar.min.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/js/pace.min.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/chartjs/js/Chart.min.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/chartjs/js/Chart.extension.js')}}"></script>
+  <script src="{{asset('asserts/aadmin/plugins/apexcharts-bundle/js/apexcharts.min.js')}}"></script>
    <!-- Vector map JavaScript -->
-   <script src="asserts/admin/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-   <script src="asserts/admin/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+   <script src="{{asset('asserts/admin/plugins/vectormap/jquery-jvectormap-2.0.2.min.js')}}"></script>
+   <script src="{{asset('asserts/admin/plugins/vectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
   <!--app-->
-  <script src="asserts/admin/js/app.js"></script>
-  <script src="asserts/admin/js/index.js"></script>
+  <script src="{{asset('asserts/admin/js/app.js')}}"></script>
+  <script src="{{asset('asserts/admin/js/index.js')}}"></script>
   <script>
     new PerfectScrollbar(".review-list")
     new PerfectScrollbar(".chat-talk")
