@@ -55,9 +55,9 @@ $(function() {
             series: [{
                 name: 'Revenue',
 				type: 'area',
-                data: [50, 80, 37, 70, 41, 98, 53, 40, 66, 75, 55, 60]
+                data: [20, 80, 37, 70, 41, 98, 53, 40, 66, 75, 55, 60]
             },{
-                name: 'Investment',
+                name: 'Investfdsment',
 				type: 'line',
                 data: [70, 91, 40, 75, 50, 120, 59, 53, 81, 100, 80, 95]
             }],
