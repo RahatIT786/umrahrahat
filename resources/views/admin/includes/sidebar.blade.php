@@ -57,7 +57,7 @@
                         <i class="bi bi-circle"></i>List All Package
                     </a>
                 </li>
-                <li> <a href="{{route('admin.package-request')}}"><i class="bi bi-circle"></i>Package Requests</a>
+                <li> <a href="{{route('admin.package-request')}}" wire:navigate><i class="bi bi-circle"></i>Package Requests</a>
                 </li>
                 <!-- <li> <a href="ecommerce-products-categories.html"><i class="bi bi-circle"></i>Categories</a>
                 </li>

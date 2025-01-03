@@ -29,6 +29,9 @@
   <link href="{{ asset('asserts/admin/css/semi-dark.css') }}" rel="stylesheet" />
   <link href="{{ asset('asserts/admin/css/header-colors.css') }}" rel="stylesheet" />
 
+  
+  
+
     <title>Snacked - Bootstrap 5 Admin Template</title>
     @livewireStyles
 </head>
