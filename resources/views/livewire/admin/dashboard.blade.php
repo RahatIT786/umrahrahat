@@ -82,7 +82,7 @@
 
              
              <div class="row">
-                <div class="col-12 col-lg-8 col-xl-8 d-flex">
+                <div class="col-12 col-lg-12 col-xl-12 d-flex">
                    <div class="card w-100 rounded-4">
                      <div class="card-body">
                       <div class="d-flex align-items-center mb-3">
@@ -112,31 +112,7 @@
                      </div>
                    </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-4 d-flex">
-                  <div class="card w-100 rounded-4">
-                    <div class="card-body">
-                     <div class="d-flex align-items-center mb-3">
-                       <h6 class="mb-0">Task Overview</h6>
-                       <div class="fs-5 ms-auto dropdown">
-                          <div class="dropdown-toggle dropdown-toggle-nocaret cursor-pointer" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></div>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                      </div>
-                       <div id="chart2"></div>
-                    </div>
-                    <ul class="list-group list-group-flush mb-0 shadow-none">
-                      <li class="list-group-item bg-transparent border-top"><i class="bi bi-circle-fill me-2 font-weight-bold text-primary"></i> Complete <span class="float-end">120</span></li>
-                      <li class="list-group-item bg-transparent"><i class="bi bi-circle-fill me-2 font-weight-bold text-orange"></i> In Progress <span class="float-end">110</span></li>
-                      <li class="list-group-item bg-transparent"><i class="bi bi-circle-fill me-2 font-weight-bold text-info"></i> Started <span class="float-end">70</span></li>
-                    </ul>
-                  </div>
-               </div>
-
+              
              </div><!--end row-->
           
        <!--end page main-->
@@ -212,5 +188,4 @@
         </div>
        </div>
        <!--end switcher-->
-
   </div>
