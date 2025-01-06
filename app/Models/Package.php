@@ -24,6 +24,7 @@ class Package extends Model
         'note',
         'includes',
         'photo_path',
+       
     ] ;
 
     protected $casts = [

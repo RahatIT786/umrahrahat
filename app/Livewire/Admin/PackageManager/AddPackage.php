@@ -43,6 +43,7 @@ class AddPackage extends Component
 
     public $wednesdays;
    
+   
         
     protected $rules = [
         'package_name' => 'required|string|max:25',
@@ -259,6 +260,7 @@ class AddPackage extends Component
         'includes'=>$this->includes  ?: $package->includes,
         'photo_path'=>$this->photo_path  ?: $package->photo_path,
 
+
         ]);
         //   CalculateWednesdaysJob::dispatch($package, $this->startYear, $this->endYear, $this->startMonth, $this->endMonth);
 
@@ -272,6 +274,9 @@ class AddPackage extends Component
        else{
          // Validate if needed
         // $photoPath = $this->photo->store('public/packages'); // Store the photo in storage and get the path
+       
+      
+
          $getWednesday =  $this->getWednesdays($this->startMonth, $this->endMonth);
         $packageData= Package::create([
         'package_name' => $this->package_name,
@@ -287,6 +292,7 @@ class AddPackage extends Component
         'wednesday_dates'=> $getWednesday,
         'includes' => $this->includes,
         'photo_path' => $this->photo_path,// Save the photo path
+       
     ]);
 
     // $packageData=[
@@ -458,7 +464,7 @@ class AddPackage extends Component
 
 
 
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
         return view('livewire.admin.components.add-package');
