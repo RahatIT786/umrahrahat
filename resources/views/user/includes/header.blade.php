@@ -91,6 +91,38 @@
     @include('user.partials.blog.style')
     {{--------------}}
     <!-- style1 -->
+
+
+ <!--package-style-start-->
+ <style>
+    @media (max-width: 768px) {
+        #package-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: red;
+            width: 100%;
+        }
+        #box{
+            width: 60vw !important;
+            margin: 3rem auto;
+        }
+       
+        #package-container .elementor-element {
+          
+            max-width: 100%; 
+        }
+
+        .elementor-widget-container img {
+            height: auto;
+            width: 100%;
+        }
+    }
+</style>
+<!--package-style-start-->
+
      
     <style>
         img.wp-smiley,

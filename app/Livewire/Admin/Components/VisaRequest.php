@@ -51,7 +51,7 @@ class VisaRequest extends Component
                 return 1;
         }
     }
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
         $userVisaRequest = userVisaEnquiry::where('delete_status', 1)

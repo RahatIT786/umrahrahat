@@ -103,7 +103,7 @@ class AddVisa extends Component
         $this->reset(['visaType', 'documentsRequired', 'processingTime', 'price', 'file']);
     }
 
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
         return view('livewire.admin.components.add-visa');
