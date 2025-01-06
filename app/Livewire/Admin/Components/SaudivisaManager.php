@@ -6,7 +6,7 @@ use Livewire\Component;
 use Livewire\Attributes\Layout;
 class SaudivisaManager extends Component
 {
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
         return view('livewire.admin.components.saudivisa-manager');

@@ -8,4 +8,3 @@
     <link rel="pingback" href="https://templatekit.rometheme.pro/prayer/xmlrpc.php" />
     <title>Homepage &#8211; Prayer</title>
     <meta name='robots' content='max-image-preview:large' />
- 

@@ -11,7 +11,7 @@
                 @endif
             </div>
             <div class="p-4 border rounded">
-                <form class="row g-3" wire:submit.prevent="packageSubmit">
+                <form class="row g-3" wire:submit.prevent="packageSubmit" enctype="multipart/form-data">
                     <div class="col-md-6">
                         <label for="validationDefault01" class="form-label">Package Name</label>
                         <input type="text" class="form-control" id="validationDefault01" value="Mark" wire:model="package_name" >
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <label for="validationDefault05" class="form-label">Includes</label>
+                        <label for="validationDefault05" class="form-label">Package Banner Image</label>
                         <input type="file" class="form-control" id="validationDefault05" wire:model="photo" value="" accept="image/*">
                       
                         @error('photo') <span class="text-danger">{{ $message }}</span> @enderror
