@@ -6,19 +6,81 @@ use Livewire\Component;
 use Livewire\Attributes\Layout;
 use App\Models\userVisaEnquiry;
 use Livewire\WithPagination;
+use App\Models\RequestCommand;
 class VisaRequest extends Component
 {
     use WithPagination; 
     public $showModal = false;
+    public $showCommantModal = false;
+    public $userCommand;
+    public $userCommandId;
     public $requestId;
     public $visaRequestStatus;
+    public $previous_status;
+    public $user_name;
+    public $user_mobile_number;
     public $search = null;
     public $VisaRequestId;
+
+    protected $rules = [
+        'userCommand' => 'required|min:5', // For example, it must be at least 5 characters long
+    ];
     public function confirmDelete($id)
     {
         $this->requestId = $id; // Set the visa ID
         $this->showModal = true; // Show the modal
     }
+    public function command($id)
+    {
+        $this->showCommantModal = true;
+        $this->userCommandId = $id;
+       // $this->updateStatus($id);
+    }
+    public function closeCommandModal()
+    {
+        $this->showCommantModal = false;
+        //dump($command);
+    }
+    public function saveCommand()
+    {
+        
+       // $this->showCommantModal = false;
+        $command = $this->userCommand;
+        $previous_status = $this->getStatus($this->userCommandId);
+        $user_name = $this->getUserName($this->userCommandId);
+        $user_mobile_number = $this->getUserMobileNumber($this->userCommandId);
+        
+        //dump($this->userCommandId);
+        //dump($command);
+        
+        RequestCommand::create([
+            'command' => $command ? $command : 'No command',
+            'status' => 1,                     
+            'previous_status' => $previous_status,    
+            'username' => $user_name,
+            'mobile_number' => $user_mobile_number,       
+        ]);
+        $this->updateStatus($this->userCommandId);
+        $this->userCommand = '';
+        $this->showCommantModal = false;
+        
+    }
+    private function getUserName($id){
+        $this->VisaRequestId = $id;
+        $this->visaRequestStatus=userVisaEnquiry::findOrFail($id);
+        return $this->visaRequestStatus->name;
+    }
+    private function getUserMobileNumber($id){
+        $this->VisaRequestId = $id;
+        $this->visaRequestStatus=userVisaEnquiry::findOrFail($id);
+        return $this->visaRequestStatus->phone;
+    }
+    private function getStatus($id){
+        $this->VisaRequestId = $id;
+        $this->visaRequestStatus=userVisaEnquiry::findOrFail($id);
+        return $this->visaRequestStatus->status;
+    }
+
     public function closeModal()
     {
         $this->showModal = false; // Close the modal
@@ -36,9 +98,9 @@ class VisaRequest extends Component
         $this->VisaRequestId = $id;
         $this->visaRequestStatus=userVisaEnquiry::findOrFail($id);
         $nextStatus=$this->getNextStatus($this->visaRequestStatus->status);
-
         userVisaEnquiry::where('id',$this->VisaRequestId)->update(['status'=>$nextStatus]);
-        // $this->visaRequestStatus=userVisaEnquiry::where('delete_status',false)->get();
+        $this->visaRequestStatus=userVisaEnquiry::where('delete_status',false)->get();
+        
     }
  // Get the next status in the cycle (pending -> responded -> no responded)
     private function getNextStatus($currentStatus){
