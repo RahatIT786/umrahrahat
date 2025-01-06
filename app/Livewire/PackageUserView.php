@@ -164,6 +164,6 @@ class PackageUserView extends Component
    
     public function render()
     {
-        return view('livewire.user_front.package')->layout('user.layouts.app');
+        return view('livewire.user_front.package')->layout('user.Layouts.app');
     }
 }

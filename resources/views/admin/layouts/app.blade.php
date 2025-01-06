@@ -58,6 +58,7 @@
   <script src="{{asset('asserts/admin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
   <script src="{{asset('asserts/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
   <script src="{{asset('asserts/admin/js/pace.min.js')}}"></script>
+
   <script src="{{asset('asserts/admin/plugins/chartjs/js/Chart.min.js')}}"></script>
   <script src="{{asset('asserts/admin/plugins/chartjs/js/Chart.extension.js')}}"></script>
   <script src="{{asset('asserts/admin/plugins/apexcharts-bundle/js/apexcharts.min.js')}}"></script>
@@ -68,7 +69,7 @@
   <script src="{{asset('asserts/admin/js/app.js')}}"></script>
   <script src="{{asset('asserts/admin/js/index.js')}}"></script>
   <!-- Bootstrap 5 JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ 
 
   <script>
     new PerfectScrollbar(".review-list")

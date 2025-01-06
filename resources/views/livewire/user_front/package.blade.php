@@ -32,13 +32,16 @@
     </div>
     <div class="elementor-element elementor-element-ad41b26 e-flex e-con-boxed e-con e-parent" data-id="ad41b26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         <div class="e-con-inner">
-        <div class="container package-container d-flex" style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div  id="package-container" class="container package-container d-flex" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
     @foreach ($packages as $package)
-        <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" style="flex: 1 1 30%; max-width: 30%; box-sizing: border-box;">
-            <div class="e-con-inner">
+        {{-- <div class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" style="flex: 1 1 30%; max-width: 30%; box-sizing: border-box;"> --}}
+        <div id="box" class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" style="width:30%;  box-sizing: border-box;">
+            <div class="e-con-inner" id="box-inner">
                 <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
-                        <img decoding="async" style="height:10rem; width:100%;" src="{{Storage::url($package->photo_path)}}" alt="{{ $package->package_name }}">
+                        <img decoding="async" class="visa-image" src="{{ $package->photo_path ? Storage::url($package->photo_path) : asset('/public/images/rahatITdepartment.png') }}" alt="Package Image">
+                        {{-- <img decoding="async" style="height:10rem; width:100%;" src="/public/storage/{{$package->photo_path}}" alt="{{ $package->package_name }}"> --}}
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
@@ -89,6 +92,10 @@
             </div>
         </div>
     @endforeach
+
+
+
+    
 </div>
 <div>
 @if ($selectedPackage)
@@ -135,22 +142,36 @@
                         <p>Single: {{ $includesContent['single'] }}.AED</p>
                         </div>  
                     </div>
+                    @elseif($type === 'note' || $type === 'includes')
+                      <div class="d-flex justify-content-center align-items-center">
+                        <ul style="text-align: left;">
+                            <li  >{!! nl2br(e($includesContent)) !!}</li>
+                           </ul>
+                      </div>
+                      
+                        
                     @elseif($type === 'wednesday_dates'  && is_array($includesContent))
-                        <div class="d-flex ">
-                            <h3>Departure Place : </h3>
+                       <div  class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex align-items-center" style="width:40vw;  padding: 1rem;">
+                            <h3>Departure Place : </h3> <br>
                             @foreach ($departurePlace as $place)
                             <div style="margin: 0px 8px;">
-                                <span class="departure-days">{{$place}}</span><br>
+                                <span class="departure-days">{{$place}}</span>,<br>
                             </div>
                             @endforeach
                         </div>
+                       </div>
                         <!-- Loop through the decoded $includesContent for wednesday dates -->
-                        <h3 class="text-start">Departure Date : </h3>
-                         <div class="d-flex flex-wrap justify-content-evenly align-items-center" style="width:60vw;  padding: 1rem;">
-                            @foreach ($includesContent as $day)
-                            <div class="date-box m-1">{{$day}}</div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div>
+                            <h3 class="text-start">Departure Date : </h3>
+                             <div class="d-flex flex-wrap justify-content-evenly align-items-start" style="width:40vw;  padding: 1rem;">
+                                @foreach ($includesContent as $day)
+                                     <div class="date-box m-1">{{$day}}</div>
                                 
-                            @endforeach
+                                @endforeach
+                            </div>
+                        </div>
                             {{-- @foreach ($groupedByMonth as $month => $dates)
                             <h4>{{ \Carbon\Carbon::parse($month)->format('F Y') }}</h4>  <!-- Display the month name and year -->
                             <div class="departure-days">
