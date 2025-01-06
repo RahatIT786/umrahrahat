@@ -17,9 +17,6 @@ use App\Livewire\Blog;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\PackageManager\ListPackage;
 use App\Livewire\Admin\PackageManager\AddPackage;
-use App\Livewire\ContactUs;
-use App\Livewire\Gallery;
-use App\Livewire\OurService;
 use App\Livewire\Package;
 use App\Livewire\PackageUserView;
 use App\Livewire\UserAbout;
@@ -32,12 +29,10 @@ use Livewire\Livewire;
 Route::get('/', UserHome::class)->name('layouts.app');
 Route::get('/about',UserAbout::class)->name('about');
 Route::get('/package',PackageUserView::class)->name('package');
-Route::get('/our-services',OurService::class)->name('our-services');
 Route::get('/blog',Blog::class)->name('blog');
-Route::get('/gallery',Gallery::class)->name('gallery');
 Route::get('/saudi-visa',SaudiVisa::class)->name('saudi-visa'); 
-Route::get('/contact-us',ContactUs::class)->name('contact-us'); 
 //USER ROUTES END
+
 
 Route::get('/login',[AuthController::class,'adminLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('admin.login.submit');

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div data-elementor-type="wp-post" data-elementor-id="5" class="elementor elementor-5">
             <div class="elementor-element elementor-element-dfa9f77 e-flex e-con-boxed e-con e-parent" data-id="dfa9f77" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:215,&quot;url&quot;:&quot;https:\/\/templatekit.rometheme.pro\/prayer\/wp-content\/uploads\/sites\/32\/2024\/12\/photo-1-1.jpg&quot;},{&quot;id&quot;:222,&quot;url&quot;:&quot;https:\/\/templatekit.rometheme.pro\/prayer\/wp-content\/uploads\/sites\/32\/2024\/12\/photo-8.jpg&quot;}],&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
                 <div class="e-con-inner">
@@ -1199,3 +1200,17 @@
             </div>
         </div>
 
+=======
+<!--body section start-->
+<section data-elementor-type="wp-page" data-elementor-id="1345" class="elementor elementor-1345">
+        @livewire('welcome-rahat')
+        @livewire('home-about')
+        {{-- @livewire('partner-logos') --}}
+        {{--partner-logos-start--}}
+         @include('livewire.user_front.components.partner-logos',['dataId'=>'7c45d61a'])
+        {{--partner-logos-end--}}
+        <!-- @livewire('choose-package') -->   
+        @livewire('about-zamzam')
+</section>
+<!--body section end-->
+>>>>>>> parent of 91f3028 (User page modification by karthi)

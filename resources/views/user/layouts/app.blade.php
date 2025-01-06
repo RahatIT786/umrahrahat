@@ -1,14 +1,6 @@
 @include('user.includes.header')
-@include('user.includes.homeHeader')
-@include('user.includes.aboutHeader')
-@include('user.includes.ourServiceHeader')
-@include('user.includes.pricePlanHeader')
-@include('user.includes.OurBlogHeader')
-@include('user.includes.gellaryHeader')
-@include('user.includes.404Header')
-@include('user.includes.ContactHeader')
-<body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-5 elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-5">
-    <div id="page">
+<body class="home page-template page-template-elementor_header_footer page page-id-1345 ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-1345">
+    <div id="page" class="hfeed site">
         <!-- navbar -->
         @include('user.includes.navbar')
        
@@ -16,8 +8,8 @@
         {{$slot}}
         
         @include('user.includes.footer')
-    </div>
-    <script type='text/javascript'>
+        </div>
+        <script type='text/javascript'>
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
             const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
@@ -45,28 +37,157 @@
             document.addEventListener(event, lazyloadRunObserver);
         });
     </script>
-    <link rel='stylesheet' id='elementor-post-1210-css' href='https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/elementor/css/post-1210.css?ver=1735749694' media='all' />
-    <link rel='stylesheet' id='widget-icon-list-css' href='https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.26.3' media='all' />
-    <link rel='stylesheet' id='elementor-post-589-css' href='https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/elementor/css/post-589.css?ver=1735749694' media='all' />
-    <link rel='stylesheet' id='widget-divider-css' href='https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.26.3' media='all' />
-    <link rel='stylesheet' id='elementor-post-669-css' href='https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/elementor/css/post-669.css?ver=1735749694' media='all' />
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/offcanvas.js?ver=1.5.2" id="rkit-offcanvas-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/navmenu.js?ver=1.5.2" id="rkit-navmenu-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/rkit-navmenu.js?ver=1.5.2" id="navmenu-rkit-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/social_share.js?ver=1.5.2" id="social-share-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/running_text.js?ver=1.5.2" id="running-text-script-js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js?ver=1.5.2" id="chartjs-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/testimonial_carousel.js?ver=1.5.2" id="rkit-testimonial_carousel-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/tabs.js?ver=1.5.2" id="rkit-tabs-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/progress.js?ver=1.5.2" id="progress-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/counter.js?ver=1.5.2" id="rkit-counter-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/countdown.js?ver=1.5.2" id="rkit-countdown-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/image_comparison.js?ver=1.5.2" id="rkit-image-comparison-script-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.1" id="hello-theme-frontend-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.26.3" id="elementor-webpack-runtime-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.26.3" id="elementor-frontend-modules-js"></script>
-    <script src="https://templatekit.rometheme.pro/prayer/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    
+    {{--dataId-dynamic-changing-script-start--}}
+    <script>
+            $(document).ready(function() {
+        var dataId=$('.partner-logo').data('id');
+        console.log(dataId);
+    });
+    </script>
+     {{--dataId-dynamic-changing-script-end--}}
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' id='font-awesome-5-all-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-image-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-heading-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-text-editor-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-spacer-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-icon-list-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-divider-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-social-icons-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='e-apple-webkit-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='widget-counter-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=3.25.9' media='all' />
+    <link rel='stylesheet' id='mediaelement-css' href='https://kitpro.site/zamzam/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' media='all' />
+    <link rel='stylesheet' id='wp-mediaelement-css' href='https://kitpro.site/zamzam/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.5.5' media='all' />
+    <link rel='stylesheet' id='elementor-post-736-css' href='https://kitpro.site/zamzam/wp-content/uploads/sites/203/elementor/css/post-736.css?ver=1705457762' media='all' />
+    <link rel='stylesheet' id='metform-ui-css' href='https://kitpro.site/zamzam/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.5.0' media='all' />
+    <link rel='stylesheet' id='metform-style-css' href='https://kitpro.site/zamzam/wp-content/plugins/metform/public/assets/css/style.css?ver=3.5.0' media='all' />
+    <link rel='stylesheet' id='widget-icon-box-css' href='https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.25.9' media='all' />
+    <script src="https://kitpro.site/zamzam/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0" id="hello-theme-frontend-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.3.0" id="elementskit-framework-js-frontend-js"></script>
+    <script id="elementskit-framework-js-frontend-js-after">
+        var elementskit = {
+            resturl: 'https://kitpro.site/zamzam/wp-json/elementskit/v1/',
+        }
+    </script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.3.0" id="ekit-widget-scripts-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.25.9" id="font-awesome-4-shim-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.36" id="hfe-frontend-js-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+    <script id="mediaelement-core-js-before">
+        var mejsL10n = {
+            "language": "en",
+            "strings": {
+                "mejs.download-file": "Download File",
+                "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/",
+                "mejs.fullscreen": "Fullscreen",
+                "mejs.play": "Play",
+                "mejs.pause": "Pause",
+                "mejs.time-slider": "Time Slider",
+                "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.",
+                "mejs.live-broadcast": "Live Broadcast",
+                "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.",
+                "mejs.unmute": "Unmute",
+                "mejs.mute": "Mute",
+                "mejs.volume-slider": "Volume Slider",
+                "mejs.video-player": "Video Player",
+                "mejs.audio-player": "Audio Player",
+                "mejs.captions-subtitles": "Captions\/Subtitles",
+                "mejs.captions-chapters": "Chapters",
+                "mejs.none": "None",
+                "mejs.afrikaans": "Afrikaans",
+                "mejs.albanian": "Albanian",
+                "mejs.arabic": "Arabic",
+                "mejs.belarusian": "Belarusian",
+                "mejs.bulgarian": "Bulgarian",
+                "mejs.catalan": "Catalan",
+                "mejs.chinese": "Chinese",
+                "mejs.chinese-simplified": "Chinese (Simplified)",
+                "mejs.chinese-traditional": "Chinese (Traditional)",
+                "mejs.croatian": "Croatian",
+                "mejs.czech": "Czech",
+                "mejs.danish": "Danish",
+                "mejs.dutch": "Dutch",
+                "mejs.english": "English",
+                "mejs.estonian": "Estonian",
+                "mejs.filipino": "Filipino",
+                "mejs.finnish": "Finnish",
+                "mejs.french": "French",
+                "mejs.galician": "Galician",
+                "mejs.german": "German",
+                "mejs.greek": "Greek",
+                "mejs.haitian-creole": "Haitian Creole",
+                "mejs.hebrew": "Hebrew",
+                "mejs.hindi": "Hindi",
+                "mejs.hungarian": "Hungarian",
+                "mejs.icelandic": "Icelandic",
+                "mejs.indonesian": "Indonesian",
+                "mejs.irish": "Irish",
+                "mejs.italian": "Italian",
+                "mejs.japanese": "Japanese",
+                "mejs.korean": "Korean",
+                "mejs.latvian": "Latvian",
+                "mejs.lithuanian": "Lithuanian",
+                "mejs.macedonian": "Macedonian",
+                "mejs.malay": "Malay",
+                "mejs.maltese": "Maltese",
+                "mejs.norwegian": "Norwegian",
+                "mejs.persian": "Persian",
+                "mejs.polish": "Polish",
+                "mejs.portuguese": "Portuguese",
+                "mejs.romanian": "Romanian",
+                "mejs.russian": "Russian",
+                "mejs.serbian": "Serbian",
+                "mejs.slovak": "Slovak",
+                "mejs.slovenian": "Slovenian",
+                "mejs.spanish": "Spanish",
+                "mejs.swahili": "Swahili",
+                "mejs.swedish": "Swedish",
+                "mejs.tagalog": "Tagalog",
+                "mejs.thai": "Thai",
+                "mejs.turkish": "Turkish",
+                "mejs.ukrainian": "Ukrainian",
+                "mejs.vietnamese": "Vietnamese",
+                "mejs.welsh": "Welsh",
+                "mejs.yiddish": "Yiddish"
+            }
+        };
+    </script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.5.5" id="mediaelement-migrate-js"></script>
+    <script id="mediaelement-js-extra">
+        var _wpmejsSettings = {
+            "pluginPath": "\/zamzam\/wp-includes\/js\/mediaelement\/",
+            "classPrefix": "mejs-",
+            "stretching": "responsive",
+            "audioShortcodeLibrary": "mediaelement",
+            "videoShortcodeLibrary": "mediaelement"
+        };
+    </script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.5.5" id="wp-mediaelement-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/metform/public/assets/js/htm.js?ver=3.5.0" id="htm-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27" id="wp-element-js"></script>
+    <script id="metform-app-js-extra">
+        var mf = {
+            "postType": "page",
+            "restURI": "https:\/\/kitpro.site\/zamzam\/wp-json\/metform\/v1\/forms\/views\/"
+        };
+    </script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/metform/public/assets/js/app.js?ver=3.5.0" id="metform-app-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.9" id="elementor-webpack-runtime-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.9" id="elementor-frontend-modules-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
     <script id="elementor-frontend-js-before">
         var elementorFrontendConfig = {
             "environmentMode": {
@@ -87,6 +208,7 @@
                 "previous": "Previous",
                 "next": "Next",
                 "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
                 "a11yCarouselPrevSlideMessage": "Previous slide",
                 "a11yCarouselNextSlideMessage": "Next slide",
                 "a11yCarouselFirstSlideMessage": "This is the first slide",
@@ -149,31 +271,31 @@
                 },
                 "hasCustomBreakpoints": false
             },
-            "version": "3.26.3",
+            "version": "3.25.9",
             "is_static": false,
             "experimentalFeatures": {
                 "additional_custom_breakpoints": true,
                 "container": true,
                 "e_swiper_latest": true,
                 "e_nested_atomic_repeaters": true,
+                "e_optimized_control_loading": true,
                 "e_onboarding": true,
                 "e_css_smooth_scroll": true,
                 "hello-theme-header-footer": true,
                 "home_screen": true,
+                "landing-pages": true,
                 "nested-elements": true,
                 "editor_v2": true,
-                "e_element_cache": true,
                 "link-in-bio": true,
-                "floating-buttons": true,
-                "launchpad-checklist": true
+                "floating-buttons": true
             },
             "urls": {
-                "assets": "https:\/\/templatekit.rometheme.pro\/prayer\/wp-content\/plugins\/elementor\/assets\/",
-                "ajaxurl": "https:\/\/templatekit.rometheme.pro\/prayer\/wp-admin\/admin-ajax.php",
-                "uploadUrl": "https:\/\/templatekit.rometheme.pro\/prayer\/wp-content\/uploads\/sites\/32"
+                "assets": "https:\/\/kitpro.site\/zamzam\/wp-content\/plugins\/elementor\/assets\/",
+                "ajaxurl": "https:\/\/kitpro.site\/zamzam\/wp-admin\/admin-ajax.php",
+                "uploadUrl": "https:\/\/kitpro.site\/zamzam\/wp-content\/uploads\/sites\/203"
             },
             "nonces": {
-                "floatingButtonsClickTracking": "4b4c8331f4"
+                "floatingButtonsClickTracking": "446b4a1df1"
             },
             "swiperClass": "swiper",
             "settings": {
@@ -181,7 +303,6 @@
                 "editorPreferences": []
             },
             "kit": {
-                "body_background_background": "classic",
                 "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
                 "global_image_lightbox": "yes",
                 "lightbox_enable_counter": "yes",
@@ -195,15 +316,28 @@
                 "hello_footer_logo_type": "logo"
             },
             "post": {
-                "id": 391,
-                "title": "Homepage%20%E2%80%93%20Prayer",
+                "id": 1345,
+                "title": "",
                 "excerpt": "",
-                "featuredImage": "https:\/\/templatekit.rometheme.pro\/prayer\/wp-content\/uploads\/sites\/32\/2024\/12\/blog-4-1024x683.jpg"
+                "featuredImage": false
             }
         };
     </script>
+<<<<<<< HEAD
     <script src="https://templatekit.rometheme.pro/prayer/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.26.3" id="elementor-frontend-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <livewire:scripts />   
+=======
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.9" id="elementor-frontend-js"></script>
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.3.0" id="animate-circle-js"></script>
+    <script id="elementskit-elementor-js-extra">
+        var ekit_config = {
+            "ajaxurl": "https:\/\/kitpro.site\/zamzam\/wp-admin\/admin-ajax.php",
+            "nonce": "5c23625b7f"
+        };
+    </script>
+    <livewire:scripts />
+    <script src="https://kitpro.site/zamzam/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.3.0" id="elementskit-elementor-js"></script>
+>>>>>>> parent of 91f3028 (User page modification by karthi)
 </body>
 </html>
