@@ -300,6 +300,7 @@
     };
     var chart = new ApexCharts(document.querySelector("#dash-performance-chart"), chartOptions);
     chart.render();
+    
 </script>
 
 

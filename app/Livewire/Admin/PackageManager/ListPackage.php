@@ -157,7 +157,7 @@ public function edit($packageId)
 
 
 
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
         return view('livewire.admin.components.list-package');
