@@ -23,6 +23,7 @@ class SaudiVisa extends Component
     public $showModal = false;
     public function mount(){
         $this->visaDetails = VisaDetail::where('delete_status', 1)->get();
+        //dd($this->visaDetails);
     }
     public function UserRequestVisaType($id)
     {

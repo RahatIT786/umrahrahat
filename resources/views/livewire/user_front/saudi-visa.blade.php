@@ -28,88 +28,79 @@
             </div>
         </div>
     </div>
-    <div class="elementor-element elementor-element-ad41b26 e-flex e-con-boxed e-con e-parent" data-id="ad41b26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="e-con-inner">
-        @if (session()->has('message'))
-            <div class="alert alert-success">
-                {{ session('message') }}
-            </div>
-        @endif
-            <div class="elementor-element elementor-element-0cc2f2e e-flex e-con-boxed e-con e-child" data-id="0cc2f2e" data-element_type="container">
-            <div class="visa-details-container">
-    @if($visaDetails->count() == 0)
-        <h3>Empty data</h3>
-    @else
-        @foreach ($visaDetails as $visaDetail)
-            <div style="margin-bottom: 100px !important;" class="visa-detail-item">
-                <div  class="elementor-element elementor-element-232d650 e-flex e-con-boxed e-con e-child" data-id="232d650" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="e-con-inner">
-                        <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="800" height="600" src="{{ Storage::url($visaDetail->file_path) }}" class="attachment-large size-large wp-image-788" alt="" />
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">{{$visaDetail->visa_type}}</h3>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                            <p class="elementor-heading-title elementor-size-default"></p>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                                <ul class="elementor-icon-list-items">
-                                    <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-hotel"></i>
-                                        </span>
-                                        <span class="elementor-icon-list-text">QR.{{$visaDetail->price}}</span>
-                                    </li>
-                                    <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-calendar"></i>
-                                        </span>
-                                        <span class="elementor-icon-list-text">
-                                            <div>Processing Time</div>
-                                            <div>{{$visaDetail->processing_time}} days</div>
-                                        </span>
-                                    </li>
-                                    <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-file"></i>
-                                        </span>
-                                        <span class="elementor-icon-list-text">
-                                            <div> Docs Required</div>
-                                            <span>{{$visaDetail->documents_required}}</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-button-wrapper">
-                                    <a wire:click="UserRequestVisaType({{ $visaDetail->id }})" class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"  data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                                        <span class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-text">Get Visa</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    @endif
+
+ <div class="elementor-element elementor-element-ad41b26 e-flex e-con-boxed e-con e-parent" data-id="ad41b26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" >
+  <div  class="container package-container" style="margin-top: 20px !important; margin-bottom: 20px !important;">
+    @foreach ($visaDetails as $visaDetail)
+      <div class="elementor-element elementor-element-232d650">
+          <div class="e-con-inner">
+              <div class="elementor-element elementor-element-1d544a6 elementor-widget elementor-widget-image" data-id="1d544a6" data-element_type="widget" data-widget_type="image.default">
+                  <div class="elementor-widget-container">
+                      <img decoding="async" class="visa-image" src="{{ Storage::url($visaDetail->file_path) }}">
+                  </div>
+              </div>
+              <div class="elementor-element elementor-element-56ba10d elementor-widget elementor-widget-heading" data-id="56ba10d" data-element_type="widget" data-widget_type="heading.default">
+                  <div class="elementor-widget-container">
+                      <h3 class="elementor-heading-title elementor-size-default">{{$visaDetail->visa_type}}</h3>
+                  </div>
+              </div>
+              <div class="elementor-element elementor-element-5c92c22 elementor-widget elementor-widget-text-editor" data-id="5c92c22" data-element_type="widget" data-widget_type="text-editor.default">
+                  <div class="elementor-widget-container">
+                      <p></p>
+                  </div>
+              </div>
+              <div class="elementor-element elementor-element-a9ad2d4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a9ad2d4" data-element_type="widget" data-widget_type="icon-list.default">
+                  <div class="elementor-widget-container">
+                      <ul class="elementor-icon-list-items">
+                          <li class="elementor-icon-list-item mt-3">
+                              <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-hotel"></i>
+                              </span>
+                              <h5 class="elementor-icon-list-text">QR.{{$visaDetail->price}}</h5>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                              <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-calendar"></i>
+                              </span>
+                              
+                              <div>
+                               <span class="elementor-icon-list-text">
+                                  Processing Time
+                               </span>
+                                <h5>{{$visaDetail->processing_time}} Day</h5>
+                              </div>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                              <span class="elementor-icon-list-icon">
+                              <i aria-hidden="true" class="fas fa-file"></i>
+                              </span>
+                              <div>
+                               <span class="elementor-icon-list-text">
+                                  Documents Required
+                               </span>
+                                <h5>{{$visaDetail->documents_required}}</h5>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="elementor-element elementor-element-a4d2c0a elementor-align-justify elementor-widget elementor-widget-button" data-id="a4d2c0a" data-element_type="widget" data-widget_type="button.default">
+                  <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                          <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" wire:click="UserRequestVisaType({{ $visaDetail->id }})">
+                              <span class="elementor-button-content-wrapper">
+                                  <span class="elementor-button-text">Get Visa</span>
+                              </span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    @endforeach
+  </div>
 </div>
 
-            </div>
-        </div>
-    </div>
    
     <div class="elementor-element elementor-element-23ae455 e-flex e-con-boxed e-con e-parent" data-id="23ae455" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=a3MeLj37S8w&quot;,&quot;background_video_start&quot;:126,&quot;background_video_end&quot;:147}">
         <div class="e-con-inner">
@@ -304,7 +295,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <div class="modal-body">
                 <form wire:submit="uservisaEnquiry" >

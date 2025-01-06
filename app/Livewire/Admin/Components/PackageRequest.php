@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\Components;
 
 use App\Models\PackageRequest as ModelsPackageRequest;
+use App\Models\PackageCommand;
 use Carbon\Carbon;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
@@ -11,22 +12,22 @@ class PackageRequest extends Component
 {
 
     public $packageRequest;
+    public $packageRequestId;
     public $package;
     public $packageStatus;
-  
+    public $showCommantModal = false;
     public $status;
     public $requestId;
-
+    public $userCommandId;
+    public $userCommand;
     public $perPage=10;
     public $search;
     public $pagination;
     public $showModal = false;
-
-
-
+    public $packageRequestStatus;
+    public $action;
 
     public function mount(){
-
         $this->packageRequest =ModelsPackageRequest::where('delete_status',false)->paginate(50)->getCollection();
         // $this->pagination = ModelsPackageRequest::where('delete_status', false)
         //                                      ->paginate(10);
@@ -38,6 +39,66 @@ class PackageRequest extends Component
         $this->requestId = $id; // Set the visa ID
         $this->showModal = true; // Show the modal
     }
+    public function command($id)
+    {
+        $this->showCommantModal = true;
+        $this->userCommandId = $id;
+       // dump($this->userCommandId);
+        // $this->updateStatus($id);
+    }
+    public function closeCommandModal()
+    {
+        $this->showCommantModal = false;
+        //dump($command);
+    }
+   
+    private function getUserName($id){
+        $this->packageRequestId = $id;
+        $this->packageRequestStatus=ModelsPackageRequest::findOrFail($id);
+        //dump($this->packageRequestStatus->customer_name);
+        return $this->packageRequestStatus->customer_name;
+    }
+    private function getUserMobileNumber($id){
+        $this->packageRequestId = $id;
+        $this->packageRequestStatus=ModelsPackageRequest::findOrFail($id);
+        //dump($this->packageRequestStatus->mobile);
+        return $this->packageRequestStatus->mobile;
+    }
+    private function getStatus($id){
+        $this->packageRequestId = $id;
+        $this->packageRequestStatus=ModelsPackageRequest::findOrFail($id);
+        //dump($this->packageRequestStatus->call_status);
+        return $this->packageRequestStatus->call_status;
+    }
+    public function saveCommand()
+    {
+        
+       // $this->showCommantModal = false;
+        $command = $this->userCommand;
+        $previous_status = $this->getStatus($this->userCommandId);
+        $user_name = $this->getUserName($this->userCommandId);
+        $user_mobile_number = $this->getUserMobileNumber($this->userCommandId);
+        
+        //dump($this->userCommandId);
+        //dump($command);
+        
+        $this->action = PackageCommand::create([
+            'command' => $command ? $command : 'No command',
+            'status' => 1,                     
+            'previous_status' => $previous_status,    
+            'username' => $user_name,
+            'mobile_number' => $user_mobile_number,       
+        ]);
+
+        if($this->action){
+            dump('passs');
+        }
+        $this->updateStatus($this->userCommandId);
+        $this->userCommand = '';
+        $this->showCommantModal = false;
+        
+    }
+
     public function closeModal()
     {
         $this->showModal = false; // Close the modal
@@ -93,13 +154,13 @@ class PackageRequest extends Component
     }
   
 
-    public function updateStatus($id){
-        $this->requestId=   $id;
-        $this->packageStatus=ModelsPackageRequest::findOrFail($id);
-        $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
-        ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
-        $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-    }
+    // public function updateStatus($id){
+    //     $this->requestId=   $id;
+    //     $this->packageStatus=ModelsPackageRequest::findOrFail($id);
+    //     $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
+    //     ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
+    //     $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
+    // }
   
 
      // Get the next status in the cycle (pending -> responded -> no responded)
@@ -154,14 +215,6 @@ class PackageRequest extends Component
 
 
 
-
-
-
-
-
-
-
-  
 
     #[Layout('admin.layouts.app')]
     public function render(){
