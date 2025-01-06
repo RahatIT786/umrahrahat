@@ -7,12 +7,12 @@
                                 <ul class="elementor-icon-list-items elementor-inline-items">
                                     <li class="elementor-icon-list-item elementor-inline-item">
                                         <span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="rtmicon rtmicon-pin-map-location"></i>						</span>
+                                        <i class="bi bi-geo-alt-fill"  style="font-size: 20px; color: #fff;"></i>	</span>
                                         <span class="elementor-icon-list-text">KLLG St, No.99, Pku City, ID 28289</span>
                                     </li>
                                     <li class="elementor-icon-list-item elementor-inline-item">
                                         <span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="rtmicon rtmicon-phone-classic"></i>						</span>
+                                        <i class="bi bi-telephone-fill" style="font-size: 20px; color: #fff;"></i>	</span>
                                         <span class="elementor-icon-list-text">0761-8523-398</span>
                                     </li>
                                 </ul>
@@ -22,24 +22,19 @@
                             <div class="elementor-widget-container">
                                 <div class="elementor-social-icons-wrapper elementor-grid">
                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7a69b06" target="_blank">
+					<a class="elementor-icon elementor-repeater-item-7a69b06" target="_blank">
 						<span class="elementor-screen-only">Facebook</span>
-                                    <i class="fab fa-facebook"></i> </a>
+                                <i class="bi bi-facebook fa-sm"  style="font-size: 25px; color: #fff;"></i></a>
                                     </span>
                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b558822" target="_blank">
+					<a class="elementor-icon  elementor-repeater-item-b558822" target="_blank">
 						<span class="elementor-screen-only">Instagram</span>
-                                    <i class="fab fa-instagram"></i> </a>
+                                    <i  class="fab fa-instagram fa-sm" style="font-size: 25px; color: #fff;"></i> </a>
                                     </span>
                                     <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-6848cff" target="_blank">
-						<span class="elementor-screen-only">X-twitter</span>
-                                    <i class="fab fa-x-twitter"></i> </a>
-                                    </span>
-                                    <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-8b51c80" target="_blank">
+					<a class="elementor-icon  elementor-repeater-item-8b51c80" target="_blank">
 						<span class="elementor-screen-only">Youtube</span>
-                                    <i class="fab fa-youtube"></i> </a>
+                                    <i class="fab fa-youtube"  style="font-size: 25px; color: #fff;"></i> </a>
                                     </span>
                                 </div>
                             </div>
@@ -76,7 +71,7 @@
                                                     <a class="rkit-nav-link" href="{{ route('about') }}" wire:navigate >Umrah Packages</a>
                                                 </li>
                                                 <li class="rkit-menu-item   ">
-                                                    <a class="rkit-nav-link" href="{{ route('about') }}" wire:navigate >Saudi Visa</a>
+                                                    <a class="rkit-nav-link" href="{{ route('saudi-visa') }}" wire:navigate >Saudi Visa</a>
                                                 </li>
                                                 <li class="rkit-menu-item  rkit-dropdown-hover ">
                                                     <a class="rkit-nav-link" href="">
@@ -94,48 +89,6 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <!-- <li class="rkit-menu-item  rkit-dropdown-hover ">
-                                                    <a class="rkit-nav-link" href="">
-                                Pages                                <i aria-hidden="true" class="rkit-submenu-icon fas fa-caret-down"></i>                            </a>
-                                                    <ul class="rkit-navmenu-dropdown">
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/our-team/" class="rkit-nav-link">
-                                                Our Team                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/pricing-plan/" class="rkit-nav-link">
-                                                Pricing Plan                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/testimonials/" class="rkit-nav-link">
-                                                Testimonials                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/gallery/" class="rkit-nav-link">
-                                                Gallery                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/appointment/" class="rkit-nav-link">
-                                                Appointment                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/faqs/" class="rkit-nav-link">
-                                                FAQ&#039;s                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/404-page/" class="rkit-nav-link">
-                                                404 Page                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/our-blog/" class="rkit-nav-link">
-                                                Our Blog                                                                                            </a>
-                                                        </li>
-                                                        <li class="rkit-submenu-item  ">
-                                                            <a href="https://templatekit.rometheme.pro/prayer/template-kit/single-blog/" class="rkit-nav-link">
-                                                Single Blog                                                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> -->
                                                 <li class="rkit-menu-item   ">
                                                     <a href="{{route('contact-us')}}" wire:navigate class="rkit-nav-link" >
                                 Contact Us                                                            </a>
