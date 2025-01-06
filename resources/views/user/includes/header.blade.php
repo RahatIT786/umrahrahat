@@ -90,6 +90,48 @@
     {{--BLOG-STYLE-FILE-INCLUDE-LINK--}}
     @include('user.partials.blog.style')
     {{--------------}}
+
+
+    <style>
+      
+/* Flex container for the package items */
+.container.package-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Default style: three boxes in a row */
+.elementor-element-232d650 {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .elementor-element-232d650 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .elementor-element-232d650 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Styling for images to maintain a uniform size */
+.visa-image {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+</style>
+
     <!-- style1 -->
 
 

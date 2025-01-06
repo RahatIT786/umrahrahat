@@ -9,6 +9,8 @@ use App\Livewire\Admin\Components\PackageRequest;
 
 
 
+use App\Livewire\Admin\Components\PackageRequestHistory;
+use App\Livewire\Admin\Components\RequestHistory;
 use App\Livewire\Admin\Components\VisaRequest;
 use App\Livewire\Admin\PackageManager\AdminViewPackage;
 use App\Livewire\Blog;
@@ -47,6 +49,8 @@ Route::get('/admin/saudivisa/add',AddVisa::class)->name('admin.visa-add');
 Route::get('/editdata/{id}', AddVisa::class)->name('editdata');
 Route::get('/editPackage/{id}',AddPackage::class)->name('editPackage');
 Route::get('/viewPackage/{id}',AdminViewPackage::class)->name('viewPackage');
+Route::get('/admin/package-request-history', PackageRequestHistory::class)->name('admin.package-request-history');
+Route::get('/admin/request-history', RequestHistory::class)->name('admin.visa-request-history');
 Route::post('/admin/logout',[AuthController::class,'logout'])->name('admin.logout');
 });
 

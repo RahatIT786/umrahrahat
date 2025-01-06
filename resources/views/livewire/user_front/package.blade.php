@@ -107,7 +107,11 @@
            </div>
         <div class="row1">
             <div class="img">
-                <img src="{{Storage::url($selectedPackage->photo_path)}}" alt="previewImage">
+                <!-- <img src="{{Storage::url($selectedPackage->photo_path)}}" alt="previewImage"> -->
+                <!-- <img src="{{Storage::url($selectedPackage->photo_path)}}" alt="previewImage"> -->
+                <img decoding="async" class="visa-image" src="{{ $visaDetail->photo_path ? Storage::url($visaDetail->photo_path) : asset('public/images/logo-dark.png') }}" alt="Package Image">
+
+
             </div>
             <div class="pack-name">
                 <h1>{{$selectedPackage->package_name}}</h1>
