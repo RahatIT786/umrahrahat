@@ -60,6 +60,9 @@
                                 data-widget_type="navigation-menu.default">
                                 <div class="elementor-widget-container">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b439750f6fe72283da2975331598f2ddf1324ee
                                     <img fetchpriority="high" width="600" height="207" src="{{ asset('asserts/user/img/rahatlogo1.png') }}" class="attachment-full size-full wp-image-594" alt="" 
                                         sizes="(max-width: 600px) 100vw, 600px" /> </div>
                             </div>

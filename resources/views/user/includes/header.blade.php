@@ -8,7 +8,7 @@
 <!-- <<<<<<< HEAD -->
     <link rel="pingback" href="https://templatekit.rometheme.pro/prayer/xmlrpc.php" />
     <title>Homepage &#8211; Prayer</title>
-<!-- <<<<<<< HEAD -->
+
 
     <meta name='robots' content='max-image-preview:large' />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -17,5 +17,3 @@
 
     <!-- <meta name='robots' content='max-image-preview:large' />
 >>>>>>> bf542e9096e97d1dfec602f38d06ff2e1cd034b5 -->
-<!-- ======= -->
-   
