@@ -142,14 +142,14 @@
 
                                     <div class="elementor-icon-box-icon">
                                         <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="rtmicon-thin rtmicon-circle-check"></i>				</span>
+				<i  class="bi bi-check-circle"></i>				</span>
                                     </div>
 
                                     <div class="elementor-icon-box-content">
 
                                         <h5 class="elementor-icon-box-title">
                                             <span>
-							Expert Guidance						</span>
+						Expert Guidance		</span>
                                         </h5>
 
                                         <p class="elementor-icon-box-description">
@@ -167,7 +167,7 @@
 
                                     <div class="elementor-icon-box-icon">
                                         <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="rtmicon-thin rtmicon-circle-check"></i>				</span>
+				<i class="bi bi-check-circle"></i>				</span>
                                     </div>
 
                                     <div class="elementor-icon-box-content">

@@ -34,7 +34,7 @@ class ListAllVisa extends Component
         }
     }
 
-    #[Layout('admin.layouts.app')]
+    #[Layout('admin.Layouts.app')]
     public function render()
     {
        //dump($this->search);

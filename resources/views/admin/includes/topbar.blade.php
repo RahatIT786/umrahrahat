@@ -12,7 +12,7 @@
               <ul class="navbar-nav align-items-center">
               
               <li class="nav-item dropdown dropdown-user-setting">
-                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret show" aria-expanded="true" href="#" data-bs-toggle="dropdown">
                   <div class="user-setting d-flex align-items-center">
                     <img src="{{asset("images/rahatITdepartment.png")}}" class="user-img" alt="">
                   </div>
