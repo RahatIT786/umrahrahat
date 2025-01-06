@@ -46,7 +46,7 @@
                         <div class="elementor-element elementor-element-defe40e e-con-full e-flex e-con e-child" data-id="defe40e" data-element_type="container">
                             <div class="elementor-element elementor-element-15ef576 elementor-widget elementor-widget-image" data-id="15ef576" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img fetchpriority="high" width="600" height="207" src="https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer.png" class="attachment-full size-full wp-image-594" alt="" srcset="https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer.png 600w, https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer-300x104.png 300w"
+                                    <img fetchpriority="high" width="600" height="207" src="{{ asset('images/your-image.jpg') }}" class="attachment-full size-full wp-image-594" alt="" 
                                         sizes="(max-width: 600px) 100vw, 600px" /> </div>
                             </div>
                         </div>
