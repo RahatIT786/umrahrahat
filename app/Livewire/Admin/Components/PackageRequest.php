@@ -89,10 +89,6 @@ class PackageRequest extends Component
             'username' => $user_name,
             'mobile_number' => $user_mobile_number,       
         ]);
-
-        if($this->action){
-            dump('passs');
-        }
         $this->updateStatus($this->userCommandId);
         $this->userCommand = '';
         $this->showCommantModal = false;
@@ -154,13 +150,13 @@ class PackageRequest extends Component
     }
   
 
-    // public function updateStatus($id){
-    //     $this->requestId=   $id;
-    //     $this->packageStatus=ModelsPackageRequest::findOrFail($id);
-    //     $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
-    //     ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
-    //     $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
-    // }
+    public function updateStatus($id){
+        $this->requestId=   $id;
+        $this->packageStatus=ModelsPackageRequest::findOrFail($id);
+        $nextStatus=$this->getNextStatus($this->packageStatus->call_status);
+        ModelsPackageRequest::where('id',$this->requestId)->update(['call_status'=>$nextStatus]);
+        $this->packageRequest=ModelsPackageRequest::where('delete_status',false)->get();
+    }
   
 
      // Get the next status in the cycle (pending -> responded -> no responded)
