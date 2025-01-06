@@ -1,384 +1,394 @@
-<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-            <div class='footer-width-fixer'>
-                <div data-elementor-type="wp-post" data-elementor-id="1164" class="elementor elementor-1164">
-                    <div class="elementor-element elementor-element-2e4d839 e-flex e-con-boxed e-con e-parent" data-id="2e4d839" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-b1d0e4b e-flex e-con-boxed e-con e-child" data-id="b1d0e4b" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-76bc39d e-con-full e-flex e-con e-child" data-id="76bc39d" data-element_type="container">
-                                        <div class="elementor-element elementor-element-e660264 elementor-widget elementor-widget-image" data-id="e660264" data-element_type="widget" data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img 
-                                                  width="800" 
-                                                  height="243" 
-                                                  src="{{ asset('asserts/user/img/UMRAH_COLOR.png') }}" 
-                                                  class="attachment-large size-large wp-image-1328" alt="" 
-                                                  sizes="(max-width: 800px) 100vw, 800px"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-20ecab6 elementor-widget elementor-widget-text-editor" data-id="20ecab6" data-element_type="widget" data-widget_type="text-editor.default">
-                                            <div class="elementor-widget-container">
-                                                <p>We offer various packages according to the convenience and budget of the pilgrims. We have special Umrah packages by Air, car and luxury buses.</p>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-d514042 e-grid-align-left e-grid-align-mobile-center elementor-shape-square elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="d514042" data-element_type="widget" data-widget_type="social-icons.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-social-icons-wrapper elementor-grid">
-                                                    <span class="elementor-grid-item">
-					<a href="https://www.facebook.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-fa3c464" target="_blank">
-						<span class="elementor-screen-only">Facebook</span>
-                                                    <i class="bi bi-facebook"></i> </a>
-                                                    </span>
-                                                    <span class="elementor-grid-item">
-					<a href="https://www.instagram.com/rahattravelsofindia/" class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-f542635" target="_blank">
-						<span class="elementor-screen-only">Twitter</span>
-                                                    <i class="bi bi-instagram"></i> </a>
-                                                    </span>
-                                                    <span class="elementor-grid-item">
-					<a href="https://www.youtube.com/@RahatGroup" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a1f2815" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-                                                    <i class="bi bi-youtube"></i> </a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
+<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+            <div data-elementor-type="wp-post" data-elementor-id="589" class="elementor elementor-589">
+                <div class="elementor-element elementor-element-8b983c2 e-flex e-con-boxed e-con e-parent" data-id="8b983c2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="e-con-inner">
+                        <div class="elementor-element elementor-element-7317f8c e-con-full e-flex e-con e-child" data-id="7317f8c" data-element_type="container">
+                            <div class="elementor-element elementor-element-275e8c7 e-con-full e-flex e-con e-child" data-id="275e8c7" data-element_type="container">
+                                <div class="elementor-element elementor-element-e7b4acd elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="e7b4acd" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img width="600" height="207" src="https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer.png" class="attachment-full size-full wp-image-594" alt="" srcset="https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer.png 600w, https://templatekit.rometheme.pro/prayer/wp-content/uploads/sites/32/2024/12/logo-prayer-300x104.png 300w"
+                                            sizes="(max-width: 600px) 100vw, 600px" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-146cfb9 elementor-widget elementor-widget-text-editor" data-id="146cfb9" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Welcome to Prayer, your trusted partner for planning and booking your sacred Hajj and Umrah pilgrimage.</p>
                                     </div>
-                                    <div class="elementor-element elementor-element-c90f607 e-flex e-con-boxed e-con e-child" data-id="c90f607" data-element_type="container">
-                                        <div class="e-con-inner">
-                                            <div class="elementor-element elementor-element-d051819 e-flex e-con-boxed e-con e-child" data-id="d051819" data-element_type="container">
-                                                <div class="e-con-inner">
-                                                    <div class="elementor-element elementor-element-f9c11dc e-flex e-con-boxed e-con e-child" data-id="f9c11dc" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-f0c59bb elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-square elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="f0c59bb" data-element_type="widget"
-                                                                data-widget_type="icon-box.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="elementor-icon-box-wrapper">
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-e559330 e-con-full e-flex e-con e-child" data-id="e559330" data-element_type="container">
+                                <div class="elementor-element elementor-element-d136769 elementor-widget elementor-widget-heading" data-id="d136769" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Company</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-51f5828 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="51f5828" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-icon">
-                                                                            <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="bi bi-telephone-fill"></i>				</span>
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Home</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-content">
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">About Us</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                            <h3 class="elementor-icon-box-title">
-                                                                                <span>Phone	</span>
-                                                                            </h3>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Services</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                            <a class="elementor-icon-box-description" href="tel:+917863878630">+91 78638 78630</a>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Our Team Article & News</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Article & News</span>
+											</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-b396d41 e-con-full e-flex e-con e-child" data-id="b396d41" data-element_type="container">
+                                <div class="elementor-element elementor-element-4b51ce7 elementor-widget elementor-widget-heading" data-id="4b51ce7" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Support</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-a34f2ad elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a34f2ad" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-bb6de16 e-flex e-con-boxed e-con e-child" data-id="bb6de16" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-0023189 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-square elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="0023189" data-element_type="widget"
-                                                                data-widget_type="icon-box.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="elementor-icon-box-wrapper">
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Help Center</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-icon">
-                                                                            <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="bi bi-envelope-fill"></i>				</span>
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Ticket Support</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-content">
-                                                                         <a href="mailto:info@rahat.in">
-                                                                            <h3 class="elementor-icon-box-title">
-                                                                                <span>
-							                                                        Email
-                                                                                </span>
-                                                                            </h3>
-                                                                            <p class="elementor-icon-box-description">
-                                                                                info@rahat.in
-                                                                            </p>
-                                                                         </a>
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">FAQs</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-82f2f67 e-flex e-con-boxed e-con e-child" data-id="82f2f67" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-7d72cff elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-square elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="7d72cff" data-element_type="widget"
-                                                                data-widget_type="icon-box.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <!-- <div class="elementor-icon-box-wrapper">
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Contact Us</span>
+											</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-067d8d8 e-con-full e-flex e-con e-child" data-id="067d8d8" data-element_type="container">
+                                <div class="elementor-element elementor-element-afa6add elementor-widget elementor-widget-heading" data-id="afa6add" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Services</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-67b15e9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="67b15e9" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-icon">
-                                                                            <span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Hajj & Umrah Packages</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        <div class="elementor-icon-box-content">
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Guided Tours</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                            <h3 class="elementor-icon-box-title">
-                                                                                <span>
-							Address						</span>
-                                                                            </h3>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Accommodation</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                            <p class="elementor-icon-box-description">
-                                                                                London Eye, UK </p>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Travel Arrangements</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                        </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Customer Support</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="#">
 
-                                                                    </div> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-element elementor-element-7bb9f90 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7bb9f90" data-element_type="widget" data-widget_type="divider.default">
-                                                <div class="elementor-widget-container">
-                                                    <div class="elementor-divider">
-                                                        <span class="elementor-divider-separator">
-						</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-element elementor-element-5c74f6b e-flex e-con-boxed e-con e-child" data-id="5c74f6b" data-element_type="container">
-                                                <div class="e-con-inner">
-                                                    <div class="elementor-element elementor-element-c82f6dd e-flex e-con-boxed e-con e-child" data-id="c82f6dd" data-element_type="container">
-                                                    <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">MAKKA - SAUDI</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
-                                                                data-widget_type="icon-list.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <ul class="elementor-icon-list-items">
-                                                                        <li style="display:flex;align-items:flex-start" class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-icon">
-							                                                  <i aria-hidden="true" class="bi bi-geo-alt-fill"></i>
-                                                                            </span>
-                                                                            <span class="elementor-icon-list-text">Deafa International, Ajyad Sud Street. Anwar Deafa, Second Floor.</span>
-                                                                        </li>
-                                                                        <li  class="elementor-icon-list-item">
-                                                                            <a href="tel:+966563898353">
-                                                                            <span class="elementor-icon-list-icon">
-							                                                  <i aria-hidden="true" class="bi bi-telephone-fill"></i>
-                                                                            </span>
-                                                                            <span class="elementor-icon-list-text">
-                                                                                 +966 56 389 8353
-                                                                            </span>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                           
-                                                    </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-9f04783 e-flex e-con-boxed e-con e-child" data-id="9f04783" data-element_type="container">
-                                                       <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">MADINA - SAUDI</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
-                                                                data-widget_type="icon-list.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <ul class="elementor-icon-list-items">
-                                                                        <li style="display:flex;align-items:flex-start" class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-icon">
-							                                                 <i aria-hidden="true" class="bi bi-geo-alt-fill"></i>	
-                                                                            </span>
-                                                                            <span class="elementor-icon-list-text">Ali ibne Talib Inside Qurban Mall. Awaali, Madina Munawwara.</span>
-                                                                        </li>
-                                                                        <li  class="elementor-icon-list-item">
-                                                                            <a href="tel:+966543186894">
-                                                                            <span class="elementor-icon-list-icon">
-						                                                	  <i aria-hidden="true" class="bi bi-telephone-fill"></i>	
-                                                                            </span>
-                                                                            <span class="elementor-icon-list-text">
-                                                                                +966 54 318 6894.
-                                                                            </span>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-738e9ec e-flex e-con-boxed e-con e-child" data-id="738e9ec" data-element_type="container">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-6d0444a elementor-widget elementor-widget-heading" data-id="6d0444a" data-element_type="widget" data-widget_type="heading.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <h5 class="elementor-heading-title elementor-size-default">SHARJAH - DUBAI</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-b0fa1d5 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b0fa1d5" data-element_type="widget"
-                                                                data-widget_type="icon-list.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <ul class="elementor-icon-list-items">
-                                                                        <li style="display:flex;align-items:flex-start"  class="elementor-icon-list-item">
-                                                                            <span class="elementor-icon-list-icon">
-							                                                <i aria-hidden="true" class="bi bi-envelope-fill"></i>	</span>
-                                                                            <span class="elementor-icon-list-text">705, F1 Building, Rolla Market, Near Hisn Fort. Sharjah.</span>
-                                                                        </li>
-                                                                        <li class="elementor-icon-list-item">
-                                                                            <a href="tel:+971566115491.">
-                                                                            <span class="elementor-icon-list-icon">
-							                                                  <i aria-hidden="true" class="bi bi-telephone-fill"></i>	
-                                                                            </span>
-
-                                                                            <span class="elementor-icon-list-text">
-                                                                                 +971 56 611 5491.
-                                                                            </span>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Group Packages</span>
+											</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-2f8d87a elementor-widget elementor-widget-spacer" data-id="2f8d87a" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-spacer">
+                                    <div class="elementor-spacer-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-0c5c0cb e-con-full e-flex e-con e-child" data-id="0c5c0cb" data-element_type="container">
+                            <div class="elementor-element elementor-element-7f32fdd e-con-full e-flex e-con e-child" data-id="7f32fdd" data-element_type="container">
+                                <div class="elementor-element elementor-element-6d7abf8 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6d7abf8" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="rtmicon rtmicon-pin-map-location"></i>						</span>
+                                                <span class="elementor-icon-list-text">KLLG St, No.99, Pku City, ID 28289</span>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="rtmicon rtmicon-phone-classic"></i>						</span>
+                                                <span class="elementor-icon-list-text">0761-8523-398</span>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="rtmicon rtmicon-envelope"></i>						</span>
+                                                <span class="elementor-icon-list-text">hello@domainsite.com</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-4845ad0 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="4845ad0" data-element_type="widget" data-widget_type="social-icons.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-social-icons-wrapper elementor-grid">
+                                            <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7a69b06" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+                                            <i class="fab fa-facebook"></i> </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b558822" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+                                            <i class="fab fa-instagram"></i> </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-6848cff" target="_blank">
+						<span class="elementor-screen-only">X-twitter</span>
+                                            <i class="fab fa-x-twitter"></i> </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-8b51c80" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+                                            <i class="fab fa-youtube"></i> </a>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-a204916 e-flex e-con-boxed e-con e-child" data-id="a204916" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-993dc33 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="993dc33" data-element_type="widget" data-widget_type="divider.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-divider">
-                                                <span class="elementor-divider-separator">
-						</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-5c5e1ac elementor-widget elementor-widget-text-editor" data-id="5c5e1ac" data-element_type="widget" data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            <p>Copyright © <span id="dev-year"></span> <a href="http://rahatitsolutions.com/" style="color: white">Rahat IT Solutions.</a> All Rights Reserved.</p>
-                                        </div>
+                            <div class="elementor-element elementor-element-0b97700 e-con-full e-flex e-con e-child" data-id="0b97700" data-element_type="container">
+                                <div class="elementor-element elementor-element-a19a600 elementor-widget elementor-widget-heading" data-id="a19a600" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Subscribe Our Newsletter</h5>
                                     </div>
                                 </div>
+                                <div class="elementor-element elementor-element-ca9486a elementor-widget elementor-widget-rform" data-id="ca9486a" data-element_type="widget" data-widget_type="rform.default">
+                                    <div class="elementor-widget-container">
+                                        <form id="rform" data-form="669">
+                                            <div class="require-login msg">
+                                                <div class="require-msg-body">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FF0000" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                                                    <div style="width: 100% ;">
+                                                        <h5>Required Login</h5>
+                                                        Please Login for Submit Form.
+                                                    </div>
+                                                    <div>
+                                                        <a type="button" class="close-msg">Close</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="success-submit msg">
+                                                <div class="success-body">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#4CAF50" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                                                    <div style="width: 100%;">
+                                                        <h5>Success</h5>
+                                                        Thank you! Form submitted successfully. </div>
+                                                    <div>
+                                                        <a type="button" class="close-msg">Close</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <style>
+                                                .elementor-669 .elementor-element.elementor-element-8670046 {
+                                                    --display: flex;
+                                                    --flex-direction: row;
+                                                    --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow)) * 100%);
+                                                    --container-widget-height: 100%;
+                                                    --container-widget-flex-grow: 1;
+                                                    --container-widget-align-self: stretch;
+                                                    --flex-wrap-mobile: wrap;
+                                                    --align-items: center;
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 .rform-input {
+                                                    background-color: var( --e-global-color-primary);
+                                                    padding: 16px 32px 16px 32px;
+                                                    color: var( --e-global-color-text);
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 {
+                                                    width: var( --container-widget-width, 80%);
+                                                    max-width: 80%;
+                                                    --container-widget-width: 80%;
+                                                    --container-widget-flex-grow: 0;
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 .rform-input::placeholder {
+                                                    color: var( --e-global-color-text);
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 .rform-input::-webkit-input-placeholder {
+                                                    color: var( --e-global-color-text);
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 .rform-input::-ms-input-placeholder {
+                                                    color: var( --e-global-color-text);
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-1c8e313 .rform-error {
+                                                    text-align: left;
+                                                }
+
+                                                .elementor-669 .elementor-element.elementor-element-0a1f948 {
+                                                    width: var( --container-widget-width, 20%);
+                                                    max-width: 20%;
+                                                    --container-widget-width: 20%;
+                                                    --container-widget-flex-grow: 0;
+                                                }
+
+                                                @media(max-width:767px) {
+                                                    .elementor-669 .elementor-element.elementor-element-1c8e313 {
+                                                        --container-widget-width: 100%;
+                                                        --container-widget-flex-grow: 0;
+                                                        width: var( --container-widget-width, 100%);
+                                                        max-width: 100%;
+                                                    }
+                                                    .elementor-669 .elementor-element.elementor-element-0a1f948 {
+                                                        --container-widget-width: 100%;
+                                                        --container-widget-flex-grow: 0;
+                                                        width: var( --container-widget-width, 100%);
+                                                        max-width: 100%;
+                                                    }
+                                                }
+                                            </style>
+                                            <div data-elementor-type="wp-post" data-elementor-id="669" class="elementor elementor-669">
+                                                <div class="elementor-element elementor-element-8670046 e-flex e-con-boxed e-con e-parent" data-id="8670046" data-element_type="container">
+                                                    <div class="e-con-inner">
+                                                        <div class="elementor-element elementor-element-1c8e313 elementor-widget__width-initial elementor-widget elementor-widget-email" data-id="1c8e313" data-element_type="widget" data-widget_type="email.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="rform-container">
+                                                                    <div class="rform-control ">
+                                                                        <input name="rform-email" placeholder="Your Email" class="rform-input" id="rform-input-email-29942547" type="email" onblur="validate_input( 'rform-input-email-' , 'rform-input-err-' ,'29942547')" aria-invalid=false data-val="by_char" required>
+                                                                    </div>
+                                                                    <span role="alert" class="rform-error" id="rform-input-err-29942547">This field is required</span>
+                                                                    <div class="rform-help-text">
+                                                                        <span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-0a1f948 elementor-widget__width-initial elementor-widget elementor-widget-rform_button_submit" data-id="0a1f948" data-element_type="widget" data-widget_type="rform_button_submit.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="rform-button-container">
+                                                                    <button class="rform-button-submit rform-btn-fullwidth" type="button" id="rform-button-submit">
+                                Subscribe                                <div class="loading">
+                    <div id="loading"></div>
+                </div>
+            </button>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-35e23dc elementor-widget elementor-widget-spacer" data-id="35e23dc" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-spacer">
+                                    <div class="elementor-spacer-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-7b2e936 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7b2e936" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-divider">
+                                    <span class="elementor-divider-separator">
+						</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-ebc07b6 elementor-widget elementor-widget-heading" data-id="ebc07b6" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default">Copyright © 2024 Rometheme. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <script>
-                document.getElementById('dev-year').innerHTML = new Date().getFullYear();
-                // document.write(new Date().getFullYear())
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-            <script>
-                window._wpemojiSettings = {
-    "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-    "ext": ".png",
-    "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-    "svgExt": ".svg",
-    "source": {
-        "concatemoji": "https:\/\/kitpro.site\/zamzam\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5"
-    }
-};
-/*! This file is auto-generated */
-! function(i, n) {
-    var o, s, e;
-
-    function c(e) {
-        try {
-            var t = {
-                supportTests: e,
-                timestamp: (new Date).valueOf()
-            };
-            sessionStorage.setItem(o, JSON.stringify(t))
-        } catch (e) {}
-    }
-
-    function p(e, t, n) {
-        e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-        var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-            r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-        return t.every(function(e, t) {
-            return e === r[t]
-        })
-    }
-
-    function u(e, t, n) {
-        switch (t) {
-            case "flag":
-                return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-            case "emoji":
-                return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-        }
-        return !1
-    }
-
-    function f(e, t, n) {
-        var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
-            a = r.getContext("2d", {
-                willReadFrequently: !0
-            }),
-            o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
-        return e.forEach(function(e) {
-            o[e] = t(a, e, n)
-        }), o
-    }
-
-    function t(e) {
-        var t = i.createElement("script");
-        t.src = e, t.defer = !0, i.head.appendChild(t)
-    }
-    "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
-        everything: !0,
-        everythingExceptFlag: !0
-    }, e = new Promise(function(e) {
-        i.addEventListener("DOMContentLoaded", e, {
-            once: !0
-        })
-    }), new Promise(function(t) {
-        var n = function() {
-            try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-            } catch (e) {}
-            return null
-        }();
-        if (!n) {
-            if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
-                    r = new Blob([e], {
-                        type: "text/javascript"
-                    }),
-                    a = new Worker(URL.createObjectURL(r), {
-                        name: "wpTestEmojiSupports"
-                    });
-                return void(a.onmessage = function(e) {
-                    c(n = e.data), a.terminate(), t(n)
-                })
-            } catch (e) {}
-            c(n = f(s, u, p))
-        }
-        t(n)
-    }).then(function(e) {
-        for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-        n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
-            n.DOMReady = !0
-        }
-    }).then(function() {
-        return e
-    }).then(function() {
-        var e;
-        n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-    }))
-}((window, document), window._wpemojiSettings);
-
-            </script>
-        </footer>
- 
-    <!-- #page -->
-   
+ </footer>
